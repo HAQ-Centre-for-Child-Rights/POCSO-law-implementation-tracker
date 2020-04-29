@@ -59,6 +59,7 @@ all_acts_sub$act_name_std[all_acts_sub$act_name_std == 'POCSO' & all_acts_sub$se
 ] <- 'IPC'
 
 all_acts_sub <- all_acts_sub[!is.na(all_acts_sub$act_name_std),]
+all_acts_sub$act_section <- paste0(all_acts_sub$act_name_std," - ",all_acts_sub$section_name_std)
 
 # How many cases are covered by these acts
 total_cases <- length(unique(all_case_acts$cino))
