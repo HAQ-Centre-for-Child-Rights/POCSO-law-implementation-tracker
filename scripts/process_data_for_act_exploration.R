@@ -6,16 +6,16 @@ source("scripts/connect_db.R")
 
 # 1 - List all tables ('https://stackoverflow.com/questions/43720911/list-tables-within-a-postgres-schema-using-r')
 
-dbxSelect(con,
-          "SELECT table_name FROM information_schema.tables
-                 WHERE table_schema='public'") %>% View()
-
-table_name <- "case_acts"
-dbxSelect(con,
-          glue::glue("SELECT * from {table_name} limit 5")) %>% View()
-
-dbxSelect(con,
-          glue::glue("SELECT count(distinct cino) from {table_name} limit 5")) %>% View()
+# dbxSelect(con,
+#           "SELECT table_name FROM information_schema.tables
+#                  WHERE table_schema='public'") %>% View()
+# 
+# table_name <- "case_acts"
+# dbxSelect(con,
+#           glue::glue("SELECT * from {table_name} limit 5")) %>% View()
+# 
+# dbxSelect(con,
+#           glue::glue("SELECT count(distinct cino) from {table_name} limit 5")) %>% View()
 
 # Get acts for all cases
 
@@ -30,7 +30,7 @@ crpc_patterns <- c("Code of Civil Procedure", "CODE OF CIVIL PROCEDURE", "Code o
 jj_act_patterns <- c("Juvenile Justice (Care and Protection of Children) Act", "JUVENILE JUSTICE (CARE AND PROTECTION OF CHILDREN) ACT", "Juvenile Justice (Care and protection of children) Act, 2015", "Juvenile Justice Amended Act, 2006", "Juvenile Justice Care and Protection of Children Act")
 sc_st_act_patterns <- c("SC/ST Prevention of Attrocities Act 1989", "SC/ST(Prevention of attrocities) Act 1989", "Scheduled Areas (Assimilation of Laws) Act", "Scheduled Castes and Scheduled Tribes Orders (Amendment)  Act", "Scheduled Castes and Scheduled Tribes Orders (Amendment) Act", "Scheduled Castes and Scheduled Tribes Orders Amendment  Act", "Scheduled Castes and the Scheduled Tribes (Prevention of  Atrocities) Act", "Scheduled Castes and the Scheduled Tribes (Prevention of Atrocities) Act", "Scheduled Castes and the Scheduled Tribes Prevention of  Atrocities Act")
  
-all_acts$act_name_std[all_acts$name %in% ipc_patterns] <- 'Indian Penal Code'
+all_acts$act_name_std[all_acts$name %in% ipc_patterns] <- 'IPC'
 all_acts$act_name_std[all_acts$name %in% pocso_patterns] <- 'POCSO'
 
 ## Standardising acts and sections
@@ -56,7 +56,7 @@ all_acts_sub$section_name_std[all_acts_sub$section %in% ipc_354A_patterns] <- '3
 all_acts_sub$section_name_std[all_acts_sub$section == '06POCSOACT'] <- 6
 all_acts_sub$section_name_std[all_acts_sub$section == '12POCSOACT'] <- 12
 all_acts_sub$act_name_std[all_acts_sub$act_name_std == 'POCSO' & all_acts_sub$section %in% c("354", "363", "376")
-] <- 'Indian Penal Code'
+] <- 'IPC'
 
 all_acts_sub <- all_acts_sub[!is.na(all_acts_sub$act_name_std),]
 
@@ -71,14 +71,11 @@ case_universe <- dbxSelect(con,glue::glue("Select cino,state_code,state_name,dis
 case_subset <- case_universe[case_universe$cino %in% cases_to_consider,]
 case_act_subset <- all_case_acts[all_case_acts$cino %in% cases_to_consider,]
 
-# For Visualisations:
+readr::write_csv(case_subset, "data/ipc_pocso_patterns/case_details.csv")
+readr::write_csv(case_act_subset, "data/ipc_pocso_patterns/case_act_details.csv")
+readr::write_csv(all_acts_sub, "data/ipc_pocso_patterns/act_details.csv")
 
-# 1 -  Section 4 POCSO r/w 377 IPC
-pocso_id <- all_acts_sub$id[all_acts_sub$act_name_std=="POCSO" & all_acts_sub$section_name_std == "4"] %>% unique()
-ipc_id <- all_acts_sub$id[all_acts_sub$act_name_std=="Indian Penal Code" & all_acts_sub$section_name_std == "377"] %>% unique()
-
-pocso_cases <- case_act_subset$cino[case_act_subset$act %in% pocso_id] %>% unique()
-ipc_cases <- case_act_subset$cino[case_act_subset$act %in% ipc_id] %>% unique()
-common_cases <- intersect(common_cases,ipc_cases)
-case_details <- case_subset[case_subset$cino %in% common_cases,]
-
+# Write all_acts_sub to the DB
+table <- "acts_subset"
+DBI::dbCreateTable(conn = con, table, data.frame("id", "name","section", "act_name_std", "section_name_std"))
+dbWriteTable(conn = con, table, value = all_acts_sub,overwrite=TRUE)
