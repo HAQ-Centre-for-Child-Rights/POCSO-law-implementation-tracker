@@ -18,7 +18,3 @@
 
 
 ---
-
-_For any questions, comments or suggestion send an email to `judiciary@civicdatalab.in` and we will respond as soon as we can._	
-
-_Information, data and advice on this document is provided on the basis that users undertake responsibility for assessing the relevance and accuracy of its content._
