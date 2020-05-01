@@ -5,7 +5,7 @@
 * [Data around challenges, mentioned in the report](https://docs.google.com/spreadsheets/d/1kCdGYpOQwNgOeNWOwE2I62qXWQNoypYqJK8SOYvQHUw/edit#)
 
 **Dashboards**
-* [To explore cases registered under selected sections of the POCSO and IPC](bit.ly/pocso-act)
+* [To explore cases registered under selected sections of the POCSO and IPC](https://docs.google.com/spreadsheets/d/e/2PACX-1vS7I4uZV9fl0kzVPkCsm3WMiNCRlNgNTGCUwVu7TBqImv2XKWdw4hUElYVwWv7KJR6lA1WvI5PjNlrD/pubhtml) - *Link Updated*
 * [Explore data around Case Filing, FIR registrations and Case Pendency in Delhi, Haryana and Assam ](https://superset.civicdatalab.in/superset/dashboard/crlit-haq-cdl/)
 
 **Judgement Annotation**
