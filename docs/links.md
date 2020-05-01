@@ -1,6 +1,4 @@
-## Child Rights Law Implementation Tracker
-_Links to reports and presentations_
-___
+# Links (Reports and Presentations) 
 
 **Data**
 * [Data Mining Report](https://docs.google.com/presentation/d/1OTnv3gKmuscATigR13xPDVDyFSXJUjOkEAplQkNh05M/edit#slide=id.gc6fa3c898_0_0)
@@ -17,3 +15,10 @@ ___
 **Research**
 * [Research questions around implementation of the POCSO law](https://docs.google.com/document/d/1EuypwV2HS8IXTKStaaBolInxQ2f1DrXOXVFhMspg58k/edit#heading=h.9ay8hxyx38e8)
 * [Data points (for _metadata_, _orders_ and _judgements_) required for an in-depth research and analysis around POCSO aka the list of non-negotiable data points](https://drive.google.com/file/d/1S8enjpqNRvjWEc-WjkdoQ4Cuiy8k9mZS/view?usp=sharing)
+
+
+---
+
+_For any questions, comments or suggestion send an email to `judiciary@civicdatalab.in` and we will respond as soon as we can._	
+
+_Information, data and advice on this document is provided on the basis that users undertake responsibility for assessing the relevance and accuracy of its content._
