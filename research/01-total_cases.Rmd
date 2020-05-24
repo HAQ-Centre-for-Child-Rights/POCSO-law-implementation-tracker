@@ -1,11 +1,72 @@
 # Total Cases {#total_cases}
 
-## Year wise
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+	echo = FALSE,
+	eval=FALSE,
+	message = FALSE,
+	warning = FALSE
+)
+
+source("../scripts/source_files.R")
+```
+
+```{sql connection=con, include=FALSE, output.var='db_tables'}
+SELECT table_name FROM information_schema.tables
+                 WHERE table_schema='public'
+```
+
+
+```{r total-cases-data}
+
+cols_to_select <- c("district_code", "district_name", "state_code", "state_name", "complex_code", "court_code", "court_name", "court_no", "est_code", "cino", "case_no", "fil_no", "fil_year", "reg_no", "reg_year", "fir_no", "fir_year", "type_name", "date_of_decision", "date_of_filing", "dt_regis", "disp_name", "disp_nature", "police_station", "subordinate_court_no", "subordinate_court_case_type", "subordinate_court_case_no", "tranfer_est_flag")
+
+all_cases <- dbxSelect(
+  con,
+  glue("select {paste0(cols_to_select,collapse = ',')} from case_details")
+)
+```
+
+## Year on Year
+```{sql connection=con, output.var='year_wise_cases'}
+select a.*, b.pending_cases from (select state_name, district_name, reg_year, count(cino) as total_cases from case_details group by state_name, district_name, reg_year) as a LEFT JOIN (select state_name, district_name, reg_year, count(cino) as pending_cases from case_details where disp_nature = '0' group by state_name, district_name, reg_year) as b ON a.state_name=b.state_name AND a.district_name=b.district_name AND a.reg_year=b.reg_year
+```
+
+## Disposal Nature
+```{sql connection=con, output.var='nature_of_disposal'}
+select state_name, district_name, disp_name, disp_nature, count(cino) as total_cases from case_details where disp_nature != '0' group by state_name, district_name, disp_name, disp_nature
+```
 
 ## Offence wise
+```{sql connection=con, output.var='nature_of_offence'}
+select state_name, district_name, est_code, court_name, act_name_std, section_name_std, count(cino) as total_cases from (select c.act_name_std, c.section_name_std, d.* from acts_subset as c inner join (select a.*, b.state_name, b.district_name, b.est_code, b.court_name FROM case_acts as a LEFT JOIN case_details as b on a.cino=b.cino) as d on c.id = d.act) as e group by state_name, district_name, est_code, court_name, act_name_std, section_name_std
+```
 
-## Pending Trials
+## Age of case
+```{sql connection=con, output.var='case_age'}
+select state_name, district_name, court_name, est_code, cino,type_name, disp_nature, dt_regis, date_of_filing, date_of_decision from case_details
+```
 
-## Conviction & Acquittal
+```{r processing-case-age}
+case_age$end_date <- case_age$date_of_decision 
 
-## Case Age
+# End date of a case should depend on when the data was downloaded for a state. This will ensure that we capture the correct status of a case (pending/disposed) as on the date of data-collection. 
+
+# At present, we're using a fix date - 2020/03/31, but this will be updated as per the revised date of data collection for each state
+
+case_age$end_date[is.na(case_age$end_date)] <- as.Date("2020-03-31")
+
+case_age$age_of_case_interval <- lubridate::interval(case_age$date_of_filing,case_age$end_date)
+case_age$age_of_case_days <- time_length(age_of_case_days, "days")
+
+# Remove cases with difference < 0
+case_age <- case_age[case_age$age_of_case_days > 0,]
+
+# Add month/year intervals for grouping
+case_age$age_buckets <- findInterval(case_age$age_of_case_days, 
+c(30L,90L,180L,365L, 730L, 1095L, 1460L, 1825L, 2190L, 2555L, 2920L, 3285L, 3650L,Inf),rightmost.closed = TRUE)
+
+age_intervals <- data.frame('age_buckets'=seq(0,13),'age_interval'=c('one month','three months','six months','one year',"two years", "three years", "four years", "five years", "six years", "seven years", "eight years", "nine years", "ten years","more than 10 years"))
+case_age <- left_join(case_age, age_intervals, by=NULL)
+```
+

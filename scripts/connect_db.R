@@ -1,5 +1,3 @@
-source("scripts/libraries.R")
-
 db <- Sys.getenv("db_name")
 host_db <- Sys.getenv("host_db")
 db_port <- Sys.getenv("db_port")
