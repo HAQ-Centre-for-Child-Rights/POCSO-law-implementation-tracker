@@ -44,7 +44,7 @@ select state_name, district_name, est_code, court_name, act_name_std, section_na
 
 ## Age of case
 ```{sql connection=con, output.var='case_age'}
-select state_name, district_name, court_name, est_code, cino,type_name, disp_nature, dt_regis, date_of_filing, date_of_decision from case_details
+select state_name, district_name, court_name, est_code, cino,reg_year, type_name, disp_name, disp_nature, dt_regis, date_of_filing, date_of_decision from case_details
 ```
 
 ```{r processing-case-age}
@@ -57,7 +57,8 @@ case_age$end_date <- case_age$date_of_decision
 case_age$end_date[is.na(case_age$end_date)] <- as.Date("2020-03-31")
 
 case_age$age_of_case_interval <- lubridate::interval(case_age$date_of_filing,case_age$end_date)
-case_age$age_of_case_days <- time_length(age_of_case_days, "days")
+
+case_age$age_of_case_days <- time_length(case_age$age_of_case_interval, "days")
 
 # Remove cases with difference < 0
 case_age <- case_age[case_age$age_of_case_days > 0,]
@@ -68,5 +69,6 @@ c(30L,90L,180L,365L, 730L, 1095L, 1460L, 1825L, 2190L, 2555L, 2920L, 3285L, 3650
 
 age_intervals <- data.frame('age_buckets'=seq(0,13),'age_interval'=c('one month','three months','six months','one year',"two years", "three years", "four years", "five years", "six years", "seven years", "eight years", "nine years", "ten years","more than 10 years"))
 case_age <- left_join(case_age, age_intervals, by=NULL)
+case_age_dataset <- case_age %>% group_by(state_name, district_name, court_name, est_code, type_name, disp_name, disp_nature, age_interval) %>% summarise(total_cases = length(cino))
 ```
 

@@ -1,0 +1,918 @@
+state_name,district_name,disp_name,disp_nature,total_cases
+Haryana,Sonepat,DISMISSED AS WITHDRAWN,28,66
+Assam,Golaghat,Not Press,18,1
+Haryana,Bhiwani,DISMISSED IN DEFAULT FOR WANT OF PROSECUTION,22,1
+Haryana,Sonepat,UNTRACE REPORT ACCEPTED,30,2
+Haryana,Faridabad,PARTLY ALLOWED,16,3
+Assam,Sivasagar,OTHERWISE,2,1
+Delhi,North West,COMPROMISED,21,1
+Delhi,Central,REMAND BACK,9,1
+Assam,Cachar,Accused are Acquitted.,38,3
+Delhi,West,ACQUITTED,1,420
+Haryana,Kaithal,ALLOWED,15,55
+Assam,Dhemaji,Allowed,16,5
+Haryana,Narnaul,CONVICTED,24,2
+Assam,Dibrugarh,DISCHARGED,14,6
+Haryana,Rohtak,CONVICTED,24,55
+Assam,Cachar,ACQUITTED,10,69
+Haryana,Faridabad,COMMITTED,33,54
+Assam,Lakhimpur,Disposed of,30,4
+Delhi,North West,DISMISSED,6,210
+Haryana,Panchkula,DISMISSED U/O 9 RULE 2 OF CPC,5,1
+Delhi,South West,CONVICTED,2,32
+Haryana,Sonepat,DISPOSED OF WITH DIRECTIONS,36,11
+Assam,Morigaon,ACQUITTED,10,69
+Haryana,Faridabad,ACQUITTED,25,312
+Delhi,North West,DISCHARGED,3,53
+Haryana,Ambala,DISMISSED AS WITHDRAWN BEING FULLY SATISFIED,27,20
+Assam,Sonitpur,ABATED,13,4
+Assam,Barpeta,TRANSFERED,1,17
+Assam,Kokrajhar,Bail petition is rejected,37,3
+Haryana,Panchkula,DISCHARGED,23,1
+Assam,Baksa,TRANSFER,1,12
+Assam,Hailakandi,Judgment,33,1
+Delhi,North,DISMISSED,6,259
+Haryana,Yamunanagar,DISMISSED AS WITHDRAWN,1010,3
+Delhi,South East,CONVICTED,2,13
+Haryana,Narnaul,ACQUITTED,25,8
+Haryana,Sirsa,TRANSFER,1,2
+Delhi,Shahdara,P.O. CONSIGNED,12,7
+Haryana,Kurukshetra,ALLOWED,15,161
+Assam,Dhemaji,Disposed of,30,7
+Assam,Lakhimpur,ACQUITTED,10,32
+Assam,Udalguri,Filed,21,2
+Haryana,Kurukshetra,COMMITAL,999,7
+Assam,Barpeta,Disposed,61,10
+Haryana,Hisar,DISPOSED OF AS WITHDRAWN,34,40
+Assam,Dhemaji,Not Press,18,1
+Haryana,Bhiwani,Dismissed as withdrawn,1000,5
+Delhi,West,SINE-DIE,11,1
+Delhi,Central,CANCEL,53,2
+Assam,Cachar,SENT TO HIGHER COURT.,99,9
+Haryana,Ambala,DISMISSED WITH COSTS,8,1
+Assam,Cachar,CONVICTED,11,22
+Assam,Kamrup Metro,ACQUITTED,10,35
+Haryana,Rewari,DISMISSED,1001,6
+Delhi,North,FURTHER INVESTIGATION ORDERED,52,1
+Assam,Lakhimpur,Stay,45,1
+Assam,Darrang,comittal of cases,33,3
+Haryana,Panipat,COMMITAL,999,103
+Delhi,West,DISMISSED IN DEFAULT,13,4
+Haryana,Palwal,UNTRACE REPORT ACCEPTED,30,2
+Haryana,Sonepat,ACQUITTED,25,162
+Assam,Kamrup,ACQUITTED,10,63
+Delhi,West,WITHDRAW,10,11
+Haryana,Sonepat,DISPOSED OF,1007,20
+Haryana,Faridabad,UNDERGONE,49,1
+Assam,Lakhimpur,Not Press,18,1
+Delhi,Central,Sessions Commit,74,1
+Assam,Udalguri,Disposed of,30,1
+Delhi,North,DISMISSED AS WITHDRAWN AS SATISFIED,51,2
+Haryana,Jhajjar,Fine Paid,44,1
+Assam,Kamrup Metro,ABATED,13,3
+Delhi,Shahdara,DISPOSED,8,9
+Haryana,Karnal,COMMITAL,999,2
+Haryana,Faridabad,Attached with Main case,59,21
+Delhi,West,Transfer,74,13
+Haryana,Sirsa,DISMISSED AS SATISFIED,44,1
+Delhi,North West,FINED,4,1
+Haryana,Fatehabad,DISMISSED AS WITHDRAWN,34,48
+Haryana,Karnal,ALLOWED,15,1
+Assam,Cachar,Converted,94,4
+Haryana,Hisar,DISMISSED BEING INFRUCTUOUS,1002,1
+Assam,Jorhat,Rejected,17,1
+Delhi,Shahdara,CONVICTED,2,9
+Delhi,New Delhi,UNTRACED,46,4
+Haryana,Kaithal,ACQUITTED,25,93
+Assam,Nalbari,Disposed of,30,29
+Haryana,Sirsa,CONSIGNED AFTER PROCEEDING U/S 299 CR.P.C,38,2
+Haryana,Fatehabad,CONFESSION,40,1
+Haryana,Kurukshetra,DISMISSED AS WITHDRAWN BEING NOT SATISFIED,28,1
+Haryana,Faridabad,TRANSFER,1,13
+Haryana,Jhajjar,DISMISSED BEING NOT PRESSED,37,3
+Assam,Golaghat,Plaintiff suit is dissmissed Counter claims decreed,42,1
+Delhi,New Delhi,CONVICTED,2,1
+Delhi,New Delhi,P.O. CONSIGNED,12,1
+Haryana,Fatehabad,DISPOSED OF AS WITHDRAWN WITH PERMISSION TO FILE FRESH,2,3
+Haryana,Palwal,Attached with main file,1008,150
+Delhi,West,REJECT,36,1
+Haryana,Panipat,DISMISSED AS WITHDRAWN BEING FULLY SATISFIED,27,17
+Delhi,New Delhi,CONVICTED and FINED,7,1
+Haryana,Hisar,TRANSFER,1,16
+Haryana,Narnaul,COMMITTED,33,24
+Delhi,South West,SESSIONS COMMIT,65,2
+Haryana,Gurugram,Accepting,47,2
+Delhi,South East,DISPOSED,8,11
+Assam,Kamrup Metro,Sent to District And Sessions Judge Court,38,3
+Assam,Morigaon,Dismissed on uncontest,34,2
+Haryana,Ambala,DISPOSED OF  AS WITHDRAWN,34,102
+Assam,Barpeta,ACQUITTED,10,150
+Delhi,South West,CONVICTED and FINED,7,18
+Delhi,East,UNTRACED,46,1
+Haryana,Jhajjar,DISPOSED OF AS WITHDRAWN,34,49
+Haryana,Gurugram,ALLOWED,15,235
+Delhi,North,P.O. CONSIGNED,12,17
+Assam,Nagaon,Convert,33,1
+Haryana,Hisar,ALLOWED,15,280
+Haryana,Panchkula,ALLOWED,15,39
+Delhi,East,ACQUITTED,1,26
+Haryana,Ambala,CANCELLATION REPORT ACCEPTED,31,7
+Assam,Golaghat,Allowed/Granted,16,8
+Haryana,Yamunanagar,CONVICTED,24,25
+Haryana,Kaithal,DISPOSED OF AS WITHDRAWN,34,10
+Haryana,Panipat,DISCHARGED,23,1
+Haryana,Gurugram,Disposed off,41,175
+Haryana,Jhajjar,ACQUITTED,25,203
+Delhi,Central,ALLOWED,31,95
+Haryana,Gurugram,DISMISSED AS WITHDRAWN BEING FULLY SATISFIED,27,62
+Assam,Dibrugarh,ABATED.,13,1
+Assam,Golaghat,OTHERWISE,2,6
+Delhi,Central,Cancellation Accepted,64,2
+Assam,Golaghat,Converted to TS(L/A),40,11
+Haryana,Kurukshetra,LIFE IMPRISONMENT,1001,1
+Haryana,Jind,DISMISSED U/O 17 RULE 3 OF CPC,6,1
+Assam,Golaghat,Dismissed on Withdrawal,26,1
+Delhi,East,ABATED,5,1
+Assam,Kamrup,OTHERWISE,2,3
+Haryana,Hisar,Probation,1009,5
+Delhi,Shahdara,ABATED,5,2
+Delhi,North,DISMISSED IN DEFAULT,13,28
+Assam,Barpeta,Dismissed for Default,54,1
+Delhi,Central,CLUBBED IN FIR,70,4
+Delhi,West,CONVICTED,2,35
+Haryana,Jhajjar,Undergoan,45,1
+Haryana,Hisar,UNTRACE REPORT ACCEPTED,30,4
+Assam,Lakhimpur,OTHERWISE,2,31
+Assam,Tinsukia,ACQUITTED,10,34
+Assam,Cachar,Acquitted.,10,1
+Haryana,Palwal,REMAND BACK,1007,3
+Assam,Nalbari,Allowed,16,7
+Assam,Barpeta,DISMISSED,3,2
+Haryana,Ambala,COMMITTED,33,97
+Assam,Nagaon,TRANSFER,1,25
+Haryana,Jhajjar,Dismissed,39,123
+Haryana,Hisar,DISMISSED AS WITHDRAWN BEING NOT SATISFIED,28,15
+Delhi,North West,PROBATION GRANTED,43,1
+Haryana,Faridabad,Dismissed,39,467
+Assam,Sonitpur,CONVICTED,11,41
+Assam,Udalguri,Proceeding is droped,46,1
+Haryana,Palwal,Dismised,1000,3
+Delhi,North,ALLOWED,31,304
+Haryana,Kaithal,CONFESSION,40,1
+Haryana,Hisar,Proclaimed Offender,1007,4
+Assam,Nalbari,ACQUITTED,10,40
+Assam,Sivasagar,disposed of on full satisfaction,47,1
+Delhi,West,DISCHARGE,3,8
+Assam,Tinsukia,STAYED,39,1
+Delhi,Central,SET ASIDE,54,1
+Haryana,Rewari,COMMITTED,33,11
+Haryana,Sirsa,DISPOSED OF WITH DIRECTIONS,36,68
+Delhi,West,QUASH,17,28
+Haryana,Sonepat,DISMISSED AS NOT SATISFIED,37,1
+Haryana,Faridabad,DISPOSED OF WITH DIRECTIONS,36,17
+Haryana,Hisar,PARTLY ALLOWED,16,2
+Delhi,North,CONVICTED and FINED,7,20
+Assam,Bongaigaon,Case is Filed,21,4
+Delhi,South West,DISMISSED AS WITHDRAWN,25,184
+Haryana,Jhajjar,CONVICTION AND SENTENCED FOR DEATH,93,1
+Delhi,New Delhi,QUASHED,17,14
+Haryana,Kaithal,DISMISSED,39,86
+Assam,Lakhimpur,Committed to District and Session Judge,36,4
+Haryana,Jind,CANCELLATION REPORT ACCEPTED,31,1
+Assam,Jorhat,ACQUITTED,10,52
+Assam,Golaghat,ACQUITTED,10,110
+Haryana,Hisar,DISMISSED IN DEFAULT FOR WANT OF PROSECUTION,22,1
+Haryana,Jind,Sine-Die,44,2
+Haryana,Jhajjar,Disposed of,72,24
+Haryana,Sonepat,TRANSFER,1,6
+Assam,Dhemaji,commit,33,11
+Haryana,Hisar,CANCELLATION REPORT ACCEPTED,31,4
+Assam,Chirang,Petition Rejected,31,1
+Haryana,Panchkula,DISMISSED AS OF WITHDRAWN,34,35
+Delhi,North West,WITHDRAWN,10,11
+Haryana,Rewari,ACQUITTED,25,67
+Haryana,Gurugram,CONVICTED,24,77
+Haryana,Yamunanagar,DISMISSED,1004,9
+Assam,Barpeta,CONCILLIATION,9,1
+Assam,Kamrup Metro,Sent to Addl. District And Sessions Judge No 3,40,1
+Assam,Darrang,Filed,21,5
+Delhi,South West,DISMISSED AS WITHDRAWN AS SATISFIED,51,2
+Assam,Morigaon,DISCHARGED,14,5
+Haryana,Jhajjar,TRANSFERRED,1,5
+Haryana,Panchkula,DISMISSED WITH NO COSTS,7,63
+Delhi,South,DISMISSED IN DEFAULT,13,2
+Delhi,North West,DECREED,15,1
+Assam,Hailakandi,TRANSFER,1,23
+Assam,Golaghat,Partly Allowed,20,1
+Haryana,Fatehabad,AWARD PASSED,20,1
+Assam,Kamrup Metro,COMMITTED TO SESSION JUDGE,28,5
+Delhi,North,DISMISSED AS NON-MAINTAINABLE,32,1
+Haryana,Gurugram,CONSIGNED AFTER PROCEEDING U/S 299 CR.P.C,38,4
+Delhi,North West,DISMISSED IN DEFAULT,13,21
+Assam,Cachar,Stayed,32,1
+Delhi,Shahdara,ALLOWED,31,3
+Assam,Dhemaji,ACQUITTED,10,51
+Assam,Kamrup,DISMISSED,3,1
+Assam,Udalguri,Remand back for trial,22,2
+Delhi,South,CONVICTED,2,19
+Haryana,Panipat,DISMISSED BEING NOT PRESSED,37,1
+Haryana,Panipat,DISMISSED AS SATISFIED,1002,28
+Haryana,Palwal,ALLOWED,15,2
+Haryana,Palwal,CANCELLATION REPORT ACCEPTED,31,5
+Assam,Dima Hasao,ACQUITTED,10,2
+Delhi,Central,P.O. CONSIGN,12,8
+Delhi,West,ALLOWED,31,123
+Assam,Barpeta,"Transfer to District and Sessions Judge, Baksa for Disposal",78,8
+Haryana,Rewari,DISMISSED AS WITHDRAWN BEING FULLY SATISFIED,27,7
+Haryana,Sonepat,CONVICTED,24,132
+Haryana,Ambala,SENT FOR FURTHER INVESTIGATION,32,1
+Assam,Kamrup,Rejected,17,21
+Assam,Karbi Anglong,Stayed,32,1
+Haryana,Kurukshetra,DISMISSED,1004,90
+Delhi,North West,DEFENDANT / RESPONDENT / ACCUSED DIED,48,1
+Delhi,South East,TRANSFERRED,69,1
+Assam,Dhemaji,CONVICTED,11,17
+Delhi,Central,DISMISSED,6,115
+Delhi,South East,P.O. CONSIGN,12,1
+Assam,Cachar,Commit.,92,1
+Assam,Sonitpur,Remand back for trial,22,5
+Assam,Karimganj,DISMISSED,3,1
+Assam,Dibrugarh,Disposed of,30,5
+Assam,Kamrup Metro,Disposed of,30,53
+Haryana,Karnal,DISPOSED OF WITH DIRECTIONS,36,2
+Haryana,Ambala,Sine Die,41,1
+Delhi,South West,QUASHED,17,2
+Haryana,Gurugram,DISMISSED IN DEFAULT U/O 9 RULE 3 OF CPC,3,1
+Delhi,North,ABATED,5,10
+Haryana,Sirsa,UNTRACE REPORT ACCEPTED,30,1
+Haryana,Yamunanagar,DISMISSED BEING INFRUCTUOUS,1005,2
+Assam,Sonitpur,TRANSFER,1,16
+Haryana,Rewari,DISMISSED,1000,76
+Haryana,Rewari,CONVICTED,24,52
+Assam,Bongaigaon,Dismissed on Withdrawal,26,1
+Assam,Sivasagar,Rejected,17,27
+Assam,Dhemaji,Remand back for trial,22,1
+Assam,Tinsukia,DISPOSED OFF,30,5
+Assam,Jorhat,Filed,21,1
+Delhi,North,DISMISSED FOR NON-PROSECUTION,26,1
+Haryana,Kurukshetra,DISPOSAL BEING FULLY SATISFIED,1005,4
+Assam,Baksa,Rejected,17,3
+Haryana,Kaithal,COMMITAL,999,24
+Delhi,West,DISMISSED FOR NON-PROSECUTION,26,1
+Assam,Kokrajhar,Bail Petition is allowed,36,5
+Haryana,Jind,ALLOWED,15,213
+Assam,Nalbari,Not Press,18,1
+Delhi,New Delhi,Transfer,64,2
+Haryana,Panchkula,DISMISSED,1005,47
+Assam,Kamrup Metro,Absolute,34,4
+Assam,Baksa,ACQUITTED,10,15
+Assam,Tinsukia,DISMISSED,3,1
+Delhi,North West,DISPOSED,8,84
+Haryana,Rewari,DISMISSED AS WITHDRAWN BEING NOT SATISFIED,28,15
+Assam,Barpeta,Partly Allowed,20,5
+Delhi,Shahdara,UNTRACED,46,1
+Haryana,Gurugram,Consigned,49,6
+Haryana,Gurugram,Convicted on plead guilty/Plea bargaining,77,2
+Haryana,Panchkula,CONVICTED,24,27
+Assam,Karimganj,Remand back for trial,22,1
+Delhi,South East,REJECTED,36,1
+Haryana,Gurugram,Dismissed,46,357
+Haryana,Sirsa,ACQUITTED,25,157
+Assam,Barpeta,DISCHARGED,14,3
+Assam,Lakhimpur,Rejected,17,14
+Haryana,Jind,RELEASED ON PROBATION,26,1
+Assam,Dima Hasao,Rejected,17,1
+Haryana,Faridabad,Remand Back,51,2
+Delhi,South West,DISMISSED,6,112
+Assam,Hailakandi,DISMISSED IN DEFAULT,5,2
+Haryana,Sirsa,DISMISSED AS WITHDRAWN BEING FULLY SATISFIED,27,1
+Haryana,Hisar,PROCEEDINGS DROPPED/ABATED,29,2
+Delhi,North West,UNTRACED,46,7
+Assam,Tinsukia,REJECTED,17,12
+Assam,Nalbari,DISMISSED,3,1
+Haryana,Kurukshetra,COMMITTED,33,15
+Haryana,Rohtak,AWARD PASSED,20,1
+Delhi,South,ALLOWED,31,139
+Assam,Dhemaji,Stay,33,1
+Haryana,Jind,ADR /SETTLED/COMPROMISE/COMPOUNDED AND DISPOSED OF,46,1
+Assam,Barpeta,Dispose of on Withdrawl,24,1
+Assam,Barpeta,Convicted with fine,63,3
+Assam,Karimganj,DISCHARGED,14,6
+Haryana,Kaithal,CONSIGNED AFTER PROCEEDING U/S 299 CR.P.C,38,1
+Haryana,Jhajjar,Undergone,45,2
+Assam,Kokrajhar,Not Press,18,1
+Haryana,Panchkula,TRANSFER,1,2
+Assam,Barpeta,CONVICTED,11,24
+Haryana,Sonepat,DISCHARGED,23,2
+Delhi,South West,DISMISSED FOR NON-PROSECUTION,26,1
+Assam,Hailakandi,Complaint Forwarded to the Concerned P/S,41,19
+Assam,Kamrup Metro,Filed,21,3
+Haryana,Gurugram,Disposed otherwise,51,1
+Haryana,Panchkula,DISPOSED OF WITH DIRECTIONS,36,66
+Assam,Golaghat,Rejected,17,6
+Assam,Sivasagar,Not Press,18,1
+Assam,Lakhimpur,DISMISSED,3,1
+Assam,Kamrup,Filed,21,1
+Haryana,Hisar,DISPOSED OF AS WITHDRAWN WITH PERMISSION TO FILE FRESH,2,1
+Assam,Karbi Anglong,DISCHARGED,14,1
+Haryana,Panipat,ALLOWED,15,85
+Assam,Golaghat,TRANSFER,1,4
+Haryana,Palwal,CONVICTED,24,23
+Assam,Dibrugarh,TRANSFER,1,1
+Haryana,Rohtak,PARTLY ALLOWED,16,8
+Haryana,Faridabad,DISMISSED AS SATISFIED,42,2
+Haryana,Jind,DISCHARGED,23,2
+Haryana,Ambala,DISPOSED OF AS WITHDRAWN WITH PERMISSION TO FILE FRESH,2,10
+Delhi,South,ABATED,5,3
+Delhi,West,ALREADY UNDERGONE,34,1
+Assam,Lakhimpur,Filed,21,2
+Assam,Cachar,Transfered to CJM Establishment.,101,1
+Assam,Golaghat,Judgment delivered Appeal is dismissed on contest,39,1
+Assam,Nalbari,CONVICTED,11,6
+Delhi,North,UNTRACED,46,11
+Delhi,South,QUASHED,17,1
+Haryana,Jind,TRANSFERRED,1,1
+Delhi,North,ACQUITTED,1,173
+Haryana,Panipat,ACQUITTED,25,108
+Haryana,Rohtak,DISMISSED,39,174
+Haryana,Rohtak,ALLOWED,15,221
+Haryana,Sonepat,COMMITTED,33,117
+Delhi,New Delhi,DISMISSED AS WITHDRAWN,25,1
+Haryana,Jind,ACQUITTED,25,109
+Haryana,Panipat,DISPOSED OF AS WITHDRAWN,34,5
+Haryana,Jhajjar,CONVICTED,24,41
+Assam,Dhemaji,Rejected,17,4
+Delhi,Central,CONVICTED,2,4
+Haryana,Karnal,PARTLY DECREED WITH COSTS,11,1
+Delhi,New Delhi,DISMISSED,6,2
+Assam,Baksa,Stay,33,1
+Haryana,Panchkula,DISMISSED FOR WANT OF PROSECUTION,21,2
+Haryana,Kurukshetra,CONVICTED,24,42
+Assam,Golaghat,Filed,21,10
+Delhi,New Delhi,ACQUITTED,1,13
+Haryana,Panchkula,LIFE IMPRISONMENT,1001,1
+Assam,Nagaon,Filed,21,6
+Haryana,Rohtak,CONFESSION,40,1
+Haryana,Rewari,ALLOWED,15,147
+Assam,Cachar,ABATED,13,2
+Assam,Karbi Anglong,DISMISSED,3,1
+Haryana,Fatehabad,DISCHARGED,23,1
+Haryana,Narnaul,CANCELLATION REPORT ACCEPTED,31,2
+Assam,Sonitpur,Filed,21,76
+Assam,Karimganj,COMMITTED TO SESSIONS COURT,60,2
+Assam,Nalbari,Dispose of on Withdrawl,24,3
+Assam,Nagaon,Rejected,17,1
+Delhi,Central,DISPOSED,8,16
+Assam,Sonitpur,Send to JJB,59,3
+Haryana,Sirsa,DISMISSED IN DEFAULT FOR WANT OF PROSECUTION,22,1
+Haryana,Bhiwani,COMPOUNDED AND DISPOSED OF.,35,1
+Haryana,Bhiwani,ACQUITTED,25,3
+Assam,Dima Hasao,Disposed off.,30,1
+Haryana,Rewari,CONSIGNED AFTER PROCEEDING U/S 299 CR.P.C,38,4
+Assam,Sivasagar,Withdrawal,51,1
+Delhi,North,WITHDRAWN,10,2
+Assam,Dibrugarh,CONVICTED,11,41
+Haryana,Fatehabad,COMMITTED,33,84
+Delhi,South,CONVICTED AND FINED,7,7
+Delhi,South West,DISCHARGED,3,11
+Delhi,South West,Transfer,64,8
+Haryana,Rewari,TRANSFER,1,1
+Delhi,West,DISMISSED,6,162
+Haryana,Kurukshetra,DISMISSED FOR WANT OF PROSECUTION,21,1
+Assam,Darrang,CONVICTED,11,4
+Assam,Hailakandi,Filed,21,1
+Assam,Cachar,TRANSFER,1,2
+Delhi,Shahdara,CANCELLED,53,9
+Haryana,Jind,PROCEEDINGS DROPPED/ABATED,29,1
+Assam,Sonitpur,Disposed of,30,10
+Haryana,Faridabad,ALLOWED,15,644
+Haryana,Palwal,Proclaim offender,1009,2
+Haryana,Palwal,Attached with main file,1007,28
+Haryana,Panipat,DISPOSED OF WITH DIRECTIONS,36,5
+Haryana,Sonepat,CONFESSION,1003,1
+Haryana,Kurukshetra,ACQUITTED,25,81
+Haryana,Faridabad,P O,46,2
+Haryana,Palwal,PROCEEDINGS DROPPED/ABATED,29,1
+Delhi,South West,DISMISSED IN DEFAULT,13,2
+Delhi,North West,RESTORATION,16,17
+Haryana,Karnal,SENT FOR FURTHER INVESTIGATION,32,3
+Delhi,North West,DISMISSED AS COMPROMISED,38,1
+Delhi,Central,DISMISSED AS WITHDRAWN,25,26
+Assam,Barpeta,Not Press,18,1
+Assam,Karbi Anglong,Disposed of,30,1
+Assam,Cachar,Commit.,89,8
+Assam,Nalbari,Rejected,17,15
+Haryana,Sirsa,DISCHARGED,23,1
+Delhi,East,CONVICTED AND FINED,7,3
+Assam,Goalpara,TRANSFER,1,1
+Haryana,Sonepat,DISMISSED FOR WANT OF PROSECUTION,21,2
+Assam,Karimganj,TRANSFER,1,1
+Assam,Karimganj,ACQUITTED,10,24
+Assam,Sonitpur,DISCHARGED,14,1
+Haryana,Kurukshetra,ACCEPTED,1006,2
+Assam,Baksa,CONVICTED,11,1
+Haryana,Yamunanagar,DISPOSED OF WITH DIRECTIONS,36,13
+Assam,Chirang,ACQUITTED,10,40
+Delhi,North West,INFRUCTUOUS,30,1
+Haryana,Yamunanagar,ALLOWED,15,84
+Haryana,Fatehabad,CONVICTED,24,36
+Haryana,Rewari,PROCEEDINGS DROPPED/ABATED,29,3
+Delhi,North East,DISMISSED,6,1
+Delhi,North,DISPOSED,8,40
+Haryana,Panipat,DISMISSED IN DEFAULT FOR WANT OF PROSECUTION,22,1
+Assam,Morigaon,Disposed on Uncontest,36,18
+Delhi,North West,DISMISSED FOR NON-PROSECUTION,26,2
+Delhi,North West,P.O. CONSIGNED,12,24
+Delhi,North,CONVICTED,2,8
+Delhi,South,DISMISSED AS WITHDRAWN,25,34
+Assam,Cachar,DISMISSED,3,1
+Haryana,Kaithal,DISPOSED OF WITH DIRECTIONS,36,6
+Haryana,Hisar,DISPOSED OF,1013,9
+Assam,Nagaon,OTHERWISE,2,5
+Haryana,Karnal,COMMITTED,33,13
+Delhi,West,DISMISSED AS WITHDRAWN,25,33
+Assam,Darrang,Disposed of,30,7
+Assam,Sivasagar,stay,49,4
+Assam,Dhemaji,Dispose of on Withdrawl,24,3
+Haryana,Faridabad,DISMISSED IN DEFAULT U/O 9 RULE 3 OF CPC,3,1
+Assam,Cachar,TRANSFERED,1,4
+Assam,Kamrup,Judgement,34,2
+Assam,Nagaon,Disposed of,30,3
+Haryana,Kaithal,COMMITTED,33,1
+Assam,Bongaigaon,Convicted and sentenced,11,5
+Delhi,North West,ALLOWED,31,581
+Assam,Morigaon,TRANSFER,1,11
+Haryana,Bhiwani,DISPOSED OF WITH DIRECTIONS,36,10
+Delhi,West,CONVICTED and FINED,7,61
+Assam,Hailakandi,Disposed of,30,1
+Haryana,Ambala,PARTLY ALLOWED,16,3
+Assam,Nagaon,ABATED,13,4
+Assam,Cachar,Dispose of on Withdrawl,24,1
+Haryana,Fatehabad,TRANSFER,1,4
+Assam,Kokrajhar,Disposed of,30,4
+Assam,Goalpara,Allowed/Granted,16,1
+Assam,Kamrup,Disposed of,30,39
+Assam,Goalpara,Disposed of,30,2
+Haryana,Fatehabad,DISPOSED OF WITH DIRECTIONS,36,272
+Haryana,Jind,DISMISSED AS WITHDRAWN,34,48
+Delhi,North West,SINE-DIE,11,1
+Assam,Kamrup,Dismissed on Withdrawal,26,1
+Haryana,Sonepat,UNDERGONE,1001,3
+Haryana,Jhajjar,ALLOWED,15,182
+Delhi,North West,QUASHED,17,5
+Delhi,South East,CANCELLED,53,2
+Haryana,Kurukshetra,Dismissed in default,1008,1
+Assam,Morigaon,Filed,21,3
+Haryana,Jhajjar,DISMISSED FOR WANT OF PROSECUTION,21,2
+Delhi,South West,FURTHER INVESTIGATION ORDERED,52,1
+Haryana,Panipat,DISMISSED AS WITHDRAWN BEING NOT SATISFIED,28,40
+Haryana,Sonepat,ALLOWED,15,144
+Delhi,South,DISCHARGED,3,1
+Assam,Nalbari,Filed,21,1
+Haryana,Hisar,CONVICTED,24,64
+Assam,Lakhimpur,Allowed/Granted,16,6
+Assam,Nalbari,Transferred to Baksa District Court,43,25
+Haryana,Jhajjar,P.O ( Proclomation Ofunder),49,1
+Delhi,North East,CANCELLED,53,9
+Assam,Cachar,Declared Juvenile.,95,1
+Assam,Bongaigaon,Dismissed,3,2
+Haryana,Ambala,Confession,40,3
+Haryana,Hisar,Compromised,1010,1
+Haryana,Sirsa,CONVICTED,24,44
+Delhi,Shahdara,DISMISSED AS WITHDRAWN,25,3
+Delhi,South East,ALLOWED,31,55
+Haryana,Kaithal,DISMISSED FOR WANT OF PROSECUTION,21,1
+Delhi,North,DISMISSED AS WITHDRAWN,25,201
+Delhi,West,Cancellation Accepted,64,2
+Haryana,Faridabad,DISCHARGED,23,1
+Assam,Cachar,Filed,21,2
+Haryana,Rewari,DISCHARGED,23,1
+Haryana,Panipat,DISMISSED FOR WANT OF PROSECUTION,21,1
+Haryana,Panchkula,DISMISSED AS SATISFIED,1002,3
+Assam,Nalbari,Transfered,38,1
+Assam,Chirang,Filed,21,7
+Haryana,Yamunanagar,DISPOSED OF AS WITHDRAWN,34,26
+Haryana,Ambala,PROCEEDINGS DROPPED/ABATED,29,2
+Assam,Kokrajhar,Petition Rejected,31,1
+Haryana,Palwal,SineDie,1006,1
+Haryana,Ambala,LIFE IMPRISIONMENT,43,1
+Assam,Kokrajhar,Judgement,35,1
+Assam,Golaghat,CONVICTED,11,16
+Haryana,Hisar,DECREED WITH COSTS,9,1
+Assam,Baksa,Filed,21,7
+Haryana,Jhajjar,CONVICTED AND SENTENCED,70,1
+Haryana,Faridabad,DISMISSED AS WITHDRAWN,34,347
+Haryana,Rewari,DISPOSED OF AS WITHDRAWN,34,25
+Assam,Hailakandi,ACQUITTED,10,38
+Haryana,Rohtak,DISMISSED AS WITHDRAWN,34,95
+Haryana,Jind,DISPOSED OF WITH DIRECTIONS,36,12
+Delhi,South East,DISMISSED IN DEFAULT,13,2
+Haryana,Panchkula,PROCEEDINGS DROPPED/ABATED,29,1
+Assam,Darrang,Remand back for trial,22,1
+Delhi,North West,CONVICTED and FINED,7,19
+Delhi,Central,ACQUITTED,1,187
+Haryana,Rohtak,COMMITTED,33,101
+Delhi,North West,ABATED,5,10
+Delhi,South West,SATISFIED,14,1
+Haryana,Sirsa,PROCEEDINGS DROPPED/ABATED,29,4
+Assam,Kamrup,CONVICTED,11,28
+Delhi,Central,Proceeding close,75,1
+Haryana,Rewari,DISMISSED IN DEFAULT FOR WANT OF PROSECUTION,22,1
+Assam,Baksa,Disposed off,30,9
+Assam,Goalpara,Sent to JJB,35,2
+Assam,Sonitpur,Converted to,55,11
+Delhi,North,PROCEEDINGS STOPPED,47,1
+Delhi,South East,DISMISSED AS WITHDRAWN,25,7
+Assam,Sivasagar,Remand back for trial,22,1
+Haryana,Rewari,DISPOSED OF WITH DIRECTIONS,36,12
+Haryana,Yamunanagar,COMMITTED,33,11
+Haryana,Ambala,CONVICTED,24,48
+Delhi,East,CONVICTED,2,7
+Assam,Barpeta,Allowed,16,46
+Delhi,Central,SINE-DIE,11,4
+Haryana,Fatehabad,Allowed/Granted,15,147
+Assam,Sivasagar,CONVICTED,11,26
+Haryana,Palwal,DISPOSED OFF,1009,5
+Haryana,Sirsa,COMMITTED,33,180
+Delhi,North,COMPROMISED,21,1
+Delhi,South West,P.O. CONSIGNED,12,7
+Assam,Kamrup Metro,Allowed on contest,39,2
+Assam,Karimganj,CONVICTED,11,1
+Delhi,South East,SINE-DIE,11,1
+Haryana,Panchkula,UNTRACE REPORT ACCEPTED,30,1
+Assam,Barpeta,Dismissed on Withdrawal,26,2
+Delhi,Shahdara,DISMISSED,6,3
+Delhi,North,CONVICTED BUT RELEASED AS ALREADY UNDERGONE,34,3
+Assam,Karbi Anglong,Filed,21,8
+Assam,Kamrup Metro,Allowed,16,213
+Delhi,North East,P.O. CONSIGNED,12,3
+Haryana,Bhiwani,PARTLY ALLOWED,16,1
+Delhi,North East,CONVICTED,2,1
+Haryana,Hisar,Dismissed,1000,110
+Haryana,Kurukshetra,DISMISSED AS WITHDRAWN BEING FULLY SATISFIED,27,50
+Haryana,Rohtak,DISMISSED AS WITHDRAWN BEING FULLY SATISFIED,27,1
+Delhi,North West,CANCELLED,53,4
+Delhi,Central,FINE,4,2
+Delhi,North West,REJECTED,36,3
+Assam,Jorhat,TRANSFER,1,4
+Haryana,Bhiwani,ALLOWED,15,33
+Haryana,Ambala,Dismissed,39,177
+Assam,Lakhimpur,Transfer to District and Sessions Judge,50,2
+Haryana,Panchkula,ACQUITTED,25,34
+Assam,Tinsukia,COMPROMISE,15,1
+Delhi,Central,ALREADY UNDERGONE,34,1
+Delhi,North West,Transfer,64,14
+Haryana,Yamunanagar,ACQUITTED,25,57
+Assam,Dhubri,ACQUITTED,10,140
+Delhi,North West,CONVICTED,2,13
+Assam,Tinsukia,COMMITTED TO SESSIONS COURT,42,15
+Assam,Karbi Anglong,CONVICTED AND SENTENCED,67,8
+Delhi,South,DISMISSED AS WITHDRAWN  AS SATISFIED,51,2
+Haryana,Rewari,DISMISSED BEING NOT PRESSED,37,8
+Haryana,Panipat,DECREED WITH NO COSTS,10,1
+Haryana,Yamunanagar,PROCEEDINGS DROPPED/ABATED,29,2
+Assam,Sivasagar,Filed,21,7
+Assam,Jorhat,Disposed of,30,11
+Haryana,Rewari,COMMITAL,999,1
+Haryana,Jhajjar,RELEASED ON PROBATION,26,1
+Delhi,South East,ABATED,5,5
+Haryana,Sonepat,CONSIGNED AFTER PROCEEDING U/S 299 CR.P.C,38,2
+Assam,Dima Hasao,Allowed,16,1
+Assam,Barpeta,Commital of Cases,65,2
+Assam,Bongaigaon,Committed,36,1
+Haryana,Kurukshetra,UNTRACE REPORT ACCEPTED,30,6
+Haryana,Kaithal,DISMISSED AS WITHDRAWN BEING FULLY SATISFIED,27,6
+Assam,Lakhimpur,CONVICTED,11,7
+Delhi,Central,Transfer,73,2
+Haryana,Sonepat,DISMISSED,1000,244
+Delhi,South,ACQUITTED,1,68
+Haryana,Ambala,DISMISSED IN DEFAULT FOR WANT OF PROSECUTION,22,3
+Haryana,Hisar,CONSIGNED AFTER PROCEEDING U/S 299 CR.P.C,38,1
+Assam,Kamrup Metro,Commited To District And Sessions Judge,30,3
+Assam,Jorhat,CONVICTED,11,16
+Assam,Kamrup Metro,Sent to Thana for investigation,20,1
+Haryana,Narnaul,COMMITAL,999,1
+Haryana,Gurugram,ACQUITTED,25,199
+Haryana,Jind,Dismissed,39,217
+Haryana,Palwal,TRANSFER,1,9
+Delhi,South,UNTRACED,46,3
+Haryana,Palwal,COMMITTED,33,4
+Haryana,Narnaul,UNTRACE REPORT ACCEPTED,30,5
+Assam,Tinsukia,TRANSFER,1,16
+Delhi,Central,DISMISSED IN DEFAULT,13,13
+Assam,Nagaon,Allowed,16,1
+Haryana,Gurugram,TRANSFER,1,8
+Assam,Karimganj,Disposed of,30,5
+Delhi,New Delhi,ABATED,5,4
+Assam,Barpeta,Rejected,17,109
+Haryana,Faridabad,UNTRACE REPORT ACCEPTED,30,3
+Delhi,Central,CONVICTED and FINED,7,102
+Haryana,Palwal,Dismissed,999,1
+Haryana,Kurukshetra,TRANSFER,1,3
+Haryana,Ambala,DISPOSED OF WITH DIRECTIONS,36,45
+Haryana,Jhajjar,COMMITTED,33,59
+Assam,Chirang,ABATED,13,2
+Assam,Barpeta,Comittal of Case,66,2
+Haryana,Karnal,Disposed Otherwise,1011,2
+Haryana,Hisar,Disposed otherwise,1014,3
+Assam,Sivasagar,ABATED,13,1
+Assam,Sivasagar,TRANSFER,1,56
+Delhi,North,QUASHED,17,6
+Assam,Dibrugarh,ACQUITTED,10,76
+Haryana,Panchkula,DISMISSED IN DEFAULT U/O 9 RULE 3 OF CPC,3,1
+Haryana,Panipat,CONVICTED,24,58
+Delhi,North,DISCHARGED,3,3
+Haryana,Palwal,DISPOSED OF WITH DIRECTIONS,36,58
+Haryana,Gurugram,COMPOUNDED AND DISPOSED OF.,35,2
+Haryana,Kaithal,DISCHARGED,23,1
+Delhi,West,COMPROMISE,21,1
+Assam,Dibrugarh,Filed,21,17
+Haryana,Panchkula,DISMISSED AS WITHDRAWN BEING FULLY SATISFIED,27,1
+Haryana,Jhajjar,DISMISSED AS WITHDRAWN BEING FULLY SATISFIED,27,29
+Assam,Baksa,Dismissed on Withdrawal,26,1
+Delhi,South,DISMISSED,6,119
+Haryana,Rohtak,DISPOSED OF AS WITHDRAWN WITH PERMISSION TO FILE FRESH,2,2
+Haryana,Kurukshetra,CONSIGNED AFTER PROCEEDING U/S 299 CR.P.C,38,1
+Delhi,North West,PARTLY ALLOWED,45,1
+Assam,Chirang,CONVICTED,11,13
+Assam,Bongaigaon,Committed,46,1
+Haryana,Kaithal,CANCELLATION REPORT ACCEPTED,31,8
+Assam,Sonitpur,Transfer to BNC,56,7
+Assam,Dhubri,Stayed,32,1
+Haryana,Palwal,DISPOSED OF AS WITHDRAWN,34,1
+Assam,Kokrajhar,ACQUITTED,10,29
+Delhi,Shahdara,Transfer,64,1
+Delhi,Central,DISMISSED FOR NON-PROSECUTION,26,1
+Haryana,Jhajjar,DISMISSED IN DEFAULT FOR WANT OF PROSECUTION,22,4
+Delhi,Central,ABATED,5,13
+Haryana,Fatehabad,PARTLY ALLOWED,16,2
+Assam,Goalpara,ACQUITTED,10,14
+Haryana,Jind,COMMITTED,33,187
+Assam,Sivasagar,Allowed/Granted,16,16
+Assam,Nagaon,ACQUITTED,10,33
+Haryana,Gurugram,DISPOSED OF WITH DIRECTIONS,36,8
+Assam,Cachar,OTHERWISE,2,3
+Assam,Cachar,Dormant Case.,93,1
+Delhi,West,PROCEEDING STOP,47,1
+Assam,Kamrup Metro,CONVICTED,11,11
+Delhi,New Delhi,SINE-DIE,11,1
+Assam,Sonitpur,Commital,56,5
+Delhi,West,DISPOSED,8,70
+Delhi,South,TRANSFERED,69,2
+Haryana,Panipat,UNTRACE REPORT ACCEPTED,30,5
+Haryana,Palwal,SENT FOR FURTHER INVESTIGATION,32,1
+Haryana,Ambala,CONSIGNED AFTER PROCEEDING U/S 299 CR.P.C,38,2
+Assam,Udalguri,CONVICTED,11,5
+Assam,Kokrajhar,Filed,21,1
+Delhi,South West,ABATED,5,8
+Haryana,Bhiwani,DISMISSED AS WITHDRAWN BEING FULLY SATISFIED,27,3
+Haryana,Rohtak,Acquited,46,148
+Delhi,Central,QUASH,17,5
+Assam,Nagaon,DISCHARGED,14,2
+Delhi,West,REMAND BACK,9,1
+Haryana,Faridabad,CONVICTED,24,179
+Assam,Kamrup Metro,Withdrawal,35,1
+Delhi,East,QUASHED,17,2
+Haryana,Fatehabad,CONSIGNED AFTER PROCEEDING U/S 299 CR.P.C,38,1
+Assam,Bongaigaon,Acquitted,10,34
+Assam,Tinsukia,FILED,21,2
+Assam,Barpeta,"Sent to Addl. Dist. and Sessions Judge Court, Bajali for Disposal",68,9
+Delhi,South West,PLEAD GUILTY,24,4
+Delhi,South East,UNTRACED,46,2
+Delhi,South,P.O. CONSIGNED,12,5
+Assam,Bongaigaon,Judgment delivered,33,1
+Delhi,Shahdara,DISCHARGED,3,2
+Assam,Cachar,Convict is Sentenced to Fine.,57,1
+Delhi,North East,ADJOURNED SINEDIE,41,1
+Haryana,Yamunanagar,DISMISSED BEING NOT PRESSED,37,4
+Haryana,Panipat,CONSIGNED,1005,3
+Haryana,Bhiwani,COMMITTED,33,1
+Delhi,North West,DISMISSED AS NON-MAINTAINABLE,32,2
+Delhi,South West,SETTLED IN LOK ADALAT,40,4
+Assam,Karimganj,CONVICTED AND SENTENCED,47,1
+Haryana,Narnaul,DISCHARGED,23,1
+Assam,Baksa,Disposed to PS for proper investigation,58,1
+Assam,Kamrup Metro,Not Press,18,1
+Assam,Karbi Anglong,TRANSFER,1,7
+Assam,Dhubri,Disposed of,30,3
+Haryana,Panipat,PARTLY ALLOWED,16,3
+Delhi,South West,DISPOSED,8,141
+Haryana,Rohtak,SENT BACK,73,1
+Haryana,Hisar,DISPOSED OF WITH DIRECTIONS,36,82
+Assam,Dhemaji,ABATED,13,1
+Haryana,Jhajjar,DISMISSED IN DEFAULT U/O 9 RULE 8 OF CPC,4,1
+Haryana,Sirsa,DISMISSED,39,142
+Delhi,New Delhi,DISCHARGED,3,10
+Assam,Kamrup Metro,Dismissed on Withdrawal,26,1
+Delhi,South,DEATH,48,1
+Assam,Dhubri,DISCHARGED,14,1
+Delhi,North West,REMANDED BACK,9,1
+Assam,Hailakandi,CONVICTED,11,4
+Assam,Golaghat,Disposed of,30,2
+Haryana,Hisar,COMMITTED,33,115
+Assam,Cachar,Conviction followed by Acquittal.,101,1
+Assam,Darrang,ACQUITTED,10,41
+Assam,Kamrup Metro,DISCHARGED,14,2
+Assam,Kamrup Metro,Dispose of on Withdrawl,24,5
+Assam,Dhubri,TRANSFER,1,11
+Delhi,South West,DISMISSED ON MERITS,39,8
+Haryana,Panchkula,DISPOSED OTHERWISE,1008,2
+Assam,Morigaon,CONVICTED,11,38
+Assam,Barpeta,Filed,21,2
+Assam,Baksa,Judgement,34,2
+Haryana,Kaithal,CONVICTED,24,38
+Haryana,Fatehabad,Dismissed,39,134
+Assam,Kamrup Metro,DISMISSED,3,3
+Haryana,Faridabad,CONSIGNED AFTER PROCEEDING U/S 299 CR.P.C,38,5
+Haryana,Faridabad,QUANTUM OF SENTENCE,45,1
+Haryana,Bhiwani,CONVICTED,24,2
+Assam,Karimganj,TRANSFERED,1,1
+Haryana,Panipat,CANCELLATION REPORT ACCEPTED,31,3
+Assam,Nagaon,DISMISSED,3,1
+Assam,Kokrajhar,ABATED,13,1
+Assam,Sonitpur,Send Back for Reinvestigation,39,1
+Haryana,Gurugram,PARTLY ALLOWED,16,3
+Assam,Tinsukia,COMMITTED TO SESSIONS COURT,33,2
+Haryana,Kaithal,DISMISSED AS WITHDRAWN BEING NOT SATISFIED,28,1
+Assam,Sivasagar,ACQUITTED,10,126
+Haryana,Faridabad,CANCELLATION REPORT ACCEPTED,31,1
+Haryana,Sirsa,LIFE IMPRISONMENT,43,1
+Assam,Baksa,Disposed off on contest,50,11
+Assam,Morigaon,Send To Juvenile Justice Board,50,3
+Assam,Dhubri,Filed,21,1
+Assam,Darrang,Stayed,32,1
+Delhi,South West,CONVICTED BUT RELEASED AS ALREADY UNDERGONE,34,1
+Delhi,South West,REMANDED BACK,9,2
+Assam,Sivasagar,Allowed,57,3
+Assam,Golaghat,DISMISSED,3,1
+Assam,Nalbari,Remand Back for Trial,22,1
+Haryana,Jind,CONVICTED,24,47
+Haryana,Fatehabad,DISMISSED IN DEFAULT U/O 9 RULE 3 OF CPC,3,1
+Assam,Barpeta,Disposed of,30,23
+Assam,Nagaon,Transfer to Outside Complex,36,48
+Haryana,Narnaul,DISPOSE OFF/Consigned,1010,2
+Haryana,Rohtak,DISPOSED OF WITH DIRECTIONS,36,65
+Haryana,Sonepat,COMMITTAL,999,7
+Haryana,Faridabad,DISMISSED BEING NOT PRESSED,37,3
+Haryana,Narnaul,DISPOSED OF WITH DIRECTIONS,36,2
+Assam,Tinsukia,ALLOWED/GRANTED,16,16
+Haryana,Sirsa,CONFESSION,40,2
+Haryana,Panipat,PROCEEDINGS DROPPED/ABATED,29,1
+Delhi,North,REMANDED BACK,9,1
+Delhi,South,WITHDRAWN,10,4
+Delhi,Shahdara,ACQUITTED,1,34
+Assam,Sonitpur,ACQUITTED,10,131
+Assam,Karimganj,Filed,21,1
+Assam,Nagaon,CONVICTED,11,11
+Haryana,Ambala,ACQUITTED,25,135
+Haryana,Palwal,DISCHARGED,23,1
+Delhi,Central,PROBATION,43,9
+Haryana,Hisar,DISMISSED AS WITHDRAWN BEING FULLY SATISFIED,27,17
+Delhi,South West,SINE-DIE,11,1
+Haryana,Sonepat,CANCELLATION REPORT ACCEPTED,31,3
+Delhi,North,Transfer,64,8
+Haryana,Panipat,COMMITTED,33,60
+Delhi,West,SATISFIED,14,1
+Assam,Kamrup,ADR,8,1
+Haryana,Kurukshetra,DISPOSED OF WITH DIRECTIONS,36,11
+Delhi,South West,UNTRACED,46,3
+Delhi,Shahdara,QUASHED,17,3
+Delhi,North East,DISPOSED,8,1
+Haryana,Gurugram,DISPOSED OF AS WITHDRAWN,34,41
+Assam,Kokrajhar,TRANSFER,1,6
+Assam,Nagaon,Sent to Thana,32,1
+Haryana,Rohtak,Disposed otherwise,77,6
+Delhi,West,P.O. CONSIGN,12,33
+Haryana,Panipat,TRANSFER,1,11
+Assam,Jorhat,Committal,37,5
+Delhi,Central,WITHDRAW,10,10
+Delhi,South West,ACQUITTED,1,190
+Delhi,New Delhi,DISPOSED,8,6
+Haryana,Panipat,DISMISSED WITH NO COSTS,7,80
+Assam,Golaghat,Petition Rejected,31,1
+Assam,Kamrup Metro,Rejected,17,155
+Delhi,Central,RELEASED ON PROBATION,33,1
+Delhi,West,ABATED,5,20
+Delhi,West,UNTRACE,46,13
+Haryana,Fatehabad,ACQUITTED,25,166
+Assam,Kokrajhar,CONVICTED,11,15
+Assam,Hailakandi,Committed to the court of Ld. Session Court,43,2
+Assam,Jorhat,DISCHARGED,14,2
+Haryana,Sirsa,ALLOWED,15,176
+Delhi,Shahdara,FURTHER INVESTIGATION ORDERED,52,2
+Delhi,North West,DISMISSED AS WITHDRAWN,25,236
+Assam,Hailakandi,CONVICTED AND SENTENCED,67,1
+Assam,Cachar,Disposed off.,30,11
+Assam,Nagaon,COMMITED,34,6
+Haryana,Hisar,Dismissed.,999,26
+Delhi,West,CLUBBED IN FIR,70,13
+Haryana,Hisar,ACQUITTED,25,153
+Assam,Baksa,Commited to Sessions/Special Judge,52,1
+Assam,Jorhat,OTHERWISE,2,1
+Assam,Kamrup Metro,Case record do not belong to this court,57,2
+Delhi,North East,ALLOWED,31,22
+Delhi,North East,DISCHARGED,3,1
+Assam,Dibrugarh,Sent to Juvenile Court,55,1
+Delhi,South,DISPOSED,8,4
+Delhi,South West,ALLOWED,31,201
+Assam,Morigaon,ABATED,13,3
+Delhi,North,DISMISSED ON MERITS,39,1
+Assam,Sonitpur,DISMISSED,3,1
+Assam,Barpeta,Convert,74,1
+Assam,Lakhimpur,committed to the sessions judge,49,8
+Haryana,Gurugram,DISMISSED WITH COSTS,8,1
+Haryana,Kurukshetra,DISPOSED OF AS WITHDRAWN,34,41
+Delhi,North West,ACQUITTED,1,111
+Haryana,Ambala,ALLOWED,15,232
+Haryana,Panchkula,COMMITTED,33,4
+Delhi,South West,REJECTED,36,3
+Assam,Tinsukia,COMMITTED TO HIGHER COURT,33,10
+Assam,Kamrup,TRANSFER,1,23
+Assam,Golaghat,ABATED,13,2
+Haryana,Bhiwani,Dismissed,1003,24
+Assam,Nalbari,TRANSFERED,35,1
+Haryana,Jind,CONSIGNED AFTER PROCEEDING U/S 299 CR.P.C,38,2
+Haryana,Kurukshetra,PROCEEDINGS DROPPED/ABATED,29,2
+Haryana,Sonepat,DISPOSED OF AS WITHDRAWN,34,2
+Assam,Morigaon,DISMISSED,3,3
+Assam,Baksa,Disposed of,30,1
+Delhi,South East,DISMISSED,6,46
+Assam,Dhemaji,Filed,21,11
+Assam,Barpeta,Acquitted on benefit of dought,76,49
+Assam,Kamrup,Allowed,16,14
+Assam,Kamrup Metro,TRANSFER,1,1
+Assam,Kamrup Metro,"Transferred to CJM Court Complex, Guwahati",55,1
+Haryana,Faridabad,DISMISSED IN DEFAULT FOR WANT OF PROSECUTION,22,1
+Haryana,Gurugram,DISCHARGED,23,1
+Assam,Dhemaji,TRANSFER,1,9
+Delhi,West,Transfer,73,2
+Haryana,Panchkula,DISSMISED BEING INFRUCTUOUS,1004,3
+Haryana,Faridabad,FIR QUASHED,47,4
+Delhi,North East,CONVICTED and FINED,7,5
+Haryana,Hisar,DISMISSED AS SATISFIED,1004,25
+Assam,Karbi Anglong,ACQUITTED,10,15
+Delhi,South East,ACQUITTED,1,48
+Assam,Kokrajhar,"Judgment is delivered in the open Court , The accused person is acquitted.",41,19
+Haryana,Faridabad,Proclaimed Offenders,55,1
+Haryana,Gurugram,"Some Convicted and sentenced, Some Acquitted",55,1
+Haryana,Sonepat,DISMISSED IN DEFAULT FOR WANT OF PROSECUTION,22,1
+Assam,Sonitpur,CR Sent to Sessions on Requisition,58,1
+Delhi,Central,UNTRACE,46,10
+Assam,Sivasagar,commit,57,1
+Assam,Tinsukia,CONVICTED,11,6
+Haryana,Jhajjar,CONVICTED AND SENTENCED,109,2
+Haryana,Palwal,DISMISSED AS WITHDRAWN BEING FULLY SATISFIED,27,4
+Assam,Dhemaji,Commit,33,2
+Haryana,Jhajjar,PARTLY ALLOWED,16,3
+Assam,Karbi Anglong,CONVICTED,11,20
+Delhi,South West,CANCELLED,53,4
+Delhi,South East,WITHDRAWN,10,13
+Assam,Udalguri,Rejected,17,1
+Haryana,Ambala,TRANSFERRED,1,6
+Delhi,North East,ACQUITTED,1,36
+Assam,Kamrup Metro,DISPOSED,29,4
+Delhi,Central,DISCHARGE,3,2
+Assam,Goalpara,Filed,21,1
+Delhi,East,DISPOSED,8,3
+Assam,Sivasagar,Transfer outside the complex,52,9
+Haryana,Rewari,CANCELLATION REPORT ACCEPTED,31,2
+Assam,Udalguri,ACQUITTED,10,80
+Haryana,Sirsa,CANCELLATION REPORT ACCEPTED,31,4
+Assam,Karbi Anglong,CONVICTED AND RELEASED ON PROBATION,68,1
+Delhi,West,DISMISSED ON MERITS,39,2
+Haryana,Kurukshetra,CANCELLATION REPORT ACCEPTED,31,1
+Assam,Barpeta,Amalgated,33,1
+Delhi,North East,ABATED,5,4
+Delhi,North West,UNDERGONE,66,3
+Assam,Sivasagar,Disposed of,30,21
+Haryana,Fatehabad,DISMISSED IN DEFAULT FOR WANT OF PROSECUTION,22,3
+Haryana,Gurugram,COMMITTED,33,15
+Haryana,Panchkula,DISMISSED IN DEFAULT FOR WANT OF PROSECUTION,22,1
+Haryana,Jind,UNTRACE REPORT ACCEPTED,30,1
+Delhi,New Delhi,CANCELLED,53,1
+Haryana,Panchkula,DECREED WITH NO COSTS,10,3
+Delhi,North,PROBATION GRANTED,43,1
+Haryana,Sirsa,PARTLY ALLOWED,16,1
+Assam,Dhubri,CONVICTED,11,25
+Delhi,West,PLEAD GUILTY,24,4
+Haryana,Rohtak,RELEASED ON PROBATION,26,2
+Assam,Cachar,TRANSFERED TO LOWER COURT.,1,14
+Delhi,North West,PLEAD GUILTY,24,1
+Delhi,South,CANCELLED,53,3
+Assam,Chirang,TRANSFER,1,16
+Assam,Dima Hasao,Stayed,32,1
+Delhi,South East,SESSIONS COMMIT,70,1
+Haryana,Fatehabad,Disposed of being fully satisfied,48,4
+Delhi,South East,QUASHED,17,3
+Delhi,North West,CONTESTED,19,1
+Assam,Kamrup,ABATED,13,2
+Haryana,Palwal,Confession,1001,1
+Haryana,Ambala,DISMISSED BEING INFRUCTUOUS,42,2
+Haryana,Fatehabad,CANCELLATION REPORT ACCEPTED,31,9
+Haryana,Rewari,CONSENT DECREE,19,1
+Haryana,Karnal,Disposed of Otherwise remand paper attached with challan,1006,10
+Haryana,Gurugram,DISPOSED OF AS WITHDRAWN WITH PERMISSION TO FILE FRESH,2,1
+Delhi,Central,PARTLY ALLOWED,45,1
+Haryana,Faridabad,Disposed off,50,91
+Haryana,Sirsa,DISMISSED AS WITHDRAWN,34,110
+Haryana,Palwal,ACQUITTED,25,49
