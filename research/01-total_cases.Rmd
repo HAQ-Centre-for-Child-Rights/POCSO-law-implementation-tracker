@@ -72,3 +72,11 @@ case_age <- left_join(case_age, age_intervals, by=NULL)
 case_age_dataset <- case_age %>% group_by(state_name, district_name, court_name, est_code, type_name, disp_name, disp_nature, age_interval) %>% summarise(total_cases = length(cino))
 ```
 
+```{r}
+write_csv(year_wise_cases,"datasets/year_wise_cases.csv")
+write_csv(nature_of_disposal,"datasets/nature_of_disposal.csv")
+write_csv(nature_of_offence,"datasets/nature_of_offence.csv")
+write_csv(case_age_dataset,"datasets/case_age_dataset.csv")
+```
+
+
