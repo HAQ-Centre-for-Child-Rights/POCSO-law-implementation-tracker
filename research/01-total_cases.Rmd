@@ -8,6 +8,8 @@ knitr::opts_chunk$set(
 	warning = FALSE
 )
 
+options(DT.options = list(pageLength = 5,dom='t',autowidth=TRUE,scrollX = TRUE))
+
 source("../scripts/source_files.R")
 ```
 
@@ -32,14 +34,27 @@ all_cases <- dbxSelect(
 select a.*, b.pending_cases from (select state_name, district_name, reg_year, count(cino) as total_cases from case_details group by state_name, district_name, reg_year) as a LEFT JOIN (select state_name, district_name, reg_year, count(cino) as pending_cases from case_details where disp_nature = '0' group by state_name, district_name, reg_year) as b ON a.state_name=b.state_name AND a.district_name=b.district_name AND a.reg_year=b.reg_year
 ```
 
+```{r year_wise_cases_sample, echo=FALSE, eval=TRUE}
+year_wise_cases[sample(nrow(year_wise_cases),5),] %>% DT::datatable()
+```
+
+
 ## Disposal Nature
 ```{sql connection=con, output.var='nature_of_disposal'}
 select state_name, district_name, disp_name, disp_nature, count(cino) as total_cases from case_details where disp_nature != '0' group by state_name, district_name, disp_name, disp_nature
 ```
 
+```{r nature_of_disposal_sample, echo=FALSE, eval=TRUE}
+nature_of_disposal[sample(nrow(nature_of_disposal),5),] %>% DT::datatable()
+```
+
 ## Offence wise
 ```{sql connection=con, output.var='nature_of_offence'}
 select state_name, district_name, est_code, court_name, act_name_std, section_name_std, count(cino) as total_cases from (select c.act_name_std, c.section_name_std, d.* from acts_subset as c inner join (select a.*, b.state_name, b.district_name, b.est_code, b.court_name FROM case_acts as a LEFT JOIN case_details as b on a.cino=b.cino) as d on c.id = d.act) as e group by state_name, district_name, est_code, court_name, act_name_std, section_name_std
+```
+
+```{r nature_of_offence_sample, echo=FALSE, eval=TRUE}
+nature_of_offence[sample(nrow(nature_of_offence),5),] %>% DT::datatable()
 ```
 
 ## Age of case
@@ -72,11 +87,29 @@ case_age <- left_join(case_age, age_intervals, by=NULL)
 case_age_dataset <- case_age %>% group_by(state_name, district_name, court_name, est_code, type_name, disp_name, disp_nature, age_interval) %>% summarise(total_cases = length(cino))
 ```
 
+```{r case_age_dataset_sample, echo=FALSE, eval=TRUE}
+case_age_dataset[sample(nrow(case_age_dataset),5),] %>% DT::datatable()
+```
+
+## Cases pending trial at the end of each year
 ```{r}
+case_age$pending_trial_year_flag <- 0
+case_age$pending_trial_year_flag[case_age$age_of_case_days >= 365] <- 1
+
+pending_trial_dataset <- case_age %>% filter(pending_trial_year_flag == 1) %>% group_by(state_name, district_name, reg_year, court_name, est_code, type_name, disp_name, disp_nature) %>% summarise(cases_pending_trial_yearly = length(cino))
+
+total_yearly_cases <- case_age %>% group_by(state_name, district_name, reg_year, court_name, est_code, type_name, disp_name, disp_nature) %>% summarise(total_cases = length(cino))
+
+yearly_cases_pendency_ratio <- left_join(total_yearly_cases, pending_trial_dataset, by=NULL)
+yearly_cases_pendency_ratio$cases_pending_trial_yearly[is.na(yearly_cases_pendency_ratio$cases_pending_trial_yearly)] <- 0
+```
+
+
+
+```{r Writing Files}
 write_csv(year_wise_cases,"datasets/year_wise_cases.csv")
 write_csv(nature_of_disposal,"datasets/nature_of_disposal.csv")
 write_csv(nature_of_offence,"datasets/nature_of_offence.csv")
 write_csv(case_age_dataset,"datasets/case_age_dataset.csv")
+write_csv(yearly_cases_pendency_ratio,"datasets/yearly_cases_pendency_ratio.csv")
 ```
-
-

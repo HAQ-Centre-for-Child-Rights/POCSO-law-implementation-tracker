@@ -24,7 +24,7 @@
 <meta name="author" content="CivicDataLab | HAQ-CRC" />
 
 
-<meta name="date" content="2020-05-24" />
+<meta name="date" content="2020-05-26" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -50,6 +50,14 @@
 
 
 
+<script src="libs/htmlwidgets-1.5.1/htmlwidgets.js"></script>
+<link href="libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="libs/datatables-binding-0.13/datatables.js"></script>
+<link href="libs/dt-core-1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="libs/dt-core-1.10.20/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="libs/dt-core-1.10.20/js/jquery.dataTables.min.js"></script>
+<link href="libs/crosstalk-1.1.0.1/css/crosstalk.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.1.0.1/js/crosstalk.min.js"></script>
 
 
 
@@ -75,10 +83,10 @@
 <li class="chapter" data-level="2.2" data-path="total-cases.html"><a href="total-cases.html#disposal-nature"><i class="fa fa-check"></i><b>2.2</b> Disposal Nature</a></li>
 <li class="chapter" data-level="2.3" data-path="total-cases.html"><a href="total-cases.html#offence-wise"><i class="fa fa-check"></i><b>2.3</b> Offence wise</a></li>
 <li class="chapter" data-level="2.4" data-path="total-cases.html"><a href="total-cases.html#age-of-case"><i class="fa fa-check"></i><b>2.4</b> Age of case</a></li>
-<li class="chapter" data-level="2.5" data-path="total-cases.html"><a href="total-cases.html#cases-pending-trial"><i class="fa fa-check"></i><b>2.5</b> Cases pending trial</a></li>
+<li class="chapter" data-level="2.5" data-path="total-cases.html"><a href="total-cases.html#cases-pending-trial-at-the-end-of-each-year"><i class="fa fa-check"></i><b>2.5</b> Cases pending trial at the end of each year</a></li>
 </ul></li>
 <li class="divider"></li>
-<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank"></a></li>
 
 </ul>
 
@@ -101,18 +109,26 @@
 <h1><span class="header-section-number">2</span> Total Cases</h1>
 <div id="year-on-year" class="section level2">
 <h2><span class="header-section-number">2.1</span> Year on Year</h2>
+<div id="htmlwidget-c19e53b547b12a583cd6" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-c19e53b547b12a583cd6">{"x":{"filter":"none","data":[["80","341","365","140","358"],["Assam","Delhi","Assam","Assam","Assam"],["Sonitpur","South West","Chirang","Barpeta","Bongaigaon"],["2019","2019","2016","2020","2016"],[91,432,8,60,7],[54,199,1,45,null]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>state_name<\/th>\n      <th>district_name<\/th>\n      <th>reg_year<\/th>\n      <th>total_cases<\/th>\n      <th>pending_cases<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":5,"dom":"t","autowidth":true,"scrollX":true,"columnDefs":[{"className":"dt-right","targets":[4,5]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[5,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div id="disposal-nature" class="section level2">
 <h2><span class="header-section-number">2.2</span> Disposal Nature</h2>
+<div id="htmlwidget-5361d7a43c43276b9378" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-5361d7a43c43276b9378">{"x":{"filter":"none","data":[["555","820","771","468","512"],["Delhi","Assam","Haryana","Haryana","Delhi"],["North West","Barpeta","Sonepat","Sonepat","Central"],["REJECTED","Convert","CANCELLATION REPORT ACCEPTED","ALLOWED","ACQUITTED"],["36","74","31","15","1"],[3,1,3,144,187]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>state_name<\/th>\n      <th>district_name<\/th>\n      <th>disp_name<\/th>\n      <th>disp_nature<\/th>\n      <th>total_cases<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":5,"dom":"t","autowidth":true,"scrollX":true,"columnDefs":[{"className":"dt-right","targets":5},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[5,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div id="offence-wise" class="section level2">
 <h2><span class="header-section-number">2.3</span> Offence wise</h2>
+<div id="htmlwidget-b6fad422c3dd593c0cee" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-b6fad422c3dd593c0cee">{"x":{"filter":"none","data":[["2650","835","401","2003","2461"],["Haryana","Assam","Haryana","Haryana","Assam"],["Ambala","Karimganj","Ambala","Gurugram","Chirang"],["HRAM03","ASKJ01","HRAMA1","HRGR01","ASCH04"],["Criminal Courts, Ambala","District and Sessions Judge Court Karimganj","Criminal Courts, Naraingarh","District and Sessions Courts, Gurugram","Additional District and Sessions Judge"],["POCSO","IPC","IPC","IPC","IPC"],["18","376","354","451","294"],[2,22,1,1,1]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>state_name<\/th>\n      <th>district_name<\/th>\n      <th>est_code<\/th>\n      <th>court_name<\/th>\n      <th>act_name_std<\/th>\n      <th>section_name_std<\/th>\n      <th>total_cases<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":5,"dom":"t","autowidth":true,"scrollX":true,"columnDefs":[{"className":"dt-right","targets":7},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[5,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div id="age-of-case" class="section level2">
 <h2><span class="header-section-number">2.4</span> Age of case</h2>
+<div id="htmlwidget-27487012541b284ac4ff" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-27487012541b284ac4ff">{"x":{"filter":"none","data":[["1","2","3","4","5"],["Haryana","Haryana","Haryana","Assam","Haryana"],["Kaithal","Rohtak","Gurugram","Dibrugarh","Rohtak"],["Criminal Courts, Kaithal","District and Sessions Court Rohtak","Criminal Courts, Gurugram","District and Sessions Judge","District and Sessions Court Rohtak"],["HRKH03","HRRH01","HRGR03","ASDB01","HRRH01"],["JJB","CRM","CRM","Pcso Act","COMA"],[null,"DISMISSED AS WITHDRAWN",null,"ACQUITTED","Acquited"],["0","34","0","10","46"],["one year","three months","one year","five years","two years"],[3,1,1,3,2]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>state_name<\/th>\n      <th>district_name<\/th>\n      <th>court_name<\/th>\n      <th>est_code<\/th>\n      <th>type_name<\/th>\n      <th>disp_name<\/th>\n      <th>disp_nature<\/th>\n      <th>age_interval<\/th>\n      <th>total_cases<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":5,"dom":"t","autowidth":true,"scrollX":true,"columnDefs":[{"className":"dt-right","targets":9},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[5,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
 </div>
-<div id="cases-pending-trial" class="section level2">
-<h2><span class="header-section-number">2.5</span> Cases pending trial</h2>
+<div id="cases-pending-trial-at-the-end-of-each-year" class="section level2">
+<h2><span class="header-section-number">2.5</span> Cases pending trial at the end of each year</h2>
 
 </div>
 </div>

@@ -12,3 +12,10 @@ description: "Research and Analysis on the POCSO law"
 # Index
 
 [Questions for Data computation and Analysis](https://drive.google.com/file/d/140lP2R8HTmOgSa3uWgj9fQgvl4u67rnf/view)
+
+| ID | Data Point | Sample Data     | Dataset  |
+| -------- | -------- | --- | -------- |
+| 1.a     | Total/Pending cases per district per year| [Link](#year-on-year)    | [Link](https://github.com/HAQ-Centre-for-Child-Rights/POCSO-law-implementation-tracker/raw/master/research/datasets/year_wise_cases.csv)     |
+| 1.b     | Total cases per district per offence (Acts & Sections)| [Link](offence-wise)    | [Link](https://github.com/HAQ-Centre-for-Child-Rights/POCSO-law-implementation-tracker/raw/master/research/datasets/nature_of_offence.csv)     |
+| 1.e     | Rate of conviction and acquittal| [Link](#disposal-nature)    | [Link](https://github.com/HAQ-Centre-for-Child-Rights/POCSO-law-implementation-tracker/raw/master/research/datasets/nature_of_disposal.csv)     |
+| 1.e     | Case Age| [Link](#age-of-case)    | [Link](https://github.com/HAQ-Centre-for-Child-Rights/POCSO-law-implementation-tracker/raw/master/research/datasets/case_age_dataset.csv)     |
