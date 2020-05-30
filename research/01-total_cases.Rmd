@@ -102,8 +102,16 @@ yearly_cases_pendency_ratio$cases_pending_trial_yearly[is.na(yearly_cases_penden
 ```
 
 
-```{sql connection=con}
-select * from case_details limit 1
+```{sql connection=con, output.var='case_type_patterns'}
+select state_name, district_name, type_name, count(cino) as total_cases from case_details group by state_name, district_name, type_name
+```
+
+```{sql connection=con, output.var='case_disposal_patterns_overall'}
+select disp_name, disp_nature, count(cino) as total_cases from case_details group by disp_name, disp_nature
+```
+
+```{sql connection=con, output.var='case_disposal_patterns_by_district'}
+select disp_name, disp_nature, state_name, district_name, count(cino) as total_cases from case_details group by disp_name, disp_nature, state_name, district_name
 ```
 
 
@@ -113,4 +121,7 @@ write_csv(nature_of_disposal,"datasets/nature_of_disposal.csv")
 write_csv(nature_of_offence,"datasets/nature_of_offence.csv")
 write_csv(case_age_dataset,"datasets/case_age_dataset.csv")
 write_csv(yearly_cases_pendency_ratio,"datasets/yearly_cases_pendency_ratio.csv")
+write_csv(case_type_patterns,"datasets/case_type_patterns.csv")
+write_csv(case_disposal_patterns_overall,"datasets/case_disposal_patterns_overall.csv")
+write_csv(case_disposal_patterns_by_district,"datasets/case_disposal_patterns_by_district.csv")
 ```

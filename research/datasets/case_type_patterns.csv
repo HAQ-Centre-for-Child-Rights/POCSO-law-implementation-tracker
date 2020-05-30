@@ -1,0 +1,458 @@
+state_name,district_name,type_name,total_cases
+Haryana,Yamunanagar,SC,92
+Assam,Kamrup Metro,Complaint Case  C.R.,2
+Haryana,Ambala,Cha,32
+Haryana,Faridabad,B A,1386
+Assam,Barpeta,PRC (Police Report Case),2
+Delhi,South,CA,4
+Haryana,Sonepat,Remp,4
+Assam,Tinsukia,Bail 438,24
+Haryana,Kaithal,UCR,13
+Assam,Lakhimpur,Criminal Miscellaneous,1
+Assam,Sonitpur,Sessions Case,8
+Haryana,Yamunanagar,Crm,1
+Delhi,South West,EX CRIMINAL,1
+Haryana,Faridabad,C R R,3
+Haryana,Karnal,COMI,2
+Assam,Nagaon,PRC,29
+Assam,Tinsukia,P R C CASE,6
+Haryana,Rewari,BA,254
+Assam,Karimganj,Special Sessions (POCSO),81
+Assam,Kamrup Metro,Misc. Case ( Criminal ),2
+Assam,Morigaon,Complaint Case ( C R),74
+Assam,Cachar,Misc. Case (Crl),1
+Assam,Baksa,Bail 438,5
+Haryana,Panipat,Crm,9
+Haryana,Rohtak,CHA,6
+Assam,Nagaon,Bail Applications,3
+Assam,Sivasagar,PRC Case,1
+Assam,Bongaigaon,PRC Case,1
+Assam,Kokrajhar,G R Case,3
+Assam,Baksa,Special POCSO,115
+Haryana,Jhajjar,CHA,3
+Assam,Jorhat,Bail 439,1
+Haryana,Sirsa,CHA,7
+Delhi,North,CA,3
+Haryana,Panchkula,COMA,5
+Haryana,Bhiwani,CRM,2
+Haryana,Gurugram,UCR,6
+Haryana,Panipat,Crmp,1
+Assam,Morigaon,Criminal Appeal,1
+Assam,Kamrup Metro,G R Case,20
+Haryana,Hisar,CHI,64
+Haryana,Rewari,CRA,13
+Haryana,Jind,CRA,6
+Haryana,Panipat,Ucr,11
+Haryana,Faridabad,UCR,10
+Assam,Hailakandi,G R Case,4
+Assam,Kokrajhar,SpecialPOCSO,128
+Assam,Barpeta,Sessions Case,7
+Haryana,Panipat,BA,247
+Haryana,Yamunanagar,BA,124
+Delhi,South East,CT CASES,7
+Haryana,Sirsa,SC,297
+Assam,Nalbari,Complaint Case ( C R),1
+Assam,Barpeta,Spl. P.O.C.S.O,50
+Assam,Nalbari,Bail 439,5
+Haryana,Fatehabad,CHA,3
+Assam,Hailakandi,Complaint Case ( C R,21
+Delhi,Central,Cr Rev,3
+Haryana,Ambala,TA,1
+Assam,Jorhat,Special Case,172
+Assam,Lakhimpur,Bail 439,16
+Assam,Sonitpur,POCSO Act,260
+Assam,Sivasagar,Crl. Misc. Case,14
+Assam,Bongaigaon,Special Case ( P ),40
+Haryana,Ambala,CMA,1
+Haryana,Rewari,SC,192
+Assam,Dhubri,G R Case,4
+Haryana,Jhajjar,CRR,2
+Assam,Barpeta,Bail 439,55
+Delhi,North West,MISC CRL,3
+Haryana,Sonepat,Crm,26
+Haryana,Jind,CHA,13
+Assam,Sivasagar,BAIL  APPLICATION,43
+Haryana,Sonepat,CRA,15
+Assam,Udalguri,SPL(N),2
+Haryana,Rewari,COMA,1
+Assam,Bongaigaon,Special (POCSO),15
+Assam,Udalguri,Special Case,1
+Haryana,Gurugram,REMP,144
+Assam,Cachar,G R Case,33
+Assam,Kamrup,Bail 438,24
+Assam,Baksa,Sessions Case,2
+Assam,Sonitpur,Spl. POCSO,183
+Haryana,Rewari,CHI,9
+Haryana,Bhiwani,SC,37
+Assam,Dhemaji,Sessions Case,28
+Delhi,South,Bail Matters,293
+Haryana,Panchkula,CRR,2
+Haryana,Rewari,COMI,1
+Haryana,Palwal,UCR,12
+Haryana,Panipat,SC,214
+Assam,Dhemaji,Bail 439,10
+Haryana,Gurugram,CHA,4
+Haryana,Narnaul,UCR,8
+Haryana,Jhajjar,D.V.ACT,2
+Haryana,Panipat,Cha,24
+Haryana,Palwal,CRM,16
+Haryana,Fatehabad,SC AND ST ACT,10
+Haryana,Rewari,CR.CAN,2
+Haryana,Hisar,CRM,30
+Assam,Tinsukia,Bail 439,8
+Haryana,Jind,SC,228
+Haryana,Hisar,CHA,5
+Delhi,Central,CA,1
+Delhi,South West,Bail Matters,556
+Haryana,Rohtak,REMP,27
+Delhi,South East,SC,636
+Haryana,Faridabad,COMA,1
+Delhi,West,CA,5
+Haryana,Yamunanagar,CHI,10
+Haryana,Fatehabad,UCR,11
+Haryana,Rohtak,BA,455
+Haryana,Hisar,D.V.Act,3
+Haryana,Jhajjar,COMA,1
+Assam,Dhemaji,POCSO Act,87
+Assam,Kokrajhar,Bail Applications,12
+Assam,Lakhimpur,Sessions ( Spl.),127
+Haryana,Sirsa,CRM,61
+Haryana,Kaithal,CHI,18
+Delhi,North East,CA,1
+Delhi,South,CT Cases,4
+Delhi,South,SC,754
+Assam,Nalbari,Sessions Spl. (C),3
+Haryana,Sonepat,CRR,2
+Assam,Kokrajhar,Sessions Case,1
+Haryana,Rohtak,SC,241
+Haryana,Sonepat,CANCR,6
+Haryana,Jind,JJB,48
+Haryana,Sirsa,CRR,5
+Delhi,West,SC,1681
+Haryana,Ambala,Chi,72
+Haryana,Kaithal,BA,144
+Assam,Sivasagar,SPECIAL JUVENILE CASE,1
+Haryana,Gurugram,BA,682
+Assam,Barpeta,G R Case,6
+Assam,Dhubri,Special,171
+Haryana,Kaithal,CRR,1
+Haryana,Jind,CHI,177
+Assam,Tinsukia,PCSO Act 2012,183
+Haryana,Fatehabad,BA,307
+Assam,Cachar,Complaint Case ( C R),8
+Haryana,Kaithal,JJB,21
+Haryana,Yamunanagar,CRA,4
+Delhi,Central,M Crl,7
+Haryana,Sirsa,CHI,222
+Assam,Karbi Anglong,SC T2,2
+Assam,Goalpara,Special POCSO,73
+Assam,Hailakandi,PRC,54
+Haryana,Hisar,CRA.,31
+Assam,Kamrup,G R Case,2
+Haryana,Hisar,JJB,55
+Haryana,Palwal,JJB,36
+Haryana,Fatehabad,REMP,309
+Assam,Lakhimpur,Bail 438,5
+Haryana,Hisar,COMI,2
+Assam,Darrang,Sessions Case,2
+Haryana,Rohtak,CRR,4
+Assam,Goalpara,Special Case,22
+Delhi,West,Bail Matters,375
+Assam,Bongaigaon,CR Case (Warrant),4
+Assam,Kamrup Metro,Sessions Case,267
+Assam,Kokrajhar,Misc1crl.,1
+Haryana,Jind,UCR,13
+Haryana,Gurugram,CRA,24
+Haryana,Sirsa,COMI,3
+Haryana,Fatehabad,TRAFFIC,1
+Haryana,Sonepat,CM,2
+Assam,Baksa,PRC,13
+Assam,Kamrup,Misc Criminal,10
+Haryana,Jhajjar,CRMP,4
+Assam,Dhubri,Sessions Case,1
+Assam,Kamrup Metro,Police Report case  JJB PRC JJB,8
+Haryana,Fatehabad,CRM,43
+Delhi,New Delhi,CA,5
+Assam,Nalbari,G R Case,1
+Assam,Nagaon,Special POSCO,19
+Haryana,Faridabad,CRMP,14
+Assam,Kamrup Metro,Police Report case  PRC,1
+Haryana,Panchkula,SC,109
+Haryana,Sonepat,CHA,4
+Haryana,Ambala,UCR,2
+Delhi,Central,Ct. Cases,1
+Haryana,Ambala,Comi,7
+Haryana,Kurukshetra,BA,312
+Delhi,South,Misc Crl,4
+Haryana,Panipat,Coma,2
+Assam,Baksa,Bail 439,1
+Assam,Morigaon,Sessions Case,5
+Haryana,Ambala,Dv Act,2
+Delhi,South West,CC,1
+Assam,Dhubri,Special ( Pocso Act ),39
+Assam,Nagaon,Complaint Case ( C R),4
+Assam,Golaghat,Sessions Case Type 2,2
+Delhi,South East,Bail Matters,116
+Assam,Kamrup Metro,G R Case J.J.B,6
+Haryana,Gurugram,SC,483
+Assam,Dhemaji,Sessions ( Spl.),10
+Haryana,Bhiwani,JJB,1
+Haryana,Sirsa,CRA,17
+Haryana,Panchkula,BA,181
+Haryana,Sonepat,COMI,3
+Haryana,Hisar,BA,457
+Assam,Kamrup,Criminal Miscellaneous,1
+Assam,Darrang,Spl (CCL),9
+Assam,Lakhimpur,Sessions Case,4
+Haryana,Hisar,UCR,13
+Haryana,Sonepat,SC,351
+Haryana,Faridabad,CRA,68
+Haryana,Kurukshetra,COMA,4
+Assam,Jorhat,Bail 438,1
+Assam,Kamrup,Bail 439,33
+Delhi,West,Cr. Case,2
+Delhi,South West,MISC DJ ASJ,59
+Haryana,Panipat,Remp,2
+Delhi,Central,Cr. Case,2
+Haryana,Sonepat,CHI,114
+Assam,Udalguri,SPL(Pocso),149
+Haryana,Panipat,Chi,139
+Haryana,Hisar,REMP,141
+Assam,Darrang,Complaint Case ( C R,2
+Haryana,Narnaul,CHI,10
+Haryana,Panchkula,REMP,48
+Haryana,Ambala,RA,37
+Assam,Karbi Anglong,Special Case,1
+Assam,Golaghat,Bail 439,6
+Assam,Hailakandi,Special(POCSO) Case,108
+Assam,Cachar,Sessions Case,6
+Haryana,Palwal,CHI,10
+Assam,Lakhimpur,G R Case ( Warrant ),10
+Assam,Dhubri,Title Suit F. A.,2
+Delhi,North,CR Rev,1
+Haryana,Kurukshetra,UCR,19
+Haryana,Bhiwani,BA,66
+Haryana,Kurukshetra,COMI,3
+Delhi,West,MC,3
+Haryana,Rewari,CRM,28
+Assam,Nagaon,G R Case,1
+Assam,Dhemaji,G R Case,16
+Haryana,Bhiwani,CRMP,1
+Haryana,Faridabad,A P P,1
+Haryana,Sonepat,BA,440
+Assam,Tinsukia,C R Case,1
+Haryana,Ambala,BA,446
+Assam,Chirang,Sessions ( Spl.),1
+Haryana,Gurugram,JJB,68
+Haryana,Fatehabad,CHI,30
+Delhi,North,EX.,1
+Delhi,South East,CA,1
+Assam,Hailakandi,Juvenile Cases,6
+Delhi,New Delhi,SC,416
+Haryana,Kaithal,CRA,6
+Assam,Dima Hasao,Spl (pocso),5
+Delhi,North West,M.,84
+Haryana,Panipat,Jjb,54
+Assam,Cachar,Spl (pocso),241
+Haryana,Palwal,REMP,230
+Haryana,Rohtak,UCR,4
+Assam,Karimganj,Complaint Case (C R),6
+Assam,Chirang,Special Case (POCSO),99
+Haryana,Panchkula,CRM,13
+Haryana,Ambala,Crm,1
+Haryana,Gurugram,CRR,3
+Assam,Tinsukia,Sessions Case Type-I,1
+Assam,Tinsukia,PRC Cases,1
+Haryana,Kurukshetra,SC,174
+Assam,Goalpara,Special( P and C),5
+Assam,Kamrup,Sessions Special (POCSO),57
+Assam,Dima Hasao,Criminal Misc(Bail) 439,4
+Haryana,Ambala,Ucr,13
+Haryana,Ambala,CRR,4
+Haryana,Jhajjar,TA,1
+Delhi,North West,Cr Case,1
+Assam,Sivasagar,PRC case,2
+Haryana,Rewari,CRR,1
+Assam,Dima Hasao,Sessions ( Spl.),4
+Haryana,Sonepat,JJB,74
+Haryana,Palwal,BA,4
+Delhi,North,Bail Matters,826
+Assam,Barpeta,Spl. POCSO Act.,437
+Assam,Kokrajhar,Sessions Spl.,1
+Assam,Chirang,Juvenile Act Cases,7
+Assam,Lakhimpur,PRC,4
+Delhi,North East,SC,429
+Haryana,Faridabad,JJB,72
+Assam,Dhubri,Sessions (Special),6
+Delhi,Central,Bail Matters,266
+Haryana,Panipat,CRA,5
+Assam,Kokrajhar,Sessions  Spl,4
+Assam,Chirang,G R Case,3
+Delhi,North West,Misc.,24
+Haryana,Sonepat,COMA,1
+Haryana,Rohtak,MNT125,1
+Haryana,Rohtak,JJB,46
+Assam,Chirang,Sessions Case,9
+Haryana,Narnaul,REMP,3
+Haryana,Kurukshetra,CRM,40
+Haryana,Faridabad,CRM,74
+Assam,Lakhimpur,Special(Children),2
+Haryana,Kurukshetra,JJB,41
+Assam,Jorhat,PRC Case,2
+Assam,Morigaon,POCSO Act,280
+Assam,Karimganj,Police Report Case (PRC),4
+Assam,Darrang,G R Case,5
+Assam,Sivasagar,SPECIAL JUVENILE,2
+Haryana,Gurugram,APP,1
+Haryana,Jhajjar,CRM,29
+Haryana,Bhiwani,CRA,1
+Delhi,North West,CA,7
+Haryana,Rohtak,MACM,1
+Haryana,Fatehabad,COMA,8
+Haryana,Bhiwani,CHI,1
+Haryana,Rewari,JJB,23
+Assam,Chirang,Bail 439,1
+Delhi,Central,SC,952
+Assam,Tinsukia,G R Case,33
+Haryana,Palwal,SC,186
+Assam,Dibrugarh,Pcso Act,170
+Assam,Kamrup,Sessions Case,3
+Assam,Dhemaji,Special Case,1
+Haryana,Gurugram,CHI,18
+Haryana,Karnal,CHA,2
+Haryana,Fatehabad,COMI,1
+Haryana,Hisar,SC,281
+Assam,Nagaon,SC T2,1
+Assam,Jorhat,Complaint Case ( C R),1
+Assam,Kamrup Metro,AB Anticipatory Bail,41
+Haryana,Faridabad,COMI,7
+Delhi,South West,CA,2
+Delhi,Shahdara,MISC CRL,9
+Assam,Tinsukia,Sessions Case,4
+Assam,Barpeta,Criminal Misc(j),11
+Haryana,Fatehabad,SC,247
+Delhi,North,MISC CRL,6
+Haryana,Ambala,Crmp,23
+Assam,Kamrup Metro,Bail 437,108
+Assam,Nalbari,Misc Case,1
+Assam,Kamrup,Sessions ( Spl.),213
+Assam,Sivasagar,Special Case POCSO,407
+Haryana,Palwal,COMI,18
+Assam,Goalpara,Special Case (Children),1
+Assam,Kamrup,Bail Application,13
+Haryana,Karnal,REMP,20
+Assam,Darrang,Sp Procso,166
+Assam,Dibrugarh,Sessions Case,1
+Assam,Dhubri,PRC (Police Report Cases),2
+Assam,Dima Hasao,Criminal Miscellaneous,1
+Haryana,Jhajjar,APP,2
+Haryana,Narnaul,CHA,10
+Haryana,Kaithal,COMI,3
+Haryana,Kurukshetra,CHI,7
+Delhi,Shahdara,Bail Matters,5
+Haryana,Sirsa,UCR,17
+Assam,Dhemaji,Bail 438,10
+Haryana,Panchkula,CRA,9
+Assam,Morigaon,Sessions ( Spl.),56
+Haryana,Panchkula,JJB,16
+Haryana,Sirsa,COMA,1
+Assam,Bongaigaon,Special Case,32
+Assam,Jorhat,G R Case,7
+Assam,Kokrajhar,Special Case,16
+Delhi,West,M,15
+Haryana,Yamunanagar,CHA,1
+Delhi,North West,Bail Matters,1071
+Delhi,South West,Cr. Case,37
+Assam,Bongaigaon,J J B Case,9
+Delhi,Shahdara,SC,641
+Assam,Barpeta,Bail 438,135
+Haryana,Kaithal,COMA,1
+Assam,Dima Hasao,Sessions Case,12
+Assam,Karbi Anglong,Sessions Case,1
+Assam,Karimganj,G R Case,3
+Haryana,Ambala,SC,276
+Delhi,New Delhi,Cr Rev,1
+Haryana,Gurugram,CRM,37
+Delhi,North West,Ct. Cases,6
+Haryana,Narnaul,JJB,21
+Assam,Karimganj,Sessions Case,1
+Haryana,Yamunanagar,Remp,11
+Assam,Hailakandi,M R Case,4
+Assam,Dhubri,Special (POCSO Act),65
+Delhi,East,SC,616
+Assam,Dhemaji,Complaint Case ( C R),1
+Delhi,North West,SC,1140
+Haryana,Narnaul,CRM,2
+Haryana,Panipat,Comi,1
+Haryana,Karnal,CRM,9
+Assam,Kokrajhar,Special A,19
+Haryana,Ambala,CRA,32
+Haryana,Sirsa,REMP,44
+Haryana,Jhajjar,CHI,53
+Assam,Kokrajhar,Misc crl.,1
+Haryana,Ambala,CRM,73
+Delhi,West,EX CRL,5
+Haryana,Kurukshetra,CRA,10
+Assam,Kamrup Metro,Bail 439,259
+Haryana,Panchkula,CHI,5
+Haryana,Palwal,COMA,1
+Haryana,Kaithal,SC,172
+Delhi,North,SC,1112
+Haryana,Bhiwani,REMP,10
+Haryana,Rohtak,CRM,66
+Haryana,Faridabad,CHI,19
+Delhi,South West,Ct. Cases,6
+Delhi,South West,SC,989
+Haryana,Rohtak,CRA,28
+Haryana,Fatehabad,JJB,34
+Assam,Baksa,Sessions ( Spl.),67
+Haryana,Jhajjar,COMI,2
+Assam,Barpeta,Complaint Case ( C R),1
+Haryana,Panchkula,COMI,5
+Haryana,Rohtak,CHI,97
+Haryana,Fatehabad,CRA,8
+Assam,Nalbari,Bail 438,47
+Delhi,North West,M,3
+Assam,Bongaigaon,Sessions Case  T II,1
+Haryana,Faridabad,S C,766
+Haryana,Jhajjar,CRA,19
+Haryana,Rohtak,COMA,12
+Haryana,Kaithal,CRM,11
+Haryana,Karnal,CHI,3
+Assam,Jorhat,Sessions Case Type 2,1
+Haryana,Panchkula,UCR,3
+Haryana,Hisar,CRR,4
+Assam,Kamrup Metro,Misc. Adoption Case,25
+Delhi,North West,Mt. CASE,2
+Assam,Tinsukia,PRC Case,1
+Assam,Karbi Anglong,POCSO,180
+Assam,Golaghat,Sessions  Spl POCSO,312
+Haryana,Gurugram,SC-ST,10
+Haryana,Ambala,Jjb,40
+Haryana,Kurukshetra,CHA,4
+Haryana,Hisar,RP,1
+Assam,Udalguri,Misc(B),1
+Assam,Baksa,Complaint Case ( C R),2
+Haryana,Jhajjar,BA,367
+Haryana,Jind,CRM,11
+Haryana,Jhajjar,S.C.,267
+Assam,Nalbari,Sessions ( Spl.),181
+Assam,Nagaon,Cases Under POCSO Act,350
+Assam,Sonitpur,GR Case,10
+Haryana,Sirsa,BA,371
+Haryana,Jind,COMI,2
+Assam,Cachar,PRC,12
+Haryana,Panchkula,CRMP,7
+Assam,Sonitpur,Misc. (Bail),1
+Haryana,Faridabad,446 CR. P. C,1
+Haryana,Jind,BA,464
+Delhi,North East,BAIL MATTERS,3
+Delhi,New Delhi,Bail Matters,2
+Assam,Golaghat,Bail 438,12
+Assam,Lakhimpur,Bail Applications,1
+Assam,Baksa,G R Case,2
+Delhi,East,BAIL MATTERS,1
+Haryana,Faridabad,REMP,107
+Haryana,Narnaul,POCSO ACT,1
+Assam,Kamrup,PRC Case,18
+Haryana,Jhajjar,JJB.,36
