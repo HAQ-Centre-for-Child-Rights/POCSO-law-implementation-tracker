@@ -6,7 +6,16 @@ fetch_all_tables <- function(){
 }
 
 
-# dbxSelect(
-#   con,
-#   "select distinct disp_name from case_details "
-# ) %>% write_clip()
+show_all_columns <- function(table_name) {
+  all_cols <- dbxSelect(
+    con,
+    glue(
+      "SELECT column_name
+FROM information_schema.columns
+WHERE table_schema = 'public'
+AND table_name = {quote(table_name)}
+ORDER BY column_name ASC"
+    )
+  )
+  return(all_cols)
+}
