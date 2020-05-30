@@ -36,7 +36,7 @@ from case_details group by state_name, district_name, fil_year, reg_year
 
 ## Disposal Nature
 ```{sql connection=con, output.var='nature_of_disposal'}
-select state_name, district_name, disp_name, disp_nature, count(cino) as total_cases from case_details where disp_nature != '0' group by state_name, district_name, disp_name, disp_nature
+select state_name, district_name, disp_name, disp_nature, fil_year, reg_year, EXTRACT(year from date_of_decision) as decision_year, count(cino) as total_cases from case_details where disp_nature != '0' group by state_name, district_name, disp_name, disp_nature, fil_year, reg_year, decision_year
 ```
 
 ## Offence wise
