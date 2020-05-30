@@ -93,9 +93,9 @@ case_age_dataset <- case_age %>% group_by(state_name, district_name, court_name,
 case_age$pending_trial_year_flag <- 0
 case_age$pending_trial_year_flag[case_age$age_of_case_days >= 365] <- 1
 
-pending_trial_dataset <- case_age %>% filter(pending_trial_year_flag == 1) %>% group_by(state_name, district_name, reg_year, court_name, est_code, type_name, disp_name, disp_nature) %>% summarise(cases_pending_trial_yearly = length(cino))
+pending_trial_dataset <- case_age %>% filter(pending_trial_year_flag == 1) %>% group_by(state_name, district_name, reg_year, fil_year, court_name, est_code, type_name, disp_name, disp_nature) %>% summarise(cases_pending_trial_yearly = length(cino))
 
-total_yearly_cases <- case_age %>% group_by(state_name, district_name, reg_year, court_name, est_code, type_name, disp_name, disp_nature) %>% summarise(total_cases = length(cino))
+total_yearly_cases <- case_age %>% group_by(state_name, district_name, reg_year, fil_year, court_name, est_code, type_name, disp_name, disp_nature) %>% summarise(total_cases = length(cino))
 
 yearly_cases_pendency_ratio <- left_join(total_yearly_cases, pending_trial_dataset, by=NULL)
 yearly_cases_pendency_ratio$cases_pending_trial_yearly[is.na(yearly_cases_pendency_ratio$cases_pending_trial_yearly)] <- 0
