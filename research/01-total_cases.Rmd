@@ -41,7 +41,7 @@ select state_name, district_name, disp_name, disp_nature, fil_year, reg_year, EX
 
 ## Offence wise
 ```{sql connection=con, output.var='nature_of_offence'}
-select state_name, district_name, est_code, court_name, act_name_std, section_name_std, count(cino) as total_cases from (select c.act_name_std, c.section_name_std, d.* from acts_subset as c inner join (select a.*, b.state_name, b.district_name, b.est_code, b.court_name FROM case_acts as a LEFT JOIN case_details as b on a.cino=b.cino) as d on c.id = d.act) as e group by state_name, district_name, est_code, court_name, act_name_std, section_name_std
+select state_name, district_name, est_code, court_name, reg_year, fil_year, decision_year, act_name_std, section_name_std, count(cino) as total_cases from (select c.act_name_std, c.section_name_std, d.* from acts_subset as c inner join (select a.*, b.state_name, b.district_name, b.est_code, b.court_name, b.reg_year, b.fil_year, EXTRACT(year from date_of_decision) as decision_year FROM case_acts as a LEFT JOIN case_details as b on a.cino=b.cino) as d on c.id = d.act) as e group by state_name, district_name, est_code, court_name, reg_year, fil_year, decision_year, act_name_std, section_name_std
 ```
 
 ## Age of case
