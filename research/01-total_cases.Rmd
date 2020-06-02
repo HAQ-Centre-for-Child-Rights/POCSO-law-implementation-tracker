@@ -112,6 +112,14 @@ yearly_cases_pendency_ratio <- left_join(total_yearly_cases, pending_trial_datas
 yearly_cases_pendency_ratio$cases_pending_trial_yearly[is.na(yearly_cases_pendency_ratio$cases_pending_trial_yearly)] <- 0
 ```
 
+Cases where the year of filing is < 2019 and are pending, but are still not categorised under cases pending trial yearly.
+
+This is happening because we are calculating the number of days between date of filing and **March 31, 2020**. Filing dates for such cases are mentioned in 2019 which is different from the year of filing (< 2019)
+
+```{sql connection=con, output.var='cases_from_2016_karbi_anglong'}
+select *  from case_details where fil_year = '2016' AND district_name='Karbi Anglong' AND date_of_filing = '2019-05-06'
+```
+
 
 ```{sql connection=con, output.var='case_type_patterns'}
 select state_name, district_name, type_name, count(cino) as total_cases from case_details group by state_name, district_name, type_name
