@@ -104,6 +104,62 @@ case_disposal_patterns_case_age <- c("Disposed of",
 
 ## Case Disposal Patterns - Nature of disposal dataset (Rate of conviction and acquittal)
 
-case_disposal_patterns_nature_of_disposal <- c("CANCEL", "CLUBBED IN FIR", "SET ASIDE", "QUASH", "P.O. CONSIGN", "PARTLY DECREED WITH COSTS", "Proceeding close", "PROCEEDING STOP")
+case_disposal_patterns_nature_of_disposal <-
+  c(
+    "CANCEL",
+    "CLUBBED IN FIR",
+    "SET ASIDE",
+    "QUASH",
+    "P.O. CONSIGN",
+    "PARTLY DECREED WITH COSTS",
+    "Proceeding close",
+    "PROCEEDING STOP"
+  )
  
-case_type_patterns_case_age <- c("PRC", "Sessions ( Spl.)", "Criminal Misc(j)", "PRC (Police Report Case)", "Special Case", "Special Case ( P )", "PRC Case", "Sessions Case  T II", "CR Case (Warrant)", "Complaint Case ( C R)", "Misc. Case (Crl)", "Complaint Case ( C R", "PRC (Police Report Cases)", "Title Suit F. A.", "Special", "Sessions Case Type 2", "M R Case", "Complaint Case  C.R.", "Police Report case  PRC", "SC T2", "Police Report Case (PRC)", "Special A", "G R Case ( Warrant )", "Sessions Spl. (C)", "GR Case", "Sessions Case Type-I", "P R C CASE", "SPL(N)", "EX.", "M", "M.", "CT Cases", "Cr. Case", "MISC DJ ASJ", "Cha", "Chi", "Comi", "Crm", "Crmp", "TA", "SC AND ST ACT", "SC-ST", "D.V.Act", "CR.CAN")
+case_type_patterns_case_age <-
+  c(
+    "PRC",
+    "Sessions ( Spl.)",
+    "Criminal Misc(j)",
+    "PRC (Police Report Case)",
+    "Special Case",
+    "Special Case ( P )",
+    "PRC Case",
+    "Sessions Case  T II",
+    "CR Case (Warrant)",
+    "Complaint Case ( C R)",
+    "Misc. Case (Crl)",
+    "Complaint Case ( C R",
+    "PRC (Police Report Cases)",
+    "Title Suit F. A.",
+    "Special",
+    "Sessions Case Type 2",
+    "M R Case",
+    "Complaint Case  C.R.",
+    "Police Report case  PRC",
+    "SC T2",
+    "Police Report Case (PRC)",
+    "Special A",
+    "G R Case ( Warrant )",
+    "Sessions Spl. (C)",
+    "GR Case",
+    "Sessions Case Type-I",
+    "P R C CASE",
+    "SPL(N)",
+    "EX.",
+    "M",
+    "M.",
+    "CT Cases",
+    "Cr. Case",
+    "MISC DJ ASJ",
+    "Cha",
+    "Chi",
+    "Comi",
+    "Crm",
+    "Crmp",
+    "TA",
+    "SC AND ST ACT",
+    "SC-ST",
+    "D.V.Act",
+    "CR.CAN"
+  )
