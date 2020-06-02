@@ -12,15 +12,24 @@ case_detail_cols <- c("district_code", "district_name", "state_code", "state_nam
 ```
 
 
-```{r case_numbers_disposal_patterns}
-case_numbers_disposal <- dbxSelect(
+```{r case_numbers_disposal_patterns_case_age}
+case_numbers_case_age <- dbxSelect(
   con,
   glue('select {paste0(case_detail_cols,collapse = ",")} from case_details where disp_name IN ({paste0("\\\'",case_disposal_patterns_case_age,"\\\'",collapse = ",")})')
 )
 ```
 
+```{r case_numbers_disposal_patterns_nature_of_disposal}
+case_numbers_nature_of_disposal <- dbxSelect(
+  con,
+  glue('select {paste0(case_detail_cols,collapse = ",")} from case_details where disp_name IN ({paste0("\\\'",case_disposal_patterns_nature_of_disposal,"\\\'",collapse = ",")})')
+)
+```
+
+
 ```{r Writing Files}
 # On 02/06/20
-write_csv(case_numbers_disposal,"datasets/case_patterns/case_disposal_patterns.csv")
+write_csv(case_numbers_case_age,"datasets/case_patterns/case_disposal_patterns_case_age.csv")
+write_csv(case_numbers_nature_of_disposal,"datasets/case_patterns/case_numbers_nature_of_disposal.csv")
 ```
 

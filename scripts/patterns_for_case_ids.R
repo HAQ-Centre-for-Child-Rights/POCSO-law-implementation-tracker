@@ -100,3 +100,9 @@ case_disposal_patterns_case_age <- c("Disposed of",
 "CONSENT DECREE",
 "SENT BACK",
 "DISMISSED AS NOT SATISFIED")
+
+
+## Case Disposal Patterns - Nature of disposal dataset (Rate of conviction and acquittal)
+
+case_disposal_patterns_nature_of_disposal <- c("CANCEL", "CLUBBED IN FIR", "SET ASIDE", "QUASH", "P.O. CONSIGN", "PARTLY DECREED WITH COSTS", "Proceeding close", "PROCEEDING STOP")
+ 
