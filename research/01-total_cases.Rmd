@@ -134,6 +134,18 @@ select disp_name, disp_nature, state_name, district_name, count(cino) as total_c
 ```
 
 
+```{r Check total cases in each file}
+f_year_wise_cases <- sum(year_wise_cases$total_cases)
+f_year_wise_cases_pending <- sum(year_wise_cases$pending_cases)
+f_year_wise_cases_disposed <- sum(year_wise_cases$disposed_cases)
+f_nature_of_disposal <- sum(nature_of_disposal$total_cases)
+f_case_age <- sum(case_age_dataset$total_cases)
+f_cases_removed <- nrow(cases_removed)
+f_pending_trial <- sum(yearly_cases_pendency_ratio$total_cases)
+
+number_of_cases_df <- data.frame('file_name'=c('year_wise_cases','year_wise_cases_pending','year_wise_disposed','nature_of_disposal', 'case_age','cases_pending_trial_yearly','cases_removed_case_age'), number_of_cases = c(f_year_wise_cases, f_year_wise_cases_pending, f_year_wise_cases_disposed, f_nature_of_disposal, f_case_age,f_pending_trial,f_cases_removed))
+```
+
 ```{r Writing Files}
 write_csv(year_wise_cases,"datasets/year_wise_cases.csv")
 write_csv(nature_of_disposal,"datasets/nature_of_disposal.csv")
@@ -147,4 +159,5 @@ write_csv(case_disposal_patterns_by_district,"datasets/case_disposal_patterns_by
 # On 02/06/20
 write_csv(filing_year_0,"datasets/cases_filing_year_0.csv")
 write_csv(filing_year_below_2012,"datasets/cases_filing_year_below_2012.csv")
+write_csv(number_of_cases_df,"datasets/file_wise_total_cases.csv")
 ```
