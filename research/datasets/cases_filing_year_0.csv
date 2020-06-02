@@ -1,0 +1,248 @@
+state_name,district_name,est_code,court_name,cino,fil_no,date_of_filing,reg_no,reg_year,type_name,disp_nature,disp_name
+Haryana,Hisar,HRHS03,"Criminal Courts, Hisar",HRHS030169312017,16898,2017-12-13,602,2017,UCR,15,ALLOWED
+Haryana,Gurugram,HRGR01,"District and Sessions Courts, Gurugram",HRGR010124232015,4217,2015-11-06,2416,2015,BA,15,ALLOWED
+Assam,Nagaon,ASNG08,Sub-Divisional Judicial Magistrate,ASNG080028932013,0,2013-06-03,732,2013,G R Case,30,Disposed of
+Assam,Nagaon,ASNG01,District and Sessions Judge,ASNG010025022013,0,2013-10-21,1,2013,Cases Under POCSO Act,10,ACQUITTED
+Assam,Darrang,ASDR04,Chief Judicial Magistrate,ASDR040017302015,0,2015-09-29,1803,2015,G R Case,33,comittal of cases
+Assam,Darrang,ASDR04,Chief Judicial Magistrate,ASDR040023292014,0,2014-07-27,2574,2014,G R Case,33,comittal of cases
+Assam,Darrang,ASDR04,Chief Judicial Magistrate,ASDR040024272014,0,2014-09-18,2038,2014,G R Case,10,ACQUITTED
+Assam,Darrang,ASDR04,Chief Judicial Magistrate,ASDR040015882014,0,2014-08-12,2636,2014,G R Case,33,comittal of cases
+Assam,Darrang,ASDR04,Chief Judicial Magistrate,ASDR040003012016,0,2016-01-07,214,2016,G R Case,11,CONVICTED
+Assam,Nalbari,ASNL01,District and Sessions Judge,ASNL010009472014,0,2014-12-04,16,2014,Sessions ( Spl.),10,ACQUITTED
+Assam,Nalbari,ASNL01,District and Sessions Judge,ASNL010005572013,0,2013-11-06,8,2013,Sessions ( Spl.),10,ACQUITTED
+Assam,Nalbari,ASNL01,District and Sessions Judge,ASNL010009982015,0,2015-01-08,17,2014,Sessions ( Spl.),10,ACQUITTED
+Assam,Nalbari,ASNL03,Chief Judicial Magistrate,ASNL030039172014,0,2014-09-24,1237,2013,G R Case,35,TRANSFERED
+Assam,Kamrup Metro,AS0106,"Chief Judicial Magistrate,Kamrup",AS01060039812015,0,2015-05-27,5481,2015,G R Case,38,Sent to District And Sessions Judge Court
+Assam,Kamrup Metro,AS0106,"Chief Judicial Magistrate,Kamrup",AS01060037652014,0,2014-03-27,3056,2014,G R Case,1,TRANSFER
+Assam,Kamrup Metro,AS0106,"Chief Judicial Magistrate,Kamrup",AS01060000162014,0,2014-07-04,6951,2014,G R Case,40,Sent to Addl. District And Sessions Judge No 3
+Assam,Kamrup Metro,AS0106,"Chief Judicial Magistrate,Kamrup",AS01060058452013,0,2013-08-10,9611,2013,G R Case,28,COMMITTED TO SESSION JUDGE
+Assam,Kamrup Metro,AS0106,"Chief Judicial Magistrate,Kamrup",AS01060007762014,0,2014-01-05,73,2014,G R Case,30,Commited To District And Sessions Judge
+Assam,Kamrup Metro,AS0106,"Chief Judicial Magistrate,Kamrup",AS01060052532014,0,2014-04-13,3657,2014,G R Case,38,Sent to District And Sessions Judge Court
+Assam,Kamrup Metro,AS0106,"Chief Judicial Magistrate,Kamrup",AS01060025862014,0,2014-07-20,7563,2014,G R Case,38,Sent to District And Sessions Judge Court
+Assam,Kamrup Metro,AS0106,"Chief Judicial Magistrate,Kamrup",AS01060016112014,0,2014-03-28,3037,2014,G R Case,28,COMMITTED TO SESSION JUDGE
+Assam,Kamrup Metro,AS0106,"Chief Judicial Magistrate,Kamrup",AS01060062082013,0,2013-06-14,7085,2013,G R Case,30,Commited To District And Sessions Judge
+Assam,Kamrup Metro,AS0106,"Chief Judicial Magistrate,Kamrup",AS01060044182014,0,2014-07-19,7523,2014,G R Case,28,COMMITTED TO SESSION JUDGE
+Assam,Kamrup Metro,AS0106,"Chief Judicial Magistrate,Kamrup",AS01060049032014,0,2014-10-30,11400,2014,G R Case,0,NA
+Assam,Kamrup Metro,AS0106,"Chief Judicial Magistrate,Kamrup",AS01060001222014,0,2014-01-07,9566,2013,G R Case,29,DISPOSED
+Assam,Karimganj,ASKJ04,Chief Judicial Magistrate Court Complex,ASKJ040022842014,0,2014-04-05,621,2014,G R Case,21,Filed
+Assam,Karimganj,ASKJ04,Chief Judicial Magistrate Court Complex,ASKJ040015022014,0,2014-01-27,159,2014,G R Case,10,ACQUITTED
+Assam,Lakhimpur,ASLK03,Chief Judicial Magistrate,ASLK030003772016,0,2016-03-05,487,2014,G R Case ( Warrant ),49,committed to the sessions judge
+Assam,Lakhimpur,ASLK01,District and Sessions Judge,ASLK010007442014,0,2014-10-10,167,2014,Sessions Case,11,CONVICTED
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010012202015,0,2015-10-05,892,2015,Bail 439,30,Disposed of
+Assam,Lakhimpur,ASLK03,Chief Judicial Magistrate,ASLK030017942015,0,2015-07-23,991,2015,G R Case ( Warrant ),49,committed to the sessions judge
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010014072014,0,2014-11-29,856,2014,Bail 439,17,Rejected
+Assam,Lakhimpur,ASLK03,Chief Judicial Magistrate,ASLK030004852016,0,2016-03-19,259,2016,G R Case ( Warrant ),49,committed to the sessions judge
+Assam,Lakhimpur,ASLK03,Chief Judicial Magistrate,ASLK030005812016,0,2016-04-13,836,2016,G R Case ( Warrant ),49,committed to the sessions judge
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010014182015,0,2015-11-16,1058,2015,Bail 439,17,Rejected
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010008262015,0,2015-07-31,602,2015,Bail 439,17,Rejected
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010002652014,0,2014-03-05,139,2014,Bail 438,17,Rejected
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010011102015,0,2015-09-16,809,2015,Bail 439,16,Allowed
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010000902016,0,2016-01-29,61,2016,Bail 438,20,Partly Allowed
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010006302015,0,2015-06-30,463,2015,Bail 439,17,Rejected
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010006152014,0,2014-06-02,381,2014,Bail 439,1,TRANSFERED
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010014462015,0,2015-04-13,6,2015,Spl. POCSO Act.,10,ACQUITTED
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010010812014,0,2014-09-08,666,2014,Bail 438,17,Rejected
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010007462014,0,2014-06-26,452,2014,Bail 439,16,Allowed
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010004962014,0,2014-05-02,291,2014,Bail 439,17,Rejected
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010012842015,0,2015-10-15,944,2015,Bail 439,16,Allowed
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010015272014,0,2014-12-31,926,2014,Bail 438,17,Rejected
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010001372016,0,2016-02-11,99,2016,Bail 439,17,Rejected
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010015832015,0,2015-01-30,17,2016,Spl. POCSO Act.,68,"Sent to Addl. Dist. and Sessions Judge Court, Bajali for Disposal"
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010011972015,0,2015-10-01,878,2015,Bail 439,30,Disposed of
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010000942016,0,2016-01-30,63,2016,Bail 438,17,Rejected
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010015312015,0,2015-12-15,1147,2015,Bail 439,17,Rejected
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010013072015,0,2015-10-17,966,2015,Bail 438,17,Rejected
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010015152015,0,2015-12-08,1131,2015,Bail 438,17,Rejected
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010002502014,0,2014-03-03,130,2014,Bail 438,17,Rejected
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010010262014,0,2014-08-28,634,2014,Bail 439,17,Rejected
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010006852015,0,2015-07-08,507,2015,Bail 439,17,Rejected
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010014932015,0,2015-12-04,1115,2015,Bail 438,17,Rejected
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010014442015,0,2015-08-18,7,2015,Spl. POCSO Act.,10,ACQUITTED
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010012352015,0,2015-10-07,904,2015,Bail 438,17,Rejected
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010003152015,0,2015-03-31,208,2015,Bail 439,17,Rejected
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010002592015,0,2015-03-19,166,2015,Bail 438,16,Allowed
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010004422016,0,2016-05-05,307,2016,Bail 438,17,Rejected
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010002262016,0,2016-03-09,165,2016,Bail 439,17,Rejected
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010010332014,0,2014-08-29,641,2014,Bail 439,30,Disposed of
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010004492016,0,2016-05-06,309,2016,Bail 438,30,Disposed of
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010004892014,0,2014-05-02,297,2014,Bail 438,17,Rejected
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010005362015,0,2015-06-06,396,2015,Bail 439,17,Rejected
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010010172015,0,2015-08-31,738,2015,Bail 438,17,Rejected
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010006312015,0,2015-06-30,464,2015,Bail 439,17,Rejected
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010011472015,0,2015-09-21,836,2015,Bail 439,17,Rejected
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010009322015,0,2015-08-17,680,2015,Bail 438,30,Disposed of
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010002242015,0,2015-03-12,146,2015,Bail 438,20,Partly Allowed
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010009892014,0,2014-08-13,605,2014,Bail 438,17,Rejected
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010010742015,0,2015-09-10,783,2015,Bail 439,17,Rejected
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010003072016,0,2016-03-30,215,2016,Bail 438,17,Rejected
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010012432015,0,2015-10-08,912,2015,Bail 439,17,Rejected
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010004142014,0,2014-04-09,249,2014,Bail 438,17,Rejected
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010014152015,0,2015-11-16,1055,2015,Bail 439,17,Rejected
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010014482015,0,2015-09-14,13,2015,Spl. POCSO Act.,10,ACQUITTED
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010004672016,0,2016-05-11,326,2016,Bail 439,20,Partly Allowed
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010014872014,0,2014-12-19,909,2014,Bail 438,17,Rejected
+Assam,Barpeta,ASBR06,Sub-Divisional Judicial Magistrate (M),ASBR060001622013,0,2013-04-13,233,2013,G R Case,65,Commital of Cases
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010003412016,0,2016-04-08,239,2016,Bail 438,17,Rejected
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010009772015,0,2015-08-24,708,2015,Bail 438,30,Disposed of
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010013152015,0,2015-10-19,974,2015,Bail 439,16,Allowed
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010009942015,0,2015-08-26,722,2015,Bail 438,17,Rejected
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010011892015,0,2015-09-30,870,2015,Bail 438,30,Disposed of
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010012882015,0,2015-10-15,948,2015,Bail 438,17,Rejected
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010006442015,0,2015-07-02,475,2015,Bail 439,16,Allowed
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010005172014,0,2014-05-07,312,2014,Bail 439,17,Rejected
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010004412016,0,2016-05-04,306,2016,Bail 438,16,Allowed
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010000962015,0,2015-02-12,76,2015,Bail 438,17,Rejected
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010003262015,0,2015-04-04,218,2015,Bail 438,17,Rejected
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010007452015,0,2015-07-20,552,2015,Bail 438,17,Rejected
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010001782016,0,2016-02-24,128,2016,Bail 438,17,Rejected
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010005022015,0,2015-05-30,371,2015,Bail 438,16,Allowed
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010014452015,0,2015-09-21,9,2015,Spl. POCSO Act.,10,ACQUITTED
+Assam,Barpeta,ASBR06,Sub-Divisional Judicial Magistrate (M),ASBR060000972015,0,2015-05-24,424,2015,G R Case,65,Commital of Cases
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010014102015,0,2015-11-13,1052,2015,Bail 439,17,Rejected
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010010862015,0,2015-09-11,792,2015,Bail 438,17,Rejected
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010002622015,0,2015-03-20,171,2015,Bail 439,17,Rejected
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010013462015,0,2015-11-02,1001,2015,Bail 438,61,Disposed
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010010072015,0,2015-08-27,735,2015,Bail 438,17,Rejected
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010015822015,0,2015-07-07,15,2016,Spl. POCSO Act.,68,"Sent to Addl. Dist. and Sessions Judge Court, Bajali for Disposal"
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010010922015,0,2015-09-11,798,2015,Bail 439,17,Rejected
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010000142016,0,2016-01-04,8,2016,Bail 439,16,Allowed
+Assam,Jorhat,ASJR03,Chief Judicial Magistrate,ASJR030013932012,0,2012-09-13,1667,2012,G R Case,10,ACQUITTED
+Assam,Jorhat,ASJR03,Chief Judicial Magistrate,ASJR030040142015,0,2015-10-08,3028,2015,G R Case,37,Committal
+Assam,Jorhat,ASJR03,Chief Judicial Magistrate,ASJR030006572014,0,2014-08-09,1807,2014,G R Case,37,Committal
+Assam,Jorhat,ASJR03,Chief Judicial Magistrate,ASJR030041922015,0,2015-11-19,3483,2015,G R Case,37,Committal
+Assam,Jorhat,ASJR01,District and Sessions Judge,ASJR010004082013,0,2013-11-30,11,2014,Special Case,10,ACQUITTED
+Assam,Jorhat,ASJR01,District and Sessions Judge,ASJR010003632015,0,2015-04-10,13,2015,Special Case,10,ACQUITTED
+Assam,Jorhat,ASJR03,Chief Judicial Magistrate,ASJR030003542016,0,2016-02-03,337,2016,G R Case,37,Committal
+Assam,Jorhat,ASJR01,District and Sessions Judge,ASJR010004232013,0,2013-08-08,88,2013,Sessions Case Type 2,30,Disposed of
+Assam,Jorhat,ASJR01,District and Sessions Judge,ASJR010006112015,0,2015-06-26,28,2015,Special Case,11,CONVICTED
+Assam,Jorhat,ASJR01,District and Sessions Judge,ASJR010004092013,0,2013-12-26,14,2013,Special Case,10,ACQUITTED
+Assam,Jorhat,ASJR01,District and Sessions Judge,ASJR010002362014,0,2014-04-29,17,2014,Special Case,11,CONVICTED
+Assam,Jorhat,ASJR03,Chief Judicial Magistrate,ASJR030041272015,0,2015-10-05,2986,2015,G R Case,2,OTHERWISE
+Assam,Goalpara,ASGA01,District and Sessions Judge,ASGA010006792014,0,2014-08-30,14,2015,Special( P and C),0,NA
+Assam,Goalpara,ASGA01,District and Sessions Judge,ASGA010002612015,0,2015-05-02,4,2015,Special( P and C),10,ACQUITTED
+Assam,Goalpara,ASGA01,District and Sessions Judge,ASGA010002332015,0,2015-04-09,3,2015,Special( P and C),10,ACQUITTED
+Assam,Dhubri,ASDU01,District and Sessions Judge,ASDU010001442016,0,2016-04-06,8,2016,Special ( Pocso Act ),10,ACQUITTED
+Assam,Dhubri,ASDU01,District and Sessions Judge,ASDU010005272015,0,2015-10-13,36,2015,Special,30,Disposed of
+Assam,Dhubri,ASDU01,District and Sessions Judge,ASDU010000562016,0,2016-02-06,3,2016,Special,10,ACQUITTED
+Assam,Dhubri,ASDU01,District and Sessions Judge,ASDU010004972015,0,2015-09-24,30,2015,Special,10,ACQUITTED
+Assam,Dhubri,ASDU01,District and Sessions Judge,ASDU010001952016,0,2016-05-09,14,2016,Special,11,CONVICTED
+Assam,Dhubri,ASDU01,District and Sessions Judge,ASDU010002732015,0,2015-06-06,14,2015,Special ( Pocso Act ),10,ACQUITTED
+Assam,Dhubri,ASDU01,District and Sessions Judge,ASDU010000162016,0,2016-01-18,1,2016,Special,10,ACQUITTED
+Assam,Dhubri,ASDU01,District and Sessions Judge,ASDU010004092015,0,2015-08-12,22,2015,Special,14,DISCHARGED
+Assam,Dhubri,ASDU01,District and Sessions Judge,ASDU010005202015,0,2015-10-12,32,2015,Special,10,ACQUITTED
+Assam,Dhubri,ASDU01,District and Sessions Judge,ASDU010001482016,0,2016-04-07,10,2016,Special ( Pocso Act ),10,ACQUITTED
+Assam,Dhubri,ASDU01,District and Sessions Judge,ASDU010005192015,0,2015-10-12,31,2015,Special,11,CONVICTED
+Assam,Dhubri,ASDU01,District and Sessions Judge,ASDU010001472016,0,2016-04-07,9,2016,Special ( Pocso Act ),10,ACQUITTED
+Assam,Dhubri,ASDU01,District and Sessions Judge,ASDU010005962015,0,2015-12-07,45,2015,Special,11,CONVICTED
+Assam,Dhubri,ASDU01,District and Sessions Judge,ASDU010003012015,0,2015-06-18,17,2015,Special ( Pocso Act ),10,ACQUITTED
+Assam,Dhubri,ASDU01,District and Sessions Judge,ASDU010002602015,12,2015-05-30,12,2015,Special ( Pocso Act ),10,ACQUITTED
+Assam,Dhubri,ASDU01,District and Sessions Judge,ASDU010005252015,0,2015-10-13,34,2015,Special,10,ACQUITTED
+Assam,Dhubri,ASDU01,District and Sessions Judge,ASDU010002332015,0,2015-05-18,7,2015,Special ( Pocso Act ),11,CONVICTED
+Assam,Dhubri,ASDU01,District and Sessions Judge,ASDU010000572016,0,2016-02-06,4,2016,Special,10,ACQUITTED
+Assam,Dhubri,ASDU01,District and Sessions Judge,ASDU010005952015,0,2015-12-07,44,2015,Special,10,ACQUITTED
+Assam,Dhubri,ASDU01,District and Sessions Judge,ASDU010000582016,0,2016-02-06,5,2016,Special,10,ACQUITTED
+Assam,Sonitpur,ASSN03,Chief Judicial Magistrate Sonitpur Tezpur,ASSN030076062015,0,2015-03-07,473,2015,GR Case,56,Commital
+Assam,Sonitpur,ASSN03,Chief Judicial Magistrate Sonitpur Tezpur,ASSN030082722015,0,2015-08-11,2081,2015,GR Case,1,TRANSFER
+Assam,Sonitpur,ASSN03,Chief Judicial Magistrate Sonitpur Tezpur,ASSN030041482014,0,2014-03-18,605,2014,GR Case,56,Commital
+Assam,Sonitpur,ASSN07,Addl District and Sessions Judge,ASSN070002572014,0,2014-11-03,10,2014,Spl. POCSO,0,NA
+Assam,Sonitpur,ASSN03,Chief Judicial Magistrate Sonitpur Tezpur,ASSN030075772015,0,2015-05-29,1230,2015,GR Case,56,Commital
+Assam,Sonitpur,ASSN03,Chief Judicial Magistrate Sonitpur Tezpur,ASSN030040442013,0,2013-01-10,2870,2012,GR Case,1,TRANSFER
+Assam,Sonitpur,ASSN03,Chief Judicial Magistrate Sonitpur Tezpur,ASSN030021492015,0,2015-06-04,1291,2014,GR Case,58,CR Sent to Sessions on Requisition
+Assam,Sonitpur,ASSN07,Addl District and Sessions Judge,ASSN070002622014,0,2014-07-17,5,2014,Spl. POCSO,10,ACQUITTED
+Assam,Sonitpur,ASSN03,Chief Judicial Magistrate Sonitpur Tezpur,ASSN030013252015,0,2015-01-19,142,2015,GR Case,56,Commital
+Assam,Sonitpur,ASSN03,Chief Judicial Magistrate Sonitpur Tezpur,ASSN030034802013,0,2013-09-09,2287,2013,GR Case,1,TRANSFER
+Assam,Kokrajhar,ASKK01,District and Sessions Judge,ASKK010003622014,0,2014-11-26,3,2014,Sessions  Spl,35,Judgement
+Assam,Kokrajhar,ASKK01,District and Sessions Judge,ASKK010003632014,0,2014-09-09,1,2014,Sessions  Spl,13,ABATED
+Assam,Kokrajhar,ASKK01,District and Sessions Judge,ASKK010002732014,0,2014-11-01,116,2014,Sessions Case,10,ACQUITTED
+Assam,Kokrajhar,ASKK02,Civil Judge Cum Asstt. Sessions Judge,ASKK020000402015,0,2015-05-27,4,2015,Sessions Spl.,1,TRANSFER
+Assam,Kokrajhar,ASKK01,District and Sessions Judge,ASKK010000362015,0,2015-01-27,1,2015,Sessions  Spl,10,ACQUITTED
+Assam,Kokrajhar,ASKK01,District and Sessions Judge,ASKK010000372015,0,2015-01-20,2,2015,Sessions  Spl,10,ACQUITTED
+Assam,Cachar,ASCC03,Chief Judicial Magistrate Court,ASCC030019202015,0,2015-07-17,2654,2015,G R Case,89,Commit.
+Assam,Cachar,ASCC01,District And Sessions Judge Court,ASCC010016582015,0,2015-10-13,18,2015,Spl (pocso),11,CONVICTED
+Assam,Cachar,ASCC03,Chief Judicial Magistrate Court,ASCC030016842014,0,2014-09-02,2396,2013,G R Case,1,TRANSFERED TO LOWER COURT.
+Assam,Cachar,ASCC03,Chief Judicial Magistrate Court,ASCC030013332015,0,2015-06-02,1032,2015,G R Case,1,TRANSFERED TO LOWER COURT.
+Assam,Cachar,ASCC01,District And Sessions Judge Court,ASCC010015922015,0,2015-12-07,24,2015,Spl (pocso),95,Declared Juvenile.
+Assam,Cachar,ASCC01,District And Sessions Judge Court,ASCC010015032015,0,2015-11-17,20,2015,Spl (pocso),11,CONVICTED
+Assam,Cachar,ASCC01,District And Sessions Judge Court,ASCC010015602015,0,2015-11-30,22,2015,Spl (pocso),10,ACQUITTED
+Assam,Cachar,ASCC01,District And Sessions Judge Court,ASCC010010582015,0,2015-08-18,15,2015,Spl (pocso),11,CONVICTED
+Assam,Cachar,ASCC03,Chief Judicial Magistrate Court,ASCC030022722013,0,2013-10-04,3924,2013,G R Case,21,Filed
+Assam,Cachar,ASCC01,District And Sessions Judge Court,ASCC010015762015,0,2015-12-04,23,2015,Spl (pocso),0,NA
+Assam,Cachar,ASCC03,Chief Judicial Magistrate Court,ASCC030022572013,0,2013-08-01,2959,2013,G R Case,93,Dormant Case.
+Assam,Cachar,ASCC01,District And Sessions Judge Court,ASCC010004792015,0,2015-04-21,6,2015,Spl (pocso),10,ACQUITTED
+Assam,Cachar,ASCC01,District And Sessions Judge Court,ASCC010005682016,0,2016-05-09,6,2016,Spl (pocso),94,Converted
+Assam,Cachar,ASCC03,Chief Judicial Magistrate Court,ASCC030027152015,0,2015-09-24,4091,2012,G R Case,89,Commit.
+Assam,Cachar,ASCC01,District And Sessions Judge Court,ASCC010014552015,0,2015-11-06,19,2015,Spl (pocso),10,ACQUITTED
+Assam,Cachar,ASCC01,District And Sessions Judge Court,ASCC010015272015,0,2015-11-20,21,2015,Spl (pocso),13,ABATED
+Assam,Cachar,ASCC03,Chief Judicial Magistrate Court,ASCC030018382014,0,2014-09-15,4167,2014,G R Case,1,TRANSFERED TO LOWER COURT.
+Assam,Cachar,ASCC04,Munsiff Court,ASCC040005932015,0,2015-08-17,4169,2014,G R Case,1,TRANSFERED
+Assam,Cachar,ASCC01,District And Sessions Judge Court,ASCC010016832015,0,2015-12-22,25,2015,Spl (pocso),10,ACQUITTED
+Assam,Cachar,ASCC01,District And Sessions Judge Court,ASCC010012452015,0,2015-09-17,17,2015,Spl (pocso),10,ACQUITTED
+Assam,Tinsukia,ASTN01,District and Sessions Judge,ASTN010010312014,0,2014-08-06,567,2014,Bail 439,17,REJECTED
+Assam,Tinsukia,ASTN04,Chief Judicial Magistrate,ASTN040007742012,0,2012-10-01,1281,2012,G R Case,42,COMMITTED TO SESSIONS COURT
+Assam,Tinsukia,ASTN04,Chief Judicial Magistrate,ASTN040009282013,0,2013-12-06,2088,2013,G R Case,42,COMMITTED TO SESSIONS COURT
+Assam,Tinsukia,ASTN06,SDJM,ASTN060002602015,0,2015-07-04,521,2015,G R Case,1,TRANSFER
+Assam,Tinsukia,ASTN01,District and Sessions Judge,ASTN010006072014,0,2014-05-13,323,2014,Bail 438,17,REJECTED
+Assam,Tinsukia,ASTN01,District and Sessions Judge,ASTN010011442015,0,2015-11-02,35,2015,PCSO Act 2012,10,ACQUITTED
+Assam,Tinsukia,ASTN06,SDJM,ASTN060001852015,0,2015-05-10,366,2015,G R Case,33,COMMITTED TO HIGHER COURT
+Assam,Tinsukia,ASTN01,District and Sessions Judge,ASTN010010242014,0,2014-08-04,563,2014,Bail 439,16,ALLOWED/GRANTED
+Assam,Tinsukia,ASTN06,SDJM,ASTN060000672014,0,2014-02-23,119,2014,G R Case,33,COMMITTED TO HIGHER COURT
+Assam,Tinsukia,ASTN01,District and Sessions Judge,ASTN010012422014,0,2014-10-08,700,2014,Bail 439,16,ALLOWED/GRANTED
+Assam,Tinsukia,ASTN06,SDJM,ASTN060006012014,0,2014-09-01,643,2014,G R Case,1,TRANSFER
+Assam,Tinsukia,ASTN01,District and Sessions Judge,ASTN010013132014,0,2014-11-14,799,2014,Bail 439,16,ALLOWED/GRANTED
+Assam,Tinsukia,ASTN04,Chief Judicial Magistrate,ASTN040009652013,0,2013-11-05,1879,2013,G R Case,42,COMMITTED TO SESSIONS COURT
+Assam,Tinsukia,ASTN04,Chief Judicial Magistrate,ASTN040001982014,0,2014-01-03,12,2014,G R Case,42,COMMITTED TO SESSIONS COURT
+Assam,Tinsukia,ASTN06,SDJM,ASTN060003682015,0,2015-08-10,629,2015,G R Case,33,COMMITTED TO HIGHER COURT
+Assam,Tinsukia,ASTN06,SDJM,ASTN060001332014,0,2014-03-03,138,2014,G R Case,33,COMMITTED TO HIGHER COURT
+Assam,Tinsukia,ASTN01,District and Sessions Judge,ASTN010004912014,0,2014-04-09,96,2014,Sessions Case,21,FILED
+Assam,Tinsukia,ASTN04,Chief Judicial Magistrate,ASTN040010582013,0,2013-10-19,1768,2013,G R Case,42,COMMITTED TO SESSIONS COURT
+Assam,Tinsukia,ASTN01,District and Sessions Judge,ASTN010009082014,0,2014-07-03,476,2014,Bail 438,3,DISMISSED
+Assam,Tinsukia,ASTN04,Chief Judicial Magistrate,ASTN040002432015,0,2015-01-02,9,2015,G R Case,42,COMMITTED TO SESSIONS COURT
+Assam,Tinsukia,ASTN04,Chief Judicial Magistrate,ASTN040010282013,0,2013-07-08,1053,2013,G R Case,42,COMMITTED TO SESSIONS COURT
+Assam,Tinsukia,ASTN01,District and Sessions Judge,ASTN010011652015,0,2015-11-09,37,2015,PCSO Act 2012,11,CONVICTED
+Assam,Tinsukia,ASTN04,Chief Judicial Magistrate,ASTN040009672013,0,2013-11-21,1998,2013,G R Case,42,COMMITTED TO SESSIONS COURT
+Assam,Tinsukia,ASTN04,Chief Judicial Magistrate,ASTN040009002013,0,2013-11-25,2015,2013,G R Case,42,COMMITTED TO SESSIONS COURT
+Assam,Tinsukia,ASTN01,District and Sessions Judge,ASTN010011572015,0,2015-11-06,36,2015,PCSO Act 2012,1,TRANSFER
+Assam,Tinsukia,ASTN06,SDJM,ASTN060006382014,0,2014-10-21,785,2014,G R Case,1,TRANSFER
+Assam,Tinsukia,ASTN06,SDJM,ASTN060001782014,0,2014-06-06,283,2014,G R Case,33,COMMITTED TO HIGHER COURT
+Assam,Tinsukia,ASTN04,Chief Judicial Magistrate,ASTN040007732013,0,2013-08-21,1342,2013,G R Case,42,COMMITTED TO SESSIONS COURT
+Assam,Tinsukia,ASTN04,Chief Judicial Magistrate,ASTN040009422013,0,2013-08-02,1211,2013,G R Case,42,COMMITTED TO SESSIONS COURT
+Assam,Tinsukia,ASTN06,SDJM,ASTN060004442014,0,2014-03-10,150,2014,G R Case,33,COMMITTED TO HIGHER COURT
+Assam,Tinsukia,ASTN04,Chief Judicial Magistrate,ASTN040002632014,0,2014-03-02,365,2014,G R Case,42,COMMITTED TO SESSIONS COURT
+Assam,Tinsukia,ASTN06,SDJM,ASTN060005912013,0,2013-10-29,785,2013,G R Case,15,COMPROMISE
+Assam,Tinsukia,ASTN04,Chief Judicial Magistrate,ASTN040007912013,0,2013-11-11,1915,2013,G R Case,42,COMMITTED TO SESSIONS COURT
+Assam,Tinsukia,ASTN04,Chief Judicial Magistrate,ASTN040009522013,0,2013-06-19,959,2013,G R Case,21,FILED
+Assam,Tinsukia,ASTN06,SDJM,ASTN060000502014,0,2014-02-12,94,2014,G R Case,33,COMMITTED TO HIGHER COURT
+Assam,Tinsukia,ASTN06,SDJM,ASTN060006182013,0,2013-10-16,745,2013,G R Case,33,COMMITTED TO HIGHER COURT
+Assam,Tinsukia,ASTN04,Chief Judicial Magistrate,ASTN040000252014,0,2014-05-08,867,2014,G R Case,42,COMMITTED TO SESSIONS COURT
+Assam,Tinsukia,ASTN01,District and Sessions Judge,ASTN010003612015,0,2015-03-07,3,2015,PCSO Act 2012,10,ACQUITTED
+Assam,Tinsukia,ASTN06,SDJM,ASTN060003272014,0,2014-09-01,562,2013,G R Case,1,TRANSFER
+Assam,Tinsukia,ASTN06,SDJM,ASTN060002002014,0,2014-06-10,195,2014,G R Case,33,COMMITTED TO HIGHER COURT
+Assam,Tinsukia,ASTN01,District and Sessions Judge,ASTN010008282014,0,2014-06-20,168,2014,Sessions Case,11,CONVICTED
+Assam,Dibrugarh,ASDB01,District and Sessions Judge,ASDB010002722014,0,2014-01-16,2,2014,Pcso Act,11,CONVICTED
+Assam,Dhemaji,AS2201,District and Sessions Judge,AS22010000312016,0,2016-01-11,10,2016,Sessions Case,10,ACQUITTED
+Assam,Dhemaji,AS2201,District and Sessions Judge,AS22010000292015,0,2015-01-22,5,2015,Sessions Case,11,CONVICTED
+Assam,Dhemaji,AS2201,District and Sessions Judge,AS22010002112015,0,2015-07-06,95,2015,Bail 439,30,Disposed of
+Assam,Dhemaji,AS2201,District and Sessions Judge,AS22010004512015,0,2015-12-11,129,2015,Sessions Case,11,CONVICTED
+Assam,Dhemaji,AS2201,District and Sessions Judge,AS22010000112015,0,2015-03-20,26,2015,Sessions Case,0,NA
+Assam,Dhemaji,AS2201,District and Sessions Judge,AS22010002882015,0,2015-08-01,86,2015,Sessions Case,21,Filed
+Assam,Dhemaji,AS2201,District and Sessions Judge,AS22010000382015,0,2015-02-07,5,2015,Bail 438,17,Rejected
+Assam,Dhemaji,AS2201,District and Sessions Judge,AS22010000552014,0,2014-01-28,2,2014,Sessions ( Spl.),11,CONVICTED
+Assam,Dhemaji,AS2201,District and Sessions Judge,AS22010003422015,0,2015-09-17,171,2015,Bail 438,30,Disposed of
+Assam,Dhemaji,AS2201,District and Sessions Judge,AS22010000062015,0,2015-03-03,18,2015,Sessions Case,10,ACQUITTED
+Assam,Dhemaji,AS2201,District and Sessions Judge,AS22010004072015,0,2015-11-02,206,2015,Bail 438,30,Disposed of
+Assam,Dhemaji,AS2201,District and Sessions Judge,AS22010001622013,0,2013-08-26,3,2013,Sessions ( Spl.),10,ACQUITTED
+Assam,Dhemaji,AS2201,District and Sessions Judge,AS22010004432015,0,2015-07-09,1,2015,Sessions ( Spl.),11,CONVICTED
+Assam,Dhemaji,AS2201,District and Sessions Judge,AS22010000052015,0,2015-03-04,20,2015,Sessions Case,0,NA
+Assam,Dhemaji,AS2201,District and Sessions Judge,AS22010003232014,0,2014-11-12,95,2014,Sessions Case,11,CONVICTED
+Assam,Dhemaji,AS2201,District and Sessions Judge,AS22010004292015,0,2015-11-26,222,2015,Bail 438,30,Disposed of
+Assam,Dhemaji,AS2201,District and Sessions Judge,AS22010000062016,0,2016-01-02,1,2016,Bail 438,30,Disposed of
+Assam,Dhemaji,AS2201,District and Sessions Judge,AS22010001612013,0,2013-12-19,5,2013,Sessions ( Spl.),10,ACQUITTED
+Assam,Dhemaji,AS2201,District and Sessions Judge,AS22010001002015,0,2015-04-06,31,2015,Sessions Case,22,Remand back for trial
+Assam,Dhemaji,AS2201,District and Sessions Judge,AS22010004382015,0,2015-11-02,117,2015,Sessions Case,11,CONVICTED
+Assam,Dhemaji,AS2201,District and Sessions Judge,AS22010001972014,0,2014-07-15,62,2014,Sessions Case,10,ACQUITTED
+Assam,Dhemaji,AS2201,District and Sessions Judge,AS22010001892015,0,2015-06-29,69,2015,Sessions Case,10,ACQUITTED
+Assam,Dhemaji,AS2201,District and Sessions Judge,AS22010000032016,0,2016-01-04,6,2016,Bail 438,30,Disposed of
+Assam,Dhemaji,AS2201,District and Sessions Judge,AS22010001602013,0,2013-10-24,4,2013,Sessions ( Spl.),10,ACQUITTED
+Assam,Dhemaji,AS2201,District and Sessions Judge,AS22010004542015,0,2015-12-15,131,2015,Sessions Case,11,CONVICTED
+Assam,Dhemaji,AS2201,District and Sessions Judge,AS22010003112014,0,2014-09-30,5,2014,Sessions ( Spl.),11,CONVICTED
+Assam,Dhemaji,AS2201,District and Sessions Judge,AS22010000562014,0,2014-01-02,1,2014,Sessions ( Spl.),10,ACQUITTED

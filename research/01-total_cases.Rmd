@@ -34,6 +34,12 @@ sum(case when disp_nature != '0' then 1 else 0 end) as disposed_cases
 from case_details group by state_name, district_name, fil_year, reg_year
 ```
 
+There are cases with filing year as 0 in Assam and Haryana. Generating a set of all such cases for a deep dive
+
+```{sql connection=con, output.var='filing_year_0'}
+select state_name, district_name, est_code, court_name, cino, fil_no,date_of_filing, reg_no, reg_year, type_name, disp_nature, disp_name from case_details where fil_year = '0'
+```
+
 ## Disposal Nature
 ```{sql connection=con, output.var='nature_of_disposal'}
 select state_name, district_name, disp_name, disp_nature, fil_year, reg_year, EXTRACT(year from date_of_decision) as decision_year, count(cino) as total_cases from case_details where disp_nature != '0' group by state_name, district_name, disp_name, disp_nature, fil_year, reg_year, decision_year
@@ -124,4 +130,7 @@ write_csv(yearly_cases_pendency_ratio,"datasets/yearly_cases_pendency_ratio.csv"
 write_csv(case_type_patterns,"datasets/case_type_patterns.csv")
 write_csv(case_disposal_patterns_overall,"datasets/case_disposal_patterns_overall.csv")
 write_csv(case_disposal_patterns_by_district,"datasets/case_disposal_patterns_by_district.csv")
+
+# On 02/06/20
+write_csv(filing_year_0,"datasets/cases_filing_year_0.csv")
 ```
