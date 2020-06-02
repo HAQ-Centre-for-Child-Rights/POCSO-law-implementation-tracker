@@ -1,0 +1,26 @@
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+	echo = FALSE,
+	eval=FALSE,
+	message = FALSE,
+	warning = FALSE
+)
+
+source("../scripts/source_files.R")
+
+case_detail_cols <- c("district_code", "district_name", "state_code", "state_name", "complex_code", "court_name", "est_code", "cino", "case_no", "fil_no", "fil_year", "reg_no", "reg_year", "type_name", "date_of_decision", "date_of_filing", "dt_regis", "disp_name", "disp_nature")
+```
+
+
+```{r case_numbers_disposal_patterns}
+case_numbers_disposal <- dbxSelect(
+  con,
+  glue('select {paste0(case_detail_cols,collapse = ",")} from case_details where disp_name IN ({paste0("\\\'",case_disposal_patterns_case_age,"\\\'",collapse = ",")})')
+)
+```
+
+```{r Writing Files}
+# On 02/06/20
+write_csv(case_numbers_disposal,"datasets/case_patterns/case_disposal_patterns.csv")
+```
+

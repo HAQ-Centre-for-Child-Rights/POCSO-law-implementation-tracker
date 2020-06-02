@@ -3,3 +3,4 @@
 source("../scripts/libraries.R")
 source("../scripts/connect_db.R")
 source("../scripts/functions.R")
+source("../scripts/patterns_for_case_ids.R")
