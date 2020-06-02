@@ -1,0 +1,6 @@
+state_name,district_name,est_code,court_name,cino,fil_no,date_of_filing,reg_no,reg_year,type_name,disp_nature,disp_name
+Delhi,North,DLNT01,"District and Sessions Judge, North, RHC",DLNT010000682009,31367,2009-11-28,58290,2016,SC,0,NA
+Delhi,North West,DLNW04,"Principal Judge Family Court, North-West, RHC",DLNW040000012008,65331,2008-10-03,55927,2016,M.,11,SINE-DIE
+Delhi,North West,DLNW04,"Principal Judge Family Court, North-West, RHC",DLNW040000022009,23514,2009-08-31,55931,2016,M.,0,NA
+Assam,Kamrup Metro,AS0106,"Chief Judicial Magistrate,Kamrup",AS01060011162004,1200005,2004-01-09,5,2004,Complaint Case  C.R.,10,ACQUITTED
+Assam,Barpeta,ASBR01,District and Sessions Judge,ASBR010002452010,99142,2019-08-16,142,2019,Spl. POCSO Act.,0,NA

@@ -40,6 +40,11 @@ There are cases with filing year as 0 in Assam and Haryana. Generating a set of 
 select state_name, district_name, est_code, court_name, cino, fil_no,date_of_filing, reg_no, reg_year, type_name, disp_nature, disp_name from case_details where fil_year = '0'
 ```
 
+For some cases, the filing year is less than 2012. What are these cases ?
+```{sql connection=con, output.var='filing_year_below_2012'}
+select state_name, district_name, est_code, court_name, cino, fil_no,date_of_filing, reg_no, reg_year, type_name, disp_nature, disp_name from case_details where fil_year IN ('2004','2008','2009','2010')
+```
+
 ## Disposal Nature
 ```{sql connection=con, output.var='nature_of_disposal'}
 select state_name, district_name, disp_name, disp_nature, fil_year, reg_year, EXTRACT(year from date_of_decision) as decision_year, count(cino) as total_cases from case_details where disp_nature != '0' group by state_name, district_name, disp_name, disp_nature, fil_year, reg_year, decision_year
@@ -133,4 +138,5 @@ write_csv(case_disposal_patterns_by_district,"datasets/case_disposal_patterns_by
 
 # On 02/06/20
 write_csv(filing_year_0,"datasets/cases_filing_year_0.csv")
+write_csv(filing_year_below_2012,"datasets/cases_filing_year_below_2012.csv")
 ```
