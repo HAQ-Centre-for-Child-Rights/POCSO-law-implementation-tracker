@@ -11,4 +11,4 @@ description: "Research and Analysis on the POCSO law"
 
 # Index
 
-[Questions for Data computation and Analysis](https://drive.google.com/file/d/140lP2R8HTmOgSa3uWgj9fQgvl4u67rnf/view)
+[Questions for Data computation and Analysis](https://bit.ly/pocso-research)

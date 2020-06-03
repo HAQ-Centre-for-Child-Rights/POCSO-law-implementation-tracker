@@ -1,0 +1,17 @@
+---
+title: "Analysing Act and Section patterns in POCSO (2012) cases"
+author: "CivicDataLab"
+output: 
+  html_document:
+    df_print: default
+    number_sections: no
+    self_contained: no
+    toc: yes
+    toc_float:
+      collapsed: no
+---
+
+<br /> Last updated: `r format(Sys.time(), '%d %B, %Y')`
+
+
+
