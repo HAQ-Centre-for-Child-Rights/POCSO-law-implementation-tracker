@@ -150,6 +150,19 @@ f_pending_trial <- sum(yearly_cases_pendency_ratio$total_cases)
 
 number_of_cases_df <- data.frame('file_name'=c('year_wise_cases','year_wise_cases_pending','year_wise_disposed','nature_of_disposal', 'case_age','cases_pending_trial_yearly','cases_removed_case_age'), number_of_cases = c(f_year_wise_cases, f_year_wise_cases_pending, f_year_wise_cases_disposed, f_nature_of_disposal, f_case_age,f_pending_trial,f_cases_removed))
 ```
+```{r state-wise-case-list}
+state_list <- dbxSelect(con, 'select distinct state_name from case_details') %>% unlist(use.names = FALSE)
+
+fetch_state_cases <- function(state_name){
+  state_cases <- dbxSelect(con, glue("select * from case_details where state_name = '{state_name}'"))
+  print(glue("Total cases in {state_name} -> {nrow(state_cases)}"))
+  write_csv(state_cases, glue("datasets/state_wise_cases/cases_{state_name}.csv"),append = FALSE)
+  return(nrow(state_cases))
+} 
+
+lapply(state_list, fetch_state_cases)
+```
+
 
 ```{r Writing Files}
 write_csv(year_wise_cases,"datasets/year_wise_cases.csv")
