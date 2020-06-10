@@ -13,5 +13,6 @@
 
 ### Partners
 
-[<img src="assets/img/CDL_Primary_Logo.png" width="200" />](https://civicdatalab.in/) 
-[<img src="assets/img/haq_logo.png" width="200" />](https://haqcrc.org/)
+* [HAQ - Centre for Child Rights](https://haqcrc.org/)
+* [CivicDataLab](https://civicdatalab.in/)
+* [Agami](https://agami.in/)
