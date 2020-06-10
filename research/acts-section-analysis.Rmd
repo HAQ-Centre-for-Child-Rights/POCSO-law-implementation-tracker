@@ -1,0 +1,76 @@
+---
+title: "Combination of Acts & Section"
+author: "CivicDataLab"
+date: "10/06/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+	echo = FALSE,
+	eval=FALSE,
+	message = FALSE,
+	warning = FALSE
+)
+source("../scripts/source_files.R")
+```
+
+
+```{sql connection=con, output.var='acts_dataset'}
+select * from acts_subset
+```
+
+```{sql connection=con, output.var='case_act_ids'}
+select * from case_acts where act IN (select distinct id from acts_subset)
+```
+
+
+```{r processing acts dataset}
+acts_dataset$title <- paste(str_squish(acts_dataset$act_name_std), str_squish(acts_dataset$section_name_std)) 
+
+revised_acts_dataset <- data.frame('title'=unique(acts_dataset$title))
+revised_acts_dataset$revised_id <- 1:nrow(revised_acts_dataset)
+
+revised_acts_dataset$revised_id[revised_acts_dataset$title == 'IPC 376IPC'] <-
+  revised_acts_dataset$revised_id[revised_acts_dataset$title == 'IPC 376']
+revised_acts_dataset$revised_id[revised_acts_dataset$title == 'IPC 506IPC'] <-
+  revised_acts_dataset$revised_id[revised_acts_dataset$title == 'IPC 506']
+
+acts_dataset_revised <- left_join(acts_dataset, revised_acts_dataset, by='title')
+```
+
+```{r add new id to case_act_ids}
+case_act_ids_revised <- left_join(case_act_ids, acts_dataset_revised[,c('id','revised_id')], by=c('act'='id'))
+```
+
+
+
+```{r act-wise-cases}
+act_ids <- unique(case_act_ids_revised$revised_id)
+act_case_df <- data.frame(id=c(), case_ids=c())
+for(i in 1:length(act_ids)){
+  act_cases <- data.frame(id=i, case_ids=unique(case_act_ids_revised$cino[case_act_ids_revised$revised_id %in% act_ids[[i]]]) %>% paste0(collapse = "__"))
+  act_case_df <- bind_rows(act_case_df, act_cases)
+}
+
+all_patterns <- c()
+for(i in 1:nrow(act_case_df)){
+  glue("Fetching cases for Act Number {i}") %>% print()
+  case_ids <- strsplit(act_case_df$case_ids[[i]], split = '__') %>% unlist()
+  for(j in 1:length(case_ids)){
+    caseidtosearch <- case_ids[[j]]
+    pattern_found <- act_case_df$id[grepl(pattern =  caseidtosearch, x = act_case_df$case_ids)] %>% sort() %>% paste0(collapse = '__')
+  all_patterns <- c(pattern_found, all_patterns)
+  }
+  glue('Total patterns found till now - {length(unique(all_patterns))}') %>% print()
+}
+
+```
+
+
+```{r}
+all_patterns_df <- table(all_patterns) %>% data.frame()
+write.csv(all_patterns_df, "datasets/act_section_patterns.csv")
+```
+
+
