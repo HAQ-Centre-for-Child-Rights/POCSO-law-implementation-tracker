@@ -1,0 +1,69 @@
+# Aadd case flag in DB 
+
+```{r setup}
+knitr::opts_chunk$set(
+	echo = FALSE,
+	eval=FALSE,
+	message = FALSE,
+	warning = FALSE
+)
+source("../scripts/source_files.R")
+```
+
+Add new column `case_flag` in the case_details table to flag cases as 1 (valid) and 0 (invalid)
+```{sql connection=con}
+ALTER table case_details ADD case_flag varchar;
+```
+
+Add new column `case_flag_reason` in the case_details table to add details on flagging a case as 0/1
+```{sql connection=con}
+ALTER table case_details ADD case_flag_reason varchar;
+```
+
+How we identified valid case numbers for the analysis - 
+
+This was an exercise undertaken by the researchers at HAQ. They filtered cases based on the type of case. For the purpose of this exercise (Phase 1), we're only selecting Sessions cases (Cases that had a trial or are ongoing a trial in the district courts)
+
+```{sql connection=con, output.var=all_cino}
+select cino from case_details
+```
+
+
+```{r import valid case numbers}
+valid_cino <- read_csv("datasets/state_wise_cases/valid_cino.csv")
+valid_cino$case_flag <- 1
+valid_cino$case_flag_reason <- 'Valid case'
+```
+
+```{r join all case numbers to form one df}
+all_cino <- left_join(all_cino, valid_cino, by='cino')
+all_cino$case_flag[is.na(all_cino$case_flag)] <- 0
+all_cino$case_flag_reason[is.na(all_cino$case_flag_reason)] <- 'Invalid case type'
+```
+
+We are not considering cases heard by CJM and which also fall under the CJM's court (Ref Col. F) in the overall case count as they are not a POCSO trial conducted by a Sessions Court.  
+
+```{r}
+invalid_court_cases <- c('ASKR030001252018', 'ASCC030002502013', 'ASCC030002512013')
+all_cino$case_flag[all_cino$cino %in% invalid_court_cases] <- 0
+all_cino$case_flag_reason[all_cino$cino %in% invalid_court_cases] <- 'Cases heard by CJM' 
+```
+
+Update the `case_details` table with `case_flag` and `case_flag_reason` columns
+
+```{r}
+dbxUpdate(
+  conn = con,
+  table = 'case_details',
+  records = all_cino,
+  where_cols = c('cino')
+)
+```
+
+```{sql connection=con}
+
+select case_flag_reason, case_flag, count(cino) from case_details group by case_flag_reason, case_flag
+
+```
+
+
