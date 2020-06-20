@@ -8,7 +8,7 @@ knitr::opts_chunk$set(
 
 source("../scripts/source_files.R")
 
-case_detail_cols <- c("district_code", "district_name", "state_code", "state_name", "complex_code", "court_name", "est_code", "cino", "case_no", "fil_no", "fil_year", "reg_no", "reg_year", "type_name", "date_of_decision", "date_of_filing", "dt_regis", "disp_name", "disp_nature")
+case_detail_cols <- c("district_code", "district_name", "state_code", "state_name", "complex_code", "court_name", "est_code", "cino", "case_no", "fil_no", "fil_year", "reg_no", "reg_year_date", "updated_type_name", "date_of_decision", "date_of_filing", "dt_regis", "updated_disp_name", "disp_nature")
 ```
 
 

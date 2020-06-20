@@ -15,6 +15,11 @@ SELECT table_name FROM information_schema.tables
                  WHERE table_schema='public'
 ```
 
+# Master file of cases for all three states
+```{sql connection=con, output.var='master_case_file'}
+select * from case_details where case_flag = '1'
+```
+
 
 ## Year on Year
 ```{sql connection=con, output.var='year_wise_cases'}
@@ -172,4 +177,7 @@ write_csv(number_of_cases_df,"datasets/file_wise_total_cases.csv")
 
 # On 03/06/20
 write_csv(year_wise_FIR,"datasets/year_wise_FIR.csv")
+
+# On 20/06/20
+write_csv(master_case_file, "datasets/state_wise_cases/master_file_of_cases.csv")
 ```
