@@ -95,12 +95,6 @@ select cino, fir_year, case_flag, case_flag_reason from case_details
 ```{r}
 valid_fir_year_values <- c(
   '0',
-  '2004',
-  '2005',
-  '2006',
-  '2009',
-  '2010',
-  '2011',
   '2012',
   '2013',
   '2014',
@@ -179,6 +173,30 @@ dbxUpdate(
   records = clean_type_name,
   where_cols = c('cino')
 )
+```
+
+Update case flag to 0 for fir where fir_year < 2012
+
+```{sql connection=con, output.var='fir_pre_2012'}
+select cino, case_flag, case_flag_reason, fir_year from case_details where case_flag = '1' AND fir_year IN ('2004', '2005', '2006', '2009', '2010', '2011')
+```
+
+```{r}
+fir_pre_2012$case_flag <- 0
+fir_pre_2012$case_flag_reason <- 'Invalid year of FIR	(Pre 2012)'
+fir_pre_2012$fir_year <- NULL
+
+dbxUpdate(
+  conn = con,
+  table = 'case_details',
+  records = fir_pre_2012,
+  where_cols = c('cino')
+)
+```
+
+
+```{sql connection=con}
+select case_flag_reason, count(cino) from case_details group by case_flag_reason
 ```
 
 
