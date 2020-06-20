@@ -195,8 +195,12 @@ dbxUpdate(
 ```
 
 
-```{sql connection=con}
+```{sql connection=con, output.var='case_flag_reason'}
 select case_flag_reason, count(cino) from case_details group by case_flag_reason
 ```
 
 
+# On 20/06/20
+```{r}
+write_csv(case_flag_reason,"datasets/case_flag_reason.csv")
+```
