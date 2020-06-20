@@ -60,10 +60,73 @@ dbxUpdate(
 )
 ```
 
+Add new column `reg_year_date` in the case_details table. We have observed patterns where the column `reg_year` has values that do not match the entries in the `dt_regis` column. The new column will be calculated on the basis of the `dt_regis` col.
+
 ```{sql connection=con}
-
-select case_flag_reason, case_flag, count(cino) from case_details group by case_flag_reason, case_flag
-
+ALTER table case_details ADD reg_year_date varchar;
+```
+```{sql connection=con, output.var='update_reg_year'}
+select cino, dt_regis from case_details
 ```
 
+calculate reg_year on the basis of dt_regis & update case_details table
+```{r}
+update_reg_year$reg_year_date <- lubridate::year(update_reg_year$dt_regis)
+update_reg_year$dt_regis <- NULL
+
+dbxUpdate(
+  conn = con,
+  table = 'case_details',
+  records = update_reg_year,
+  where_cols = c('cino')
+)
+```
+
+```{sql connection=con}
+select reg_year_date, count(cino) from case_details group by reg_year_date
+```
+
+Flag cases with garbage values in `fir_year`
+
+```{sql connection=con, output.var='update_case_flag_fir'}
+select cino, fir_year, case_flag, case_flag_reason from case_details
+```
+
+```{r}
+valid_fir_year_values <- c(
+  '0',
+  '2004',
+  '2005',
+  '2006',
+  '2009',
+  '2010',
+  '2011',
+  '2012',
+  '2013',
+  '2014',
+  '2015',
+  '2016',
+  '2017',
+  '2018',
+  '2019',
+  '2020'
+)
+
+invalid_cases_fir <- update_case_flag_fir[update_case_flag_fir$case_flag == 1 & !str_trim(update_case_flag_fir$fir_year) %in% valid_fir_year_values,] 
+invalid_cases_fir$case_flag <- 0
+invalid_cases_fir$case_flag_reason <- 'Invalid year of FIR'
+invalid_cases_fir$fir_year <- NULL
+
+dbxUpdate(
+  conn = con,
+  table = 'case_details',
+  records = invalid_cases_fir,
+  where_cols = c('cino')
+)
+```
+
+
+```{sql connection=con, output.var='test'}
+select case_flag, case_flag_reason, count(cino) from case_details group by case_flag, case_flag_reason
+```
 
