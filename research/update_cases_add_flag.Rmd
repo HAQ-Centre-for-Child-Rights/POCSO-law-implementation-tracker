@@ -130,3 +130,30 @@ dbxUpdate(
 select case_flag, case_flag_reason, count(cino) from case_details group by case_flag, case_flag_reason
 ```
 
+Update case disposal nature - Standardise values under `disp_name`
+
+```{sql connection=con}
+ALTER table case_details ADD updated_disp_name varchar;
+```
+
+```{sql connection=con, output.var='clean_disp_name'}
+select cino, disp_name from case_details where case_flag = '1'
+```
+
+```{r}
+clean_disp_name$disp_name <- str_trim(clean_disp_name$disp_name)
+disposal_codebook <- read_csv("datasets/case_disposal_codebook.csv")
+
+clean_disp_name <- left_join(clean_disp_name, disposal_codebook, by='disp_name')
+
+clean_disp_name <- clean_disp_name[!is.na(clean_disp_name$disp_name),]
+clean_disp_name$disp_name <- NULL
+
+dbxUpdate(
+  conn = con,
+  table = 'case_details',
+  records = clean_disp_name,
+  where_cols = c('cino')
+)
+```
+
