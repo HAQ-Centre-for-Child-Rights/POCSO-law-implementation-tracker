@@ -27,22 +27,22 @@ from case_details where case_flag = '1' group by state_name, district_name, fil_
 There are cases with filing year as 0 in Assam and Haryana. Generating a set of all such cases for a deep dive
 
 ```{sql connection=con, output.var='filing_year_0'}
-select state_name, district_name, est_code, court_name, cino, fil_no,date_of_filing, reg_no, reg_year_date, type_name, disp_nature, disp_name from case_details where fil_year = '0' and case_flag = '1'
+select state_name, district_name, est_code, court_name, cino, fil_no,date_of_filing, reg_no, reg_year_date, updated_type_name, disp_nature, updated_disp_name from case_details where fil_year = '0' and case_flag = '1'
 ```
 
 For some cases, the filing year is less than 2012. What are these cases ?
 ```{sql connection=con, output.var='filing_year_below_2012'}
-select state_name, district_name, est_code, court_name, cino, fil_no,date_of_filing, reg_no, reg_year, type_name, disp_nature, disp_name from case_details where fil_year IN ('2004','2008','2009','2010')
+select state_name, district_name, est_code, court_name, cino, fil_no,date_of_filing, reg_no, reg_year_date, updated_type_name, disp_nature, updated_disp_name from case_details where fil_year IN ('2004','2008','2009','2010') AND case_flag = '1'
 ```
 
 ## Year wise FIR
 ```{sql connection=con, output.var='year_wise_FIR'}
-select state_name, district_name, fir_year, fil_year, reg_year, count(cino) as total_cases from case_details group by state_name, district_name,fir_year, fil_year, reg_year
+select state_name, district_name, fir_year, fil_year, reg_year_date, count(cino) as total_cases from case_details where case_flag = '1' group by state_name, district_name,fir_year, fil_year, reg_year_date
 ```
 
 ## Disposal Nature
 ```{sql connection=con, output.var='nature_of_disposal'}
-select state_name, district_name, disp_name, disp_nature, fil_year, reg_year, EXTRACT(year from date_of_decision) as decision_year, count(cino) as total_cases from case_details where disp_nature != '0' group by state_name, district_name, disp_name, disp_nature, fil_year, reg_year, decision_year
+select state_name, district_name, updated_disp_name, disp_nature, fil_year, reg_year_date, EXTRACT(year from date_of_decision) as decision_year, count(cino) as total_cases from case_details where disp_nature != '0' AND case_flag = '1' group by state_name, district_name, updated_disp_name, disp_nature, fil_year, reg_year_date, decision_year
 ```
 
 ## Offence wise
@@ -52,7 +52,7 @@ select state_name, district_name, est_code, court_name, reg_year, fil_year, deci
 
 ## Age of case
 ```{sql connection=con, output.var='case_age_raw'}
-select state_name, district_name, court_name, est_code, cino,reg_year, fil_year, type_name, disp_name, disp_nature, dt_regis, date_of_filing, date_of_decision from case_details
+select state_name, district_name, court_name, est_code, cino,reg_year_date, fil_year, updated_type_name, updated_disp_name, disp_nature, dt_regis, date_of_filing, date_of_decision from case_details where case_flag = '1'
 ```
 
 
@@ -68,11 +68,11 @@ case_age$end_date[is.na(case_age$end_date)] <- as.Date("2020-03-31")
 case_age$decision_year <- year(case_age$end_date)
 case_age$decision_year[case_age$disp_nature == 0] <- NA_character_
 
-case_age$age_of_case_interval <- lubridate::interval(case_age$date_of_filing,case_age$end_date)
+# Case age is calculated as a difference between the date of decision (disposed cases) or 2020/03/31 (pending cases) and the date of registration (dt_regis) of a case
+
+case_age$age_of_case_interval <- lubridate::interval(case_age$dt_regis,case_age$end_date)
 
 case_age$age_of_case_days <- time_length(case_age$age_of_case_interval, "days")
-
-
 
 # Remove cases with difference < 0
 cases_removed <- case_age[case_age$age_of_case_days < 0,]
@@ -90,7 +90,7 @@ case_age <- left_join(case_age, age_intervals, by=NULL)
 ```
 
 ```{r case-age-dataset}
-case_age_dataset <- case_age %>% group_by(state_name, district_name, court_name, est_code, type_name, disp_name, disp_nature, fil_year, decision_year, age_interval) %>% summarise(total_cases = length(cino))
+case_age_dataset <- case_age %>% group_by(state_name, district_name, court_name, est_code, updated_type_name, updated_disp_name, disp_nature, fil_year, reg_year_date, decision_year, age_interval) %>% summarise(total_cases = length(cino))
 ```
 
 
@@ -99,33 +99,33 @@ case_age_dataset <- case_age %>% group_by(state_name, district_name, court_name,
 case_age$pending_trial_year_flag <- 0
 case_age$pending_trial_year_flag[case_age$age_of_case_days >= 365] <- 1
 
-pending_trial_dataset <- case_age %>% filter(pending_trial_year_flag == 1) %>% group_by(state_name, district_name, reg_year, fil_year, court_name, est_code, type_name, disp_name, disp_nature) %>% summarise(cases_pending_trial_yearly = length(cino))
+pending_trial_dataset <- case_age %>% filter(pending_trial_year_flag == 1) %>% group_by(state_name, district_name, reg_year_date, fil_year, court_name, est_code, updated_type_name, updated_disp_name, disp_nature) %>% summarise(cases_pending_trial_yearly = length(cino))
 
-total_yearly_cases <- case_age %>% group_by(state_name, district_name, reg_year, fil_year, court_name, est_code, type_name, disp_name, disp_nature) %>% summarise(total_cases = length(cino))
+total_yearly_cases <- case_age %>% group_by(state_name, district_name, reg_year_date, fil_year, court_name, est_code, updated_type_name, updated_disp_name, disp_nature) %>% summarise(total_cases = length(cino))
 
 yearly_cases_pendency_ratio <- left_join(total_yearly_cases, pending_trial_dataset, by=NULL)
 yearly_cases_pendency_ratio$cases_pending_trial_yearly[is.na(yearly_cases_pendency_ratio$cases_pending_trial_yearly)] <- 0
 ```
 
-Cases where the year of filing is < 2019 and are pending, but are still not categorised under cases pending trial yearly.
+<!-- Cases where the year of registration is < 2019 and are pending, but are still not categorised under cases pending trial yearly. -->
 
-This is happening because we are calculating the number of days between date of filing and **March 31, 2020**. Filing dates for such cases are mentioned in 2019 which is different from the year of filing (< 2019)
+<!-- This is happening because we are calculating the number of days between date of registration and **March 31, 2020**. Filing dates for such cases are mentioned in 2019 which is different from the year of filing (< 2019) -->
 
-```{sql connection=con, output.var='cases_from_2016_karbi_anglong'}
-select *  from case_details where fil_year = '2016' AND district_name='Karbi Anglong' AND date_of_filing = '2019-05-06'
-```
+<!-- ```{sql connection=con, output.var='cases_from_2016_karbi_anglong'} -->
+<!-- select *  from case_details where fil_year = '2016' AND district_name='Karbi Anglong' AND date_of_filing = '2019-05-06' -->
+<!-- ``` -->
 
 
 ```{sql connection=con, output.var='case_type_patterns'}
-select state_name, district_name, type_name, count(cino) as total_cases from case_details group by state_name, district_name, type_name
+select state_name, district_name, updated_type_name, count(cino) as total_cases from case_details  where case_flag = '1' group by state_name, district_name, updated_type_name
 ```
 
 ```{sql connection=con, output.var='case_disposal_patterns_overall'}
-select disp_name, disp_nature, count(cino) as total_cases from case_details group by disp_name, disp_nature
+select updated_disp_name, disp_nature, count(cino) as total_cases from case_details where case_flag = '1' group by updated_disp_name, disp_nature
 ```
 
 ```{sql connection=con, output.var='case_disposal_patterns_by_district'}
-select disp_name, disp_nature, state_name, district_name, count(cino) as total_cases from case_details group by disp_name, disp_nature, state_name, district_name
+select updated_disp_name, disp_nature, state_name, district_name, count(cino) as total_cases from case_details where case_flag = '1' group by updated_disp_name, disp_nature, state_name, district_name
 ```
 
 
@@ -140,11 +140,12 @@ f_pending_trial <- sum(yearly_cases_pendency_ratio$total_cases)
 
 number_of_cases_df <- data.frame('file_name'=c('year_wise_cases','year_wise_cases_pending','year_wise_disposed','nature_of_disposal', 'case_age','cases_pending_trial_yearly','cases_removed_case_age'), number_of_cases = c(f_year_wise_cases, f_year_wise_cases_pending, f_year_wise_cases_disposed, f_nature_of_disposal, f_case_age,f_pending_trial,f_cases_removed))
 ```
+
 ```{r state-wise-case-list}
-state_list <- dbxSelect(con, 'select distinct state_name from case_details') %>% unlist(use.names = FALSE)
+state_list <- dbxSelect(con, "select distinct state_name from case_details where case_flag = '1'") %>% unlist(use.names = FALSE)
 
 fetch_state_cases <- function(state_name){
-  state_cases <- dbxSelect(con, glue("select * from case_details where state_name = '{state_name}'"))
+  state_cases <- dbxSelect(con, glue("select * from case_details where state_name = '{state_name}' AND case_flag = '1' "))
   print(glue("Total cases in {state_name} -> {nrow(state_cases)}"))
   write_csv(state_cases, glue("datasets/state_wise_cases/cases_{state_name}.csv"),append = FALSE)
   return(nrow(state_cases))
@@ -157,7 +158,7 @@ lapply(state_list, fetch_state_cases)
 ```{r Writing Files}
 write_csv(year_wise_cases,"datasets/year_wise_cases.csv")
 write_csv(nature_of_disposal,"datasets/nature_of_disposal.csv")
-write_csv(nature_of_offence,"datasets/nature_of_offence.csv")
+# write_csv(nature_of_offence,"datasets/nature_of_offence.csv")
 write_csv(case_age_dataset,"datasets/case_age_dataset.csv")
 write_csv(yearly_cases_pendency_ratio,"datasets/yearly_cases_pendency_ratio.csv")
 write_csv(case_type_patterns,"datasets/case_type_patterns.csv")
@@ -171,5 +172,4 @@ write_csv(number_of_cases_df,"datasets/file_wise_total_cases.csv")
 
 # On 03/06/20
 write_csv(year_wise_FIR,"datasets/year_wise_FIR.csv")
-
 ```

@@ -1,513 +1,483 @@
-state_name,district_name,fil_year,reg_year,total_cases,pending_cases,disposed_cases
+state_name,district_name,fil_year,reg_year_date,total_cases,pending_cases,disposed_cases
 Assam,Goalpara,2018,2018,21,14,7
-Assam,Kokrajhar,2017,2017,28,10,18
+Assam,Kokrajhar,2017,2017,28,11,17
 Assam,Sonitpur,2017,2017,97,11,86
-Delhi,East,2015,2016,62,56,6
-Haryana,Kaithal,2019,2019,92,41,51
-Assam,Morigaon,2020,2020,30,27,3
-Delhi,South West,2015,2016,67,43,24
-Assam,Karbi Anglong,2014,2014,9,7,2
+Assam,Kamrup,2015,2018,3,0,3
+Haryana,Kaithal,2019,2019,52,34,18
+Assam,Morigaon,2020,2020,29,26,3
+Assam,Karbi Anglong,2017,2013,1,1,0
+Assam,Karbi Anglong,2014,2014,8,6,2
 Assam,Sonitpur,2014,2014,10,0,10
-Haryana,Faridabad,2019,2020,18,16,2
+Haryana,Faridabad,2019,2020,15,15,0
 Delhi,North West,2018,2019,1,1,0
-Assam,Chirang,2017,2017,19,1,18
-Haryana,Faridabad,2018,2018,722,57,665
-Assam,Morigaon,2018,2018,76,54,22
-Haryana,Jhajjar,2018,2018,198,6,192
-Delhi,East,2018,2018,157,153,4
-Delhi,West,2017,2017,388,139,249
-Delhi,South East,2018,2018,195,154,41
-Assam,Tinsukia,2014,2014,2,0,2
-Delhi,Shahdara,2019,2019,211,181,30
-Assam,Lakhimpur,2018,2019,2,1,1
+Delhi,East,2015,2014,3,3,0
+Assam,Chirang,2017,2017,18,1,17
+Haryana,Faridabad,2018,2018,260,36,224
+Assam,Morigaon,2018,2018,75,55,20
+Haryana,Jhajjar,2018,2018,67,4,63
+Delhi,East,2018,2018,156,153,3
+Delhi,West,2017,2017,224,143,81
+Delhi,South East,2018,2018,178,153,25
+Delhi,Central,2014,2015,1,0,1
+Delhi,South,2020,2019,1,1,0
+Delhi,Shahdara,2019,2019,205,181,24
+Assam,Tinsukia,2014,2014,1,0,1
 Delhi,East,2020,2020,25,25,0
-Haryana,Hisar,2014,2014,2,0,2
-Assam,Lakhimpur,0   ,2014,2,0,2
-Assam,Sivasagar,2015,2015,52,12,40
-Assam,Kamrup Metro,0   ,2014,8,1,7
-Assam,Sonitpur,0   ,2015,4,0,4
-Delhi,Shahdara,2018,2018,180,152,28
-Haryana,Fatehabad,2016,2016,119,0,119
-Haryana,Hisar,2018,2018,311,9,302
-Assam,Kamrup Metro,0   ,2015,1,0,1
+Assam,Lakhimpur,0   ,2014,1,0,1
+Assam,Sivasagar,2015,2015,45,12,33
+Assam,Karbi Anglong,2013,2014,1,1,0
+Delhi,Shahdara,2018,2018,176,152,24
+Haryana,Fatehabad,2016,2016,36,0,36
+Haryana,Hisar,2018,2018,82,5,77
+Assam,Karbi Anglong,2015,2014,1,0,1
 Assam,Bongaigaon,2016,2016,7,0,7
-Assam,Karbi Anglong,2019,2019,61,53,8
-Assam,Nalbari,0   ,2013,2,0,2
-Haryana,Sirsa,2017,2017,110,0,110
-Delhi,South,2017,2017,235,93,142
-Assam,Kamrup Metro,2017,2017,103,27,76
-Haryana,Faridabad,2016,2016,252,0,252
-Assam,Barpeta,0   ,2016,14,0,14
-Assam,Chirang,2020,2020,12,11,1
-Assam,Lakhimpur,2015,2015,7,1,6
-Assam,Sivasagar,2018,2018,69,31,38
-Assam,Jorhat,2019,2019,66,55,11
-Haryana,Jhajjar,2020,2020,33,9,24
-Assam,Sonitpur,2016,2016,55,10,45
+Delhi,South West,2015,2015,49,43,6
+Assam,Nalbari,0   ,2013,1,0,1
+Assam,Karbi Anglong,2019,2019,60,53,7
+Haryana,Sirsa,2017,2017,35,0,35
+Delhi,South,2017,2017,134,93,41
+Assam,Kamrup Metro,2017,2017,40,27,13
+Haryana,Faridabad,2016,2016,85,0,85
+Assam,Chirang,2020,2020,11,10,1
+Assam,Lakhimpur,2015,2015,4,1,3
+Assam,Sivasagar,2018,2018,53,31,22
+Assam,Jorhat,2019,2019,64,55,9
+Haryana,Jhajjar,2020,2020,7,7,0
 Assam,Sonitpur,2015,2015,34,6,28
-Assam,Kamrup Metro,2019,2019,170,88,82
-Delhi,North West,2016,2016,331,81,250
-Assam,Dhubri,2014,2014,5,0,5
-Assam,Dhubri,2018,2018,71,17,54
-Assam,Golaghat,2014,2014,12,5,7
-Haryana,Fatehabad,2018,2018,346,29,317
+Assam,Sonitpur,2016,2016,54,10,44
+Assam,Karbi Anglong,2018,2016,1,1,0
+Assam,Kamrup Metro,2019,2019,87,84,3
+Delhi,North West,2016,2016,179,77,102
+Delhi,West,2012,2012,1,0,1
+Assam,Dhubri,2014,2014,1,0,1
+Delhi,South,2014,2015,62,38,24
+Assam,Dhubri,2018,2018,68,17,51
+Assam,Golaghat,2014,2014,9,4,5
+Haryana,Fatehabad,2018,2018,78,19,59
 Assam,Karimganj,2015,2015,9,3,6
 Delhi,New Delhi,2017,2018,8,8,0
-Haryana,Ambala,2016,2016,89,3,86
+Haryana,Ambala,2016,2016,25,2,23
 Delhi,Central,2013,2014,1,0,1
-Assam,Morigaon,2016,2019,1,1,0
-Haryana,Sirsa,2016,2017,1,0,1
-Delhi,East,2014,2016,31,19,12
-Delhi,North West,2013,2016,1,1,0
-Assam,Karbi Anglong,2015,2015,17,8,9
-Assam,Morigaon,2015,2015,29,4,25
-Haryana,Rohtak,2013,2014,1,0,1
-Assam,Dibrugarh,2016,2016,67,13,54
-Delhi,West,2012,2016,1,0,1
+Delhi,West,2019,2013,1,0,1
+Delhi,South,2013,2015,26,16,10
+Delhi,North West,2014,2015,1,1,0
+Assam,Kamrup,2016,2014,1,0,1
+Assam,Karbi Anglong,2015,2015,16,8,8
+Assam,Karbi Anglong,2016,2017,1,0,1
+Delhi,Shahdara,2015,2015,39,35,4
+Assam,Morigaon,2015,2015,18,2,16
+Delhi,South West,2014,2014,34,19,15
+Assam,Dibrugarh,2016,2016,68,13,55
 Assam,Lakhimpur,2014,2014,1,0,1
 Delhi,East,2017,2017,110,107,3
 Assam,Udalguri,2020,2020,12,11,1
-Haryana,Sirsa,2016,2016,126,1,125
-Delhi,South,2020,2020,31,25,6
+Haryana,Sirsa,2016,2016,35,0,35
+Delhi,South,2020,2020,19,19,0
 Assam,Dibrugarh,2017,2017,18,6,12
-Assam,Karimganj,2014,2014,4,2,2
+Assam,Karimganj,2014,2014,3,1,2
 Delhi,New Delhi,2018,2019,2,1,1
-Delhi,North,2013,2016,19,1,18
-Assam,Kamrup Metro,2004,2004,1,0,1
-Assam,Golaghat,2015,2015,19,6,13
-Assam,Tinsukia,0   ,2012,1,0,1
+Assam,Golaghat,2015,2015,17,6,11
 Assam,Darrang,2020,2020,18,18,0
-Delhi,North West,2020,2020,136,71,65
-Assam,Sivasagar,2017,2017,100,19,81
-Assam,Tinsukia,0   ,2013,13,0,13
-Delhi,South West,2016,2019,1,0,1
-Assam,Jorhat,2017,2017,20,3,17
-Assam,Nalbari,2017,2017,52,9,43
-Haryana,Fatehabad,2015,2015,87,0,87
-Haryana,Panipat,2015,2015,54,0,54
-Haryana,Panchkula,2014,2014,3,1,2
-Delhi,West,2015,2015,7,0,7
-Delhi,North,2019,2020,2,2,0
-Haryana,Sirsa,2018,2018,185,16,169
-Haryana,Jhajjar,2019,2019,164,29,135
-Haryana,Bhiwani,2020,2020,62,21,41
-Haryana,Yamunanagar,2016,2016,20,0,20
-Assam,Barpeta,2015,2015,6,0,6
-Haryana,Ambala,2013,2013,9,0,9
-Haryana,Panipat,2020,2020,26,17,9
-Haryana,Hisar,2017,2017,185,1,184
-Assam,Jorhat,0   ,2015,5,0,5
-Delhi,New Delhi,2016,2016,77,62,15
+Delhi,North West,2020,2020,67,66,1
+Assam,Sivasagar,2017,2017,91,19,72
+Assam,Jorhat,2017,2017,18,3,15
+Assam,Nalbari,2017,2017,41,9,32
+Haryana,Panipat,2015,2015,9,0,9
+Haryana,Fatehabad,2015,2015,27,0,27
+Delhi,West,2015,2015,211,126,85
+Delhi,North,2019,2020,1,1,0
+Haryana,Sirsa,2018,2018,54,11,43
+Haryana,Jhajjar,2019,2019,49,21,28
+Assam,Udalguri,2016,2015,8,0,8
+Assam,Barpeta,2016,2014,3,0,3
+Haryana,Bhiwani,2020,2020,18,18,0
+Haryana,Yamunanagar,2016,2016,6,0,6
+Assam,Barpeta,2015,2015,4,0,4
+Assam,Chirang,2018,2017,4,1,3
+Assam,Kamrup,2016,2018,5,1,4
+Haryana,Panipat,2020,2020,13,13,0
+Haryana,Hisar,2017,2017,54,1,53
+Assam,Jorhat,0   ,2015,2,0,2
+Delhi,New Delhi,2016,2016,76,61,15
 Assam,Cachar,0   ,2016,1,0,1
-Assam,Kamrup Metro,2013,2013,10,1,9
-Haryana,Fatehabad,2018,2019,1,0,1
-Haryana,Rewari,2020,2020,66,22,44
-Delhi,West,2015,2016,204,126,78
-Assam,Nalbari,2019,2019,69,50,19
+Assam,Kamrup Metro,2013,2013,1,0,1
+Haryana,Rewari,2020,2020,20,19,1
+Assam,Nalbari,2019,2019,58,50,8
 Assam,Dhubri,0   ,2016,8,0,8
-Haryana,Kaithal,2016,2016,47,0,47
-Assam,Karimganj,2019,2019,17,15,2
+Delhi,East,2015,2015,59,53,6
+Haryana,Kaithal,2016,2016,25,0,25
+Assam,Karimganj,2019,2019,15,15,0
 Assam,Dhubri,2016,2016,18,1,17
-Assam,Tinsukia,2013,2013,1,0,1
 Delhi,Shahdara,2016,2016,68,63,5
-Assam,Udalguri,2017,2017,24,4,20
-Assam,Jorhat,0   ,2012,1,0,1
-Assam,Nagaon,2019,2019,79,69,10
-Haryana,Rewari,2019,2019,189,51,138
+Assam,Udalguri,2017,2017,19,4,15
+Assam,Nagaon,2019,2019,73,69,4
+Delhi,New Delhi,2017,2016,1,1,0
+Haryana,Rewari,2019,2019,57,43,14
+Assam,Golaghat,2015,2014,2,0,2
 Haryana,Jhajjar,2014,2015,1,0,1
-Assam,Chirang,2018,2018,32,3,29
-Assam,Tinsukia,0   ,2015,8,0,8
-Delhi,West,2013,2013,42,0,42
-Haryana,Kurukshetra,2014,2014,14,0,14
-Assam,Karimganj,0   ,2014,2,0,2
+Assam,Chirang,2018,2018,25,1,24
+Assam,Tinsukia,0   ,2015,4,0,4
+Delhi,Central,2016,2014,1,0,1
+Delhi,West,2013,2013,176,17,159
+Haryana,Kurukshetra,2014,2014,6,0,6
+Delhi,North West,2015,2013,1,0,1
 Assam,Udalguri,2019,2019,58,39,19
-Haryana,Gurugram,2015,2015,85,0,85
-Delhi,South,2013,2016,29,19,10
-Assam,Lakhimpur,0   ,2015,1,0,1
-Assam,Barpeta,2017,2017,82,4,78
-Assam,Morigaon,2018,2020,3,3,0
-Haryana,Jind,2017,2017,198,9,189
-Delhi,Central,2017,2017,245,109,136
-Assam,Kamrup,2019,2019,99,69,30
-Assam,Dhemaji,0   ,2015,16,2,14
-Delhi,Central,2015,2015,11,0,11
-Assam,Barpeta,0   ,2014,15,0,15
-Delhi,West,2014,2014,29,0,29
+Haryana,Gurugram,2015,2015,27,0,27
+Assam,Barpeta,2017,2017,63,4,59
+Haryana,Jind,2017,2017,53,7,46
+Delhi,Central,2017,2017,156,108,48
+Assam,Kamrup,2019,2019,69,61,8
+Delhi,Central,2015,2015,107,48,59
+Assam,Dhemaji,0   ,2015,11,2,9
+Delhi,West,2014,2014,217,77,140
 Assam,Dibrugarh,0   ,2014,1,0,1
-Delhi,North,2016,2016,284,105,179
-Assam,Dhemaji,2016,2016,33,1,32
-Assam,Nalbari,2016,2016,27,1,26
-Assam,Cachar,0   ,2013,3,0,3
-Delhi,Central,2016,2018,3,0,3
-Haryana,Rohtak,2018,2018,189,10,179
-Assam,Chirang,2019,2019,43,25,18
-Delhi,North West,2008,2016,1,0,1
-Haryana,Palwal,2018,2018,201,26,175
-Haryana,Hisar,2016,2017,1,0,1
-Delhi,West,2018,2019,5,0,5
-Delhi,North East,2014,2015,14,8,6
-Assam,Nalbari,0   ,2014,2,0,2
-Haryana,Bhiwani,2019,2019,56,13,43
+Delhi,North,2016,2016,180,105,75
+Assam,Dhemaji,2016,2016,15,1,14
+Delhi,South East,2014,2014,26,15,11
+Assam,Nalbari,2016,2016,15,1,14
+Haryana,Rohtak,2018,2018,41,8,33
+Assam,Chirang,2019,2019,37,22,15
+Haryana,Palwal,2018,2018,74,15,59
+Assam,Barpeta,2016,2017,2,0,2
+Delhi,East,2014,2014,31,19,12
+Assam,Nalbari,0   ,2014,1,0,1
+Haryana,Bhiwani,2019,2019,18,13,5
 Delhi,Central,2020,2020,32,32,0
-Assam,Cachar,2018,2018,46,26,20
-Haryana,Panipat,2016,2016,96,3,93
+Assam,Bongaigaon,2014,2015,1,1,0
+Assam,Cachar,2018,2018,37,24,13
+Haryana,Panipat,2016,2016,52,3,49
 Delhi,North East,2017,2018,1,1,0
+Assam,Barpeta,2016,2015,1,0,1
 Assam,Hailakandi,2016,2016,1,0,1
-Haryana,Jhajjar,2015,2015,113,2,111
-Delhi,South,2015,2016,81,77,4
-Haryana,Ambala,2014,2014,51,0,51
+Haryana,Jhajjar,2015,2015,43,1,42
+Delhi,South,2015,2016,1,1,0
+Haryana,Ambala,2014,2014,14,0,14
 Assam,Goalpara,2017,2017,1,0,1
-Delhi,Shahdara,2014,2016,22,9,13
-Assam,Golaghat,2020,2020,18,17,1
-Assam,Kamrup,2017,2017,58,10,48
-Assam,Dhubri,2013,2013,2,0,2
-Haryana,Rohtak,2016,2016,162,1,161
-Assam,Morigaon,2016,2016,34,10,24
-Assam,Cachar,2016,2016,43,12,31
-Assam,Cachar,2017,2020,1,1,0
-Assam,Kokrajhar,2018,2018,69,35,34
+Assam,Golaghat,2020,2020,17,17,0
+Assam,Kamrup,2017,2017,24,3,21
+Haryana,Rohtak,2016,2016,46,1,45
+Assam,Morigaon,2016,2016,29,11,18
+Assam,Barpeta,2017,2018,1,0,1
+Assam,Cachar,2016,2016,35,10,25
+Assam,Kokrajhar,2018,2018,61,36,25
 Assam,Nalbari,2014,2014,2,1,1
-Delhi,Central,2017,2018,17,1,16
+Assam,Nalbari,0   ,2015,1,0,1
+Delhi,Central,2017,2018,1,1,0
+Delhi,New Delhi,2013,2013,1,0,1
 Assam,Dhemaji,0   ,2013,3,0,3
-Haryana,Sonepat,2018,2018,186,15,171
-Haryana,Jind,2019,2019,294,49,245
-Delhi,Central,2014,2016,60,10,50
-Delhi,Central,2013,2016,40,3,37
-Delhi,East,2016,2016,70,69,1
-Assam,Udalguri,2018,2018,38,7,31
-Assam,Baksa,2019,2018,1,1,0
-Assam,Sonitpur,0   ,2013,1,0,1
-Haryana,Rewari,2016,2016,30,0,30
-Assam,Dhemaji,2013,2013,1,0,1
+Haryana,Sonepat,2018,2018,72,12,60
+Haryana,Jind,2019,2019,38,37,1
+Assam,Kamrup,2015,2017,1,0,1
+Delhi,East,2016,2016,69,68,1
+Assam,Udalguri,2018,2018,37,7,30
+Delhi,East,2013,2013,10,6,4
+Haryana,Rewari,2016,2016,13,0,13
+Delhi,North West,2014,2014,4,4,0
 Delhi,North East,2020,2020,19,18,1
-Assam,Baksa,2019,2019,74,55,19
-Assam,Kokrajhar,2016,2016,12,3,9
-Haryana,Ambala,2020,2020,62,23,39
+Assam,Baksa,2019,2019,61,56,5
+Assam,Kokrajhar,2016,2016,9,3,6
+Haryana,Ambala,2020,2020,13,13,0
 Assam,Goalpara,2015,2015,1,0,1
-Haryana,Faridabad,2020,2020,156,59,97
-Assam,Lakhimpur,2018,2018,19,6,13
+Haryana,Faridabad,2020,2020,23,23,0
+Delhi,Shahdara,2014,2014,22,9,13
+Assam,Lakhimpur,2018,2018,14,6,8
 Assam,Nalbari,2015,2015,10,6,4
-Haryana,Hisar,0   ,2017,1,0,1
 Assam,Dibrugarh,2019,2019,1,1,0
-Delhi,North,2018,2018,548,233,315
+Delhi,North,2018,2018,272,234,38
 Assam,Lakhimpur,2013,2013,1,0,1
-Delhi,South East,2020,2020,22,21,1
-Haryana,Jind,2018,2018,289,41,248
-Haryana,Sirsa,2015,2015,104,1,103
-Haryana,Panchkula,2020,2020,24,6,18
-Assam,Karimganj,2018,2018,17,11,6
-Haryana,Gurugram,0   ,2015,1,0,1
-Assam,Kamrup Metro,2018,2018,210,83,127
-Haryana,Narnaul,2019,2019,16,5,11
-Delhi,South West,2017,2017,331,106,225
-Delhi,South West,2016,2018,2,2,0
-Haryana,Panchkula,2015,2015,33,0,33
-Assam,Hailakandi,2020,2020,14,12,2
-Assam,Dibrugarh,2016,2019,1,0,1
+Delhi,South East,2020,2020,20,20,0
+Haryana,Jhajjar,2014,2013,1,0,1
+Haryana,Jind,2018,2018,85,40,45
+Haryana,Sirsa,2015,2015,30,0,30
+Assam,Kamrup,2016,2010,1,1,0
+Assam,Karimganj,2018,2018,13,11,2
+Assam,Kamrup Metro,2018,2018,90,79,11
+Delhi,South West,2017,2017,192,109,83
+Haryana,Panchkula,2015,2015,11,0,11
+Assam,Hailakandi,2020,2020,11,11,0
+Delhi,West,2019,2017,1,0,1
 Assam,Dhemaji,0   ,2014,5,0,5
-Delhi,South,2016,2016,94,81,13
-Haryana,Fatehabad,2014,2014,11,0,11
-Assam,Tinsukia,2017,2017,39,10,29
-Haryana,Rewari,2015,2015,17,0,17
-Assam,Darrang,2014,2014,1,0,1
-Assam,Barpeta,0   ,2015,45,0,45
-Assam,Tinsukia,2018,2015,1,0,1
-Assam,Dima Hasao,2020,2020,8,7,1
-Assam,Hailakandi,2019,2019,102,75,27
-Assam,Lakhimpur,2017,2017,22,7,15
-Assam,Cachar,0   ,2014,2,0,2
-Delhi,North East,2019,2019,194,160,34
-Haryana,Narnaul,2020,2020,6,3,3
+Delhi,South,2016,2016,93,80,13
+Haryana,Fatehabad,2014,2014,1,0,1
+Assam,Tinsukia,2017,2017,30,10,20
+Haryana,Rewari,2015,2015,5,0,5
+Assam,Barpeta,0   ,2015,6,0,6
+Assam,Dima Hasao,2020,2020,6,6,0
+Assam,Hailakandi,2019,2019,54,41,13
+Assam,Lakhimpur,2017,2017,17,7,10
+Assam,Tinsukia,2018,2017,1,0,1
+Delhi,North East,2019,2019,193,160,33
 Assam,Jorhat,2016,2016,9,0,9
-Delhi,North,2014,2016,38,18,20
-Assam,Dhemaji,2019,2019,3,2,1
-Delhi,South West,2019,2019,430,198,232
-Assam,Baksa,2020,2020,11,10,1
-Haryana,Ambala,2017,2017,179,9,170
-Assam,Tinsukia,2018,2018,68,45,23
-Assam,Sonitpur,2019,2019,90,54,36
-Haryana,Narnaul,2017,2017,6,0,6
-Haryana,Jind,2014,2014,16,0,16
+Assam,Golaghat,2014,2015,1,1,0
+Assam,Dhemaji,2019,2019,2,2,0
+Delhi,South West,2019,2019,229,196,33
+Assam,Baksa,2018,2015,2,0,2
+Assam,Baksa,2020,2020,9,9,0
+Haryana,Ambala,2017,2017,52,6,46
+Assam,Tinsukia,2018,2018,61,45,16
+Assam,Sonitpur,2019,2019,89,54,35
+Haryana,Jind,2014,2014,11,0,11
 Assam,Lakhimpur,2017,2019,1,1,0
-Haryana,Karnal,2020,2020,4,0,4
-Assam,Sivasagar,2016,2016,77,15,62
-Delhi,North West,2017,2016,1,0,1
+Assam,Sivasagar,2016,2016,71,14,57
+Assam,Sivasagar,2017,2016,1,0,1
+Assam,Karbi Anglong,2019,2017,1,0,1
+Delhi,Shahdara,2017,2016,1,1,0
+Delhi,North,2014,2014,38,18,20
 Assam,Dima Hasao,2018,2018,9,8,1
-Haryana,Sonepat,2019,2019,256,72,184
-Assam,Kokrajhar,2017,2019,1,1,0
-Assam,Karimganj,2017,2017,6,2,4
-Haryana,Jhajjar,2014,2014,56,0,56
-Haryana,Kurukshetra,2018,2018,132,6,126
-Haryana,Rewari,2018,2018,145,10,135
-Assam,Nagaon,0   ,2013,2,0,2
-Haryana,Kurukshetra,2019,2019,161,68,93
-Assam,Nalbari,2020,2020,11,8,3
-Haryana,Karnal,2017,2017,1,0,1
-Delhi,South West,2020,2020,46,26,20
+Haryana,Sonepat,2019,2019,76,57,19
+Assam,Karimganj,2017,2017,5,2,3
+Haryana,Jhajjar,2014,2014,22,0,22
+Haryana,Kurukshetra,2018,2018,6,3,3
+Haryana,Rewari,2018,2018,67,9,58
+Assam,Nagaon,0   ,2013,1,0,1
+Haryana,Kurukshetra,2019,2019,54,48,6
+Assam,Nalbari,2020,2020,9,8,1
+Delhi,South West,2020,2020,23,22,1
 Assam,Sonitpur,2020,2020,19,11,8
 Assam,Lakhimpur,2019,2019,49,20,29
-Delhi,West,2017,2018,9,5,4
 Assam,Goalpara,2019,2019,66,56,10
-Haryana,Jind,2015,2015,15,1,14
-Assam,Nalbari,2018,2018,64,33,31
-Assam,Kamrup,2020,2020,22,14,8
-Assam,Kamrup,2016,2016,34,8,26
-Assam,Morigaon,2017,2017,91,40,51
-Haryana,Sonepat,2013,2013,1,1,0
+Haryana,Jind,2015,2015,4,0,4
+Assam,Kamrup,2017,2015,2,1,1
+Assam,Nalbari,2018,2018,46,33,13
+Assam,Kamrup,2020,2020,13,13,0
+Assam,Kamrup,2016,2016,14,5,9
+Assam,Morigaon,2017,2017,50,23,27
 Assam,Darrang,2015,2015,4,0,4
-Assam,Jorhat,0   ,2016,1,0,1
-Assam,Golaghat,2018,2018,54,19,35
+Assam,Golaghat,2018,2018,51,19,32
+Delhi,South West,2017,2016,1,1,0
 Haryana,Faridabad,2018,2019,11,7,4
-Haryana,Gurugram,2017,2017,338,19,319
-Delhi,North West,2014,2016,5,5,0
-Assam,Jorhat,0   ,2013,2,0,2
-Haryana,Rohtak,2019,2019,251,63,188
+Delhi,South,2019,2018,3,3,0
+Haryana,Gurugram,2017,2017,141,18,123
+Assam,Udalguri,2017,2016,4,0,4
+Haryana,Rohtak,2019,2019,51,46,5
+Assam,Jorhat,0   ,2013,3,0,3
 Assam,Kokrajhar,0   ,2014,3,0,3
-Assam,Darrang,2019,2019,97,79,18
-Delhi,New Delhi,2020,2020,20,20,0
-Assam,Barpeta,2020,2020,60,45,15
-Haryana,Hisar,2015,2015,30,0,30
-Delhi,West,2018,2018,446,246,200
-Delhi,South West,2016,2017,9,1,8
-Delhi,Shahdara,2020,2020,29,28,1
-Haryana,Gurugram,2018,2018,268,67,201
-Haryana,Panchkula,2017,2017,76,12,64
-Delhi,North,2018,2019,4,4,0
-Haryana,Kurukshetra,2017,2017,142,1,141
-Assam,Karbi Anglong,2017,2017,22,8,14
-Assam,Dhemaji,2020,2020,2,1,1
+Assam,Darrang,2019,2019,96,78,18
+Delhi,New Delhi,2020,2020,19,19,0
+Assam,Barpeta,2020,2020,43,42,1
+Haryana,Hisar,2015,2015,3,0,3
+Delhi,West,2018,2018,301,245,56
+Delhi,South West,2016,2017,1,1,0
+Delhi,Shahdara,2020,2020,25,25,0
+Haryana,Gurugram,2018,2018,98,58,40
+Haryana,Panchkula,2017,2017,26,11,15
+Delhi,North,2018,2019,2,2,0
+Haryana,Kurukshetra,2017,2017,47,0,47
+Assam,Karbi Anglong,2017,2017,18,5,13
 Assam,Darrang,2017,2017,7,4,3
-Assam,Golaghat,2017,2017,53,23,30
-Delhi,Central,2016,2016,201,102,99
+Delhi,North East,2014,2014,14,8,6
+Assam,Golaghat,2017,2017,49,23,26
+Delhi,Central,2016,2016,161,104,57
 Assam,Dhubri,2015,2015,7,1,6
-Delhi,South West,2014,2016,34,19,15
-Assam,Kamrup Metro,2014,2014,22,0,22
-Haryana,Jind,2020,2020,63,15,48
-Haryana,Faridabad,2015,2015,101,0,101
-Haryana,Kaithal,2020,2020,9,8,1
+Assam,Kamrup Metro,2014,2014,3,0,3
+Haryana,Jind,2020,2020,13,13,0
+Haryana,Faridabad,2015,2015,16,0,16
+Haryana,Kaithal,2020,2020,8,8,0
 Assam,Morigaon,2014,2014,10,0,10
-Haryana,Sonepat,2016,2016,162,3,159
+Haryana,Sonepat,2016,2016,64,0,64
 Assam,Udalguri,2015,2015,5,0,5
-Delhi,West,2016,2016,339,146,193
-Delhi,South,2018,2018,252,139,113
+Delhi,West,2016,2016,259,146,113
+Delhi,South,2018,2018,163,138,25
+Assam,Chirang,2018,2014,1,1,0
 Assam,Dhemaji,2018,2018,50,21,29
-Haryana,Panipat,2014,2014,29,0,29
 Assam,Kokrajhar,2020,2020,9,9,0
-Delhi,West,2019,2019,234,210,24
-Delhi,South,2014,2016,66,42,24
+Delhi,West,2019,2019,231,209,22
 Haryana,Bhiwani,2018,2018,1,1,0
-Assam,Nagaon,2017,2017,107,65,42
-Assam,Jorhat,0   ,2014,3,0,3
-Delhi,Shahdara,2017,2018,2,2,0
-Haryana,Kaithal,2017,2017,96,2,94
-Assam,Bongaigaon,2014,2014,1,1,0
-Haryana,Rohtak,2018,2019,4,2,2
-Haryana,Panchkula,2016,2016,46,3,43
-Assam,Baksa,2018,2018,121,76,45
-Delhi,North West,2016,2015,2,0,2
+Delhi,East,2016,2015,1,1,0
+Assam,Nagaon,2017,2017,103,65,38
+Assam,Kamrup,2014,2018,1,1,0
+Assam,Jorhat,0   ,2014,1,0,1
+Haryana,Kaithal,2017,2017,29,0,29
+Delhi,South West,2013,2013,11,1,10
+Delhi,South East,2013,2013,11,3,8
+Haryana,Panchkula,2016,2016,18,3,15
+Assam,Baksa,2018,2018,112,75,37
 Assam,Karimganj,2016,2016,30,9,21
-Delhi,New Delhi,2013,2016,1,0,1
-Delhi,Central,2019,2019,161,148,13
-Delhi,West,2014,2016,189,78,111
-Delhi,South East,2019,2019,163,138,25
-Assam,Bongaigaon,2015,2015,3,2,1
+Delhi,Central,2019,2019,154,148,6
+Delhi,South,2016,2014,1,1,0
+Delhi,South East,2019,2019,151,137,14
+Assam,Karbi Anglong,2016,2015,1,1,0
+Assam,Bongaigaon,2015,2015,1,1,0
 Delhi,North East,2016,2016,16,14,2
-Haryana,Fatehabad,2020,2020,25,10,15
-Haryana,Sirsa,2014,2014,100,0,100
-Assam,Barpeta,2018,2018,150,48,102
-Assam,Lakhimpur,0   ,2016,2,0,2
-Delhi,North,2017,2018,4,4,0
-Delhi,South West,2017,2019,1,1,0
-Assam,Sivasagar,2017,2018,2,0,2
-Delhi,New Delhi,2019,2019,107,92,15
-Delhi,South,2017,2018,5,4,1
-Haryana,Rohtak,2020,2020,76,29,47
+Haryana,Fatehabad,2020,2020,9,9,0
+Assam,Karbi Anglong,2017,2018,3,2,1
+Haryana,Sirsa,2014,2014,32,0,32
+Assam,Barpeta,2018,2018,131,48,83
+Delhi,North,2017,2018,3,3,0
+Assam,Sivasagar,2017,2018,1,0,1
+Delhi,New Delhi,2019,2019,105,94,11
+Delhi,East,2012,2012,1,1,0
+Delhi,South,2017,2018,2,1,1
+Haryana,Rohtak,2020,2020,11,11,0
 Assam,Udalguri,2014,2014,1,0,1
-Haryana,Panipat,2019,2019,188,48,140
-Assam,Barpeta,2016,2016,61,2,59
-Assam,Dhemaji,0   ,2016,3,0,3
-Haryana,Faridabad,2017,2017,456,1,455
-Delhi,North,2019,2019,420,208,212
-Assam,Morigaon,2019,2020,1,1,0
-Delhi,North West,2019,2019,641,313,328
-Assam,Cachar,0   ,2012,1,0,1
-Delhi,New Delhi,2019,2020,3,3,0
-Delhi,New Delhi,2018,2018,106,95,11
+Haryana,Panipat,2019,2019,63,47,16
+Assam,Barpeta,2016,2016,37,2,35
+Assam,Dhemaji,0   ,2016,1,0,1
+Haryana,Faridabad,2017,2017,144,1,143
+Delhi,North,2019,2019,231,209,22
+Delhi,North West,2019,2019,346,308,38
+Delhi,New Delhi,2019,2020,1,1,0
+Delhi,New Delhi,2018,2018,104,95,9
 Delhi,South,2019,2020,2,2,0
-Haryana,Kurukshetra,2016,2016,88,1,87
-Assam,Karbi Anglong,2016,2016,16,6,10
+Haryana,Kurukshetra,2016,2016,35,1,34
+Assam,Karbi Anglong,2016,2016,13,4,9
 Assam,Dhubri,2019,2019,104,70,34
-Delhi,South West,2018,2018,566,224,342
-Assam,Dhemaji,2015,2015,7,0,7
-Assam,Tinsukia,2016,2015,1,1,0
-Delhi,South East,2013,2016,11,3,8
-Assam,Cachar,0   ,2015,13,1,12
-Assam,Nagaon,2020,2020,17,15,2
-Delhi,North East,2013,2015,3,1,2
+Delhi,South West,2018,2018,330,221,109
+Assam,Udalguri,2016,2014,1,0,1
+Assam,Dhemaji,2015,2015,4,0,4
+Assam,Bongaigaon,2017,2016,2,1,1
+Assam,Cachar,0   ,2015,11,1,10
+Assam,Nagaon,2020,2020,15,15,0
 Assam,Dhubri,2017,2017,49,6,43
-Assam,Dhemaji,2014,2014,1,0,1
-Haryana,Ambala,2015,2015,80,0,80
-Assam,Cachar,2013,2013,8,1,7
-Assam,Karimganj,2020,2020,10,9,1
-Assam,Sivasagar,2020,2020,20,17,3
-Delhi,South,2019,2019,264,160,104
+Haryana,Ambala,2015,2015,29,0,29
+Assam,Cachar,2013,2013,2,0,2
+Assam,Karimganj,2020,2020,7,7,0
+Assam,Sivasagar,2020,2020,18,17,1
+Delhi,South,2019,2019,156,151,5
 Delhi,East,2019,2019,151,138,13
-Assam,Cachar,2020,2020,21,21,0
-Assam,Lakhimpur,2016,2016,50,15,35
-Assam,Cachar,2014,2014,7,0,7
-Delhi,North,2020,2020,52,35,17
-Delhi,North,2015,2014,1,1,0
+Assam,Cachar,2020,2020,20,20,0
+Assam,Lakhimpur,2016,2016,30,15,15
+Assam,Cachar,2014,2014,3,0,3
+Delhi,North,2020,2020,33,33,0
+Delhi,North,2015,2014,3,2,1
 Assam,Darrang,2016,2016,14,3,11
-Haryana,Panipat,2018,2018,143,13,130
-Haryana,Gurugram,2019,2019,590,156,434
-Haryana,Kurukshetra,2015,2015,35,1,34
-Assam,Kamrup,2018,2018,135,68,67
-Haryana,Fatehabad,2019,2019,215,46,169
-Haryana,Yamunanagar,2015,2015,188,0,188
+Haryana,Panipat,2018,2018,27,11,16
+Assam,Kamrup,2018,2018,105,55,50
+Haryana,Kurukshetra,2015,2015,14,0,14
+Haryana,Gurugram,2019,2019,159,128,31
+Haryana,Fatehabad,2019,2019,53,38,15
+Haryana,Yamunanagar,2015,2015,72,0,72
+Delhi,North,2016,2015,1,0,1
 Assam,Kokrajhar,0   ,2015,3,0,3
 Delhi,West,2019,2020,3,3,0
 Assam,Dhubri,2020,2020,14,13,1
-Assam,Kamrup,2014,2014,11,2,9
-Haryana,Jhajjar,2016,2016,82,1,81
+Assam,Kamrup,2014,2014,9,1,8
+Delhi,North East,2013,2013,3,1,2
+Haryana,Jhajjar,2016,2016,34,0,34
 Assam,Goalpara,2020,2020,8,8,0
-Assam,Sonitpur,2018,2019,1,0,1
-Haryana,Panchkula,2019,2019,129,21,108
-Assam,Tinsukia,2019,2019,85,67,18
-Assam,Hailakandi,2017,2017,18,2,16
-Assam,Chirang,2015,2015,6,0,6
+Delhi,North,2013,2014,4,0,4
+Haryana,Panchkula,2019,2019,23,18,5
+Delhi,North West,2015,2015,9,8,1
+Assam,Tinsukia,2019,2019,71,68,3
+Assam,Kamrup,2016,2015,4,1,3
+Assam,Hailakandi,2017,2017,15,2,13
+Assam,Chirang,2015,2015,5,0,5
 Delhi,West,2017,2016,1,0,1
 Assam,Jorhat,2020,2020,17,17,0
-Delhi,West,2016,2017,3,2,1
+Delhi,West,2016,2017,2,2,0
 Assam,Dhubri,0   ,2015,12,0,12
-Haryana,Narnaul,2019,2020,2,0,2
-Assam,Tinsukia,0   ,2014,19,0,19
-Haryana,Sonepat,2015,2015,157,0,157
-Assam,Morigaon,2019,2019,137,117,20
+Haryana,Sonepat,2015,2015,53,0,53
+Assam,Tinsukia,0   ,2014,2,0,2
+Assam,Morigaon,2019,2019,129,112,17
 Assam,Dibrugarh,2015,2015,65,3,62
-Assam,Udalguri,2016,2016,15,0,15
-Assam,Darrang,0   ,2014,3,0,3
-Haryana,Yamunanagar,2014,2014,6,0,6
+Assam,Udalguri,2016,2016,6,0,6
+Haryana,Yamunanagar,2014,2014,5,0,5
+Delhi,South,2014,2014,4,4,0
 Assam,Dibrugarh,2015,2016,1,0,1
-Haryana,Yamunanagar,2020,2020,4,3,1
-Delhi,South West,2016,2016,141,67,74
-Assam,Golaghat,2019,2019,97,53,44
+Haryana,Yamunanagar,2020,2020,3,3,0
+Delhi,South West,2016,2016,118,68,50
+Assam,Golaghat,2019,2019,89,53,36
 Assam,Lakhimpur,2020,2020,13,6,7
-Assam,Sonitpur,2016,2014,1,0,1
-Delhi,South East,2016,2017,3,2,1
-Assam,Karbi Anglong,2018,2018,35,16,19
-Delhi,North West,2015,2016,10,8,2
-Assam,Hailakandi,2018,2018,62,16,46
-Haryana,Narnaul,2015,2015,3,0,3
-Delhi,Central,2013,2013,58,0,58
+Assam,Karbi Anglong,2018,2018,34,15,19
+Assam,Hailakandi,2018,2018,27,11,16
+Assam,Kamrup,2018,2017,1,1,0
+Delhi,Central,2013,2013,97,3,94
+Delhi,South East,2015,2015,39,35,4
 Assam,Darrang,2018,2018,38,18,20
-Delhi,South East,2015,2016,39,35,4
-Assam,Morigaon,2018,2019,2,2,0
-Haryana,Hisar,2019,2019,334,66,268
-Assam,Kamrup Metro,2016,2016,101,10,91
+Assam,Kamrup,2018,2016,1,1,0
+Haryana,Hisar,2019,2019,83,58,25
+Assam,Kamrup Metro,2016,2016,19,10,9
 Delhi,South West,2019,2020,4,4,0
-Assam,Jorhat,2015,2015,1,0,1
-Assam,Nagaon,2014,2014,30,7,23
+Delhi,North,2015,2015,60,40,20
+Assam,Nagaon,2014,2014,29,7,22
+Delhi,West,2014,2015,1,1,0
 Delhi,West,2020,2020,49,48,1
+Assam,Udalguri,2017,2015,1,0,1
+Delhi,South,2017,2016,4,3,1
 Assam,Dibrugarh,2014,2014,17,0,17
-Haryana,Panipat,2017,2017,173,8,165
-Assam,Bongaigaon,2017,2017,18,2,16
+Haryana,Panipat,2017,2017,50,6,44
+Assam,Bongaigaon,2017,2017,16,1,15
 Assam,Barpeta,2010,2019,1,1,0
-Assam,Dima Hasao,2019,2019,8,4,4
-Delhi,Shahdara,2017,2017,104,97,7
-Assam,Barpeta,0   ,2013,1,0,1
-Assam,Kamrup Metro,0   ,2013,3,0,3
-Haryana,Hisar,2013,2013,1,0,1
+Assam,Dima Hasao,2019,2019,5,4,1
+Delhi,Shahdara,2017,2017,105,98,7
 Assam,Karbi Anglong,2020,2020,18,18,0
-Assam,Dima Hasao,2016,2016,1,1,0
-Haryana,Sirsa,2019,2019,320,89,231
-Assam,Sonitpur,0   ,2012,1,0,1
-Haryana,Palwal,2020,2020,50,33,17
-Haryana,Sonepat,2020,2020,44,19,25
-Assam,Sivasagar,2019,2019,115,73,42
-Delhi,North,2015,2016,62,41,21
-Assam,Cachar,2019,2019,82,50,32
-Haryana,Sonepat,2017,2017,174,4,170
-Haryana,Faridabad,2019,2019,813,213,600
-Haryana,Fatehabad,2017,2017,208,10,198
+Haryana,Sirsa,2019,2019,90,71,19
+Haryana,Palwal,2020,2020,19,19,0
+Haryana,Sonepat,2020,2020,11,11,0
+Assam,Sivasagar,2019,2019,96,73,23
+Assam,Cachar,2019,2019,73,49,24
+Assam,Karbi Anglong,2014,2015,1,1,0
+Haryana,Sonepat,2017,2017,55,3,52
+Haryana,Faridabad,2019,2019,211,183,28
+Haryana,Fatehabad,2017,2017,53,2,51
+Delhi,North West,2013,2013,1,1,0
 Delhi,South East,2019,2020,2,2,0
-Assam,Tinsukia,2020,2020,19,16,3
-Assam,Tinsukia,2019,2018,1,1,0
-Delhi,Central,2014,2014,18,0,18
-Assam,Morigaon,2017,2020,2,2,0
-Haryana,Karnal,2019,2019,21,1,20
-Assam,Sivasagar,2014,2014,35,1,34
-Haryana,Rewari,2017,2017,77,1,76
-Delhi,New Delhi,2017,2017,100,82,18
-Assam,Karbi Anglong,2013,2013,6,5,1
-Haryana,Ambala,2018,2018,257,49,208
-Assam,Cachar,2017,2017,59,26,33
-Assam,Cachar,2015,2015,14,0,14
-Haryana,Karnal,2015,2015,1,0,1
-Delhi,South East,2014,2016,26,15,11
-Assam,Darrang,0   ,2016,1,0,1
-Haryana,Narnaul,2018,2018,10,0,10
-Delhi,Shahdara,2015,2016,39,35,4
-Haryana,Palwal,2019,2019,262,100,162
-Assam,Bongaigaon,2018,2018,16,1,15
-Haryana,Rohtak,2014,2014,1,1,0
-Haryana,Kurukshetra,2020,2020,42,16,26
-Assam,Goalpara,0   ,2015,3,1,2
-Assam,Tinsukia,2016,2016,4,1,3
-Haryana,Narnaul,2016,2016,12,0,12
-Delhi,Central,2018,2018,284,138,146
-Assam,Nagaon,2016,2016,28,16,12
-Delhi,Central,2015,2016,96,48,48
-Delhi,South West,2017,2018,8,6,2
-Assam,Bongaigaon,2020,2020,18,18,0
-Haryana,Sirsa,2020,2020,98,40,58
-Assam,Sonitpur,2018,2018,145,56,89
-Haryana,Jhajjar,2013,2013,3,0,3
-Haryana,Jind,2016,2016,87,1,86
+Assam,Tinsukia,2020,2020,14,14,0
+Delhi,Central,2014,2014,77,10,67
+Delhi,North,2013,2013,15,1,14
+Assam,Sivasagar,2014,2014,32,1,31
+Haryana,Rewari,2017,2017,30,0,30
+Delhi,New Delhi,2017,2017,97,80,17
+Assam,Karbi Anglong,2013,2013,5,4,1
+Haryana,Ambala,2018,2018,68,27,41
+Assam,Cachar,2017,2017,54,26,28
+Assam,Cachar,2015,2015,9,0,9
+Haryana,Palwal,2019,2019,93,78,15
+Assam,Bongaigaon,2018,2018,13,1,12
+Haryana,Kurukshetra,2020,2020,12,12,0
+Delhi,South,2015,2015,80,76,4
+Assam,Goalpara,0   ,2015,2,0,2
+Assam,Tinsukia,2016,2016,3,0,3
+Delhi,Central,2018,2018,164,138,26
+Assam,Nagaon,2016,2016,24,16,8
+Delhi,South West,2017,2018,3,2,1
+Assam,Bongaigaon,2020,2020,16,16,0
+Haryana,Sirsa,2020,2020,20,19,1
+Assam,Sonitpur,2018,2018,146,56,90
+Haryana,Jhajjar,2013,2013,1,0,1
+Haryana,Jind,2016,2016,24,1,23
 Assam,Goalpara,2016,2016,1,1,0
-Delhi,South East,2016,2016,135,60,75
-Haryana,Hisar,2020,2020,79,28,51
-Delhi,North,2017,2017,514,193,321
-Haryana,Karnal,2018,2018,9,1,8
-Assam,Dhemaji,2017,2017,39,12,27
-Delhi,North West,2018,2018,669,245,424
-Haryana,Sonepat,2014,2014,62,0,62
-Delhi,North West,2016,2017,4,3,1
-Haryana,Rohtak,2015,2015,130,0,130
+Delhi,South East,2016,2016,72,62,10
+Haryana,Hisar,2020,2020,23,22,1
+Delhi,North,2017,2017,268,194,74
+Assam,Dhemaji,2017,2017,35,12,23
+Delhi,North West,2018,2018,299,234,65
+Haryana,Sonepat,2014,2014,20,0,20
+Delhi,North West,2016,2017,1,1,0
+Haryana,Rohtak,2015,2015,35,0,35
 Haryana,Sirsa,2015,2016,1,0,1
-Assam,Nagaon,2018,2018,140,87,53
-Delhi,West,2013,2016,137,18,119
-Assam,Sonitpur,0   ,2014,4,1,3
-Haryana,Hisar,2016,2016,143,1,142
-Assam,Kokrajhar,2019,2019,60,41,19
+Delhi,South,2013,2013,3,3,0
+Assam,Nagaon,2018,2018,125,87,38
+Assam,Sonitpur,0   ,2014,2,1,1
+Haryana,Hisar,2016,2016,36,0,36
+Assam,Kokrajhar,2019,2019,56,41,15
 Assam,Chirang,2016,2016,8,1,7
-Haryana,Panchkula,2018,2018,92,22,70
-Assam,Bongaigaon,2019,2019,39,29,10
-Delhi,North West,2009,2016,1,1,0
-Haryana,Ambala,2019,2019,335,80,255
-Assam,Kamrup Metro,2020,2020,23,16,7
-Delhi,East,2013,2016,10,6,4
-Haryana,Yamunanagar,2019,2019,18,3,15
-Delhi,North East,2017,2017,44,38,6
-Delhi,Central,2016,2017,5,2,3
-Haryana,Rohtak,2017,2017,174,1,173
-Assam,Kokrajhar,2018,2019,1,1,0
-Delhi,North West,2017,2017,538,170,368
-Haryana,Kaithal,2018,2018,146,7,139
-Haryana,Gurugram,2016,2016,120,3,117
-Delhi,North East,2018,2018,120,88,32
-Assam,Jorhat,2018,2018,60,17,43
-Assam,Barpeta,2019,2019,263,132,131
-Assam,Darrang,0   ,2015,1,0,1
-Delhi,East,2012,2016,1,1,0
-Assam,Kamrup,2015,2015,15,4,11
-Delhi,South West,2013,2016,11,1,10
-Assam,Nagaon,2015,2015,4,0,4
-Assam,Barpeta,2014,2014,6,0,6
+Haryana,Panchkula,2018,2018,31,19,12
+Assam,Bongaigaon,2019,2019,30,25,5
+Assam,Goalpara,0   ,2014,1,1,0
+Haryana,Ambala,2019,2019,75,52,23
+Assam,Kamrup Metro,2020,2020,15,15,0
+Haryana,Yamunanagar,2019,2019,3,3,0
+Delhi,North East,2017,2017,43,37,6
+Haryana,Rohtak,2017,2017,57,1,56
+Assam,Kamrup,2017,2018,7,6,1
+Assam,Sivasagar,2016,2017,1,1,0
+Delhi,North West,2017,2017,231,159,72
+Haryana,Kaithal,2018,2018,58,3,55
+Assam,Karbi Anglong,2016,2019,1,1,0
+Delhi,New Delhi,2019,2013,1,0,1
+Haryana,Gurugram,2016,2016,52,3,49
+Delhi,North East,2018,2018,117,88,29
+Delhi,West,2013,2014,2,1,1
+Assam,Barpeta,2019,2019,198,128,70
+Assam,Jorhat,2018,2018,59,17,42
+Assam,Kamrup,2015,2015,10,4,6
+Assam,Bongaigaon,2015,2016,2,1,1
+Assam,Barpeta,2014,2014,3,0,3
 Assam,Golaghat,2016,2016,79,27,52
-Haryana,Gurugram,2020,2020,78,33,45
-Haryana,Yamunanagar,2018,2018,7,1,6
-Assam,Kamrup Metro,2015,2015,87,0,87
-Delhi,South East,2017,2017,164,118,46
-Haryana,Jhajjar,2017,2017,138,3,135
+Haryana,Gurugram,2020,2020,15,15,0
+Haryana,Yamunanagar,2018,2018,3,1,2
+Assam,Kamrup Metro,2015,2015,11,0,11
+Delhi,South East,2017,2017,135,118,17
+Haryana,Jhajjar,2017,2017,42,1,41
 Delhi,North East,2015,2015,22,21,1
-Delhi,North,2009,2016,1,1,0
