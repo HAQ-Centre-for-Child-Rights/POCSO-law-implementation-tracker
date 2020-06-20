@@ -126,10 +126,6 @@ dbxUpdate(
 ```
 
 
-```{sql connection=con, output.var='test'}
-select case_flag, case_flag_reason, count(cino) from case_details group by case_flag, case_flag_reason
-```
-
 Update case disposal nature - Standardise values under `disp_name`
 
 ```{sql connection=con}
@@ -156,4 +152,33 @@ dbxUpdate(
   where_cols = c('cino')
 )
 ```
+
+Update case type - Standardise values under `type_name`
+
+```{sql connection=con}
+ALTER table case_details ADD updated_type_name varchar;
+```
+
+```{sql connection=con, output.var='clean_type_name'}
+select cino, type_name from case_details where case_flag = '1'
+```
+
+```{r}
+clean_type_name$type_name <- str_trim(clean_type_name$type_name)
+case_type_codebook <- read_csv("datasets/case_type_codebook.csv")
+case_type_codebook$`Broad heading it falls under` <- NULL
+
+
+clean_type_name <- left_join(clean_type_name, case_type_codebook, by='type_name')
+
+clean_type_name$type_name <- NULL
+
+dbxUpdate(
+  conn = con,
+  table = 'case_details',
+  records = clean_type_name,
+  where_cols = c('cino')
+)
+```
+
 

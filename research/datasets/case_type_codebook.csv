@@ -9,7 +9,7 @@ Cases Under POCSO Act,SC,POCSO Act
 Special Case POCSO,SC,Special (POCSO) Case
 Spl (CCL),SC,Special (CCL)
 POCSO Act,SC,POCSO Act
-Sessions  Spl POCSO,SC,Sessions Special POCSO
+Sessions Spl POCSO,SC,Sessions Special POCSO
 Special POSCO,SC,Special (POCSO) Case
 SC T2,SC,Sessions Case (SC)
 SPECIAL JUVENILE,SC,Special Juvenile Case
@@ -17,7 +17,7 @@ SPECIAL JUVENILE CASE,SC,Special Juvenile Case
 Special Case ( P ),SC,Special (POCSO) Case
 Special (POCSO),SC,Special (POCSO) Case
 Special Case,SC,Special Case
-Sessions Case  T II,SC,Sessions Case (SC)
+Sessions Case T II,SC,Sessions Case (SC)
 Sessions Case,SC,Sessions Case (SC)
 Sessions ( Spl.),SC,Sessions Special
 Sessions Spl. (C),SC,Sessions Special
@@ -38,7 +38,7 @@ Sessions (Special),SC,Sessions Special
 POCSO,SC,POCSO Act
 SpecialPOCSO,SC,Special (POCSO) Case
 Special A,SC,Special Case
-Sessions  Spl,SC,Sessions Special
+Sessions Spl,SC,Sessions Special
 Sessions Spl.,SC,Sessions Special
 Spl (pocso),SC,Special (POCSO) Case
 PCSO Act 2012,SC,POCSO Act
@@ -50,3 +50,6 @@ S C,SC,Sessions Case (SC)
 S.C.,SC,Sessions Case (SC)
 SC AND ST ACT,SC,SC-ST Act
 SC-ST,SC,SC-ST Act
+Sessions  Spl POCSO,SC,Sessions Special POCSO
+Sessions  Spl,SC,Sessions Special
+Sessions Case  T II,SC,Sessions Case (SC)

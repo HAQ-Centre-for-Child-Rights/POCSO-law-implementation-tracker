@@ -16,28 +16,18 @@ SELECT table_name FROM information_schema.tables
 ```
 
 
-```{r total-cases-data}
-
-cols_to_select <- c("district_code", "district_name", "state_code", "state_name", "complex_code", "court_code", "court_name", "court_no", "est_code", "cino", "case_no", "fil_no", "fil_year", "reg_no", "reg_year", "fir_no", "fir_year", "type_name", "date_of_decision", "date_of_filing", "dt_regis", "disp_name", "disp_nature", "police_station", "subordinate_court_no", "subordinate_court_case_type", "subordinate_court_case_no", "tranfer_est_flag")
-
-all_cases <- dbxSelect(
-  con,
-  glue("select {paste0(cols_to_select,collapse = ',')} from case_details")
-)
-```
-
 ## Year on Year
 ```{sql connection=con, output.var='year_wise_cases'}
-select state_name, district_name, fil_year, reg_year, count(cino) as total_cases, 
+select state_name, district_name, fil_year, reg_year_date, count(cino) as total_cases, 
 sum(case when disp_nature = '0' then 1 else 0 end) as pending_cases,
 sum(case when disp_nature != '0' then 1 else 0 end) as disposed_cases
-from case_details group by state_name, district_name, fil_year, reg_year
+from case_details where case_flag = '1' group by state_name, district_name, fil_year, reg_year_date
 ```
 
 There are cases with filing year as 0 in Assam and Haryana. Generating a set of all such cases for a deep dive
 
 ```{sql connection=con, output.var='filing_year_0'}
-select state_name, district_name, est_code, court_name, cino, fil_no,date_of_filing, reg_no, reg_year, type_name, disp_nature, disp_name from case_details where fil_year = '0'
+select state_name, district_name, est_code, court_name, cino, fil_no,date_of_filing, reg_no, reg_year_date, type_name, disp_nature, disp_name from case_details where fil_year = '0' and case_flag = '1'
 ```
 
 For some cases, the filing year is less than 2012. What are these cases ?
