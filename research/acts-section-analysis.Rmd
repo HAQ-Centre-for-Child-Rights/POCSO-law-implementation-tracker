@@ -16,6 +16,25 @@ source("../scripts/source_files.R")
 ```
 
 
+```{sql connection=con}
+select count(*) as total_rows, 'act' as act_table from act UNION select count(*) as total_rows, 'acts_subset' as act_table from acts_subset
+```
+
+```{sql connection=con, output.var='check_acts'}
+select c.act as act_id, d.name as act_name, d.section as section_name from (select distinct a.cino, b.act from case_details as a LEFT JOIN case_acts as b ON a.cino=b.cino where case_flag = '1') as c LEFT JOIN act as d on c.act=d.id
+```
+
+Writing check_acts for standardising acts
+
+```{r}
+write.csv(check_acts, "datasets/to_standardise/acts_to_standardise.csv")
+```
+
+
+```{sql connection=con}
+select count(distinct a.cino) from case_details as a LEFT JOIN case_acts as b ON a.cino=b.cino where case_flag = '1'
+```
+
 ```{sql connection=con, output.var='acts_dataset'}
 select * from acts_subset
 ```
