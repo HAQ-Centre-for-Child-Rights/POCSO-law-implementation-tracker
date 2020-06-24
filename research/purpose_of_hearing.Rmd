@@ -1,0 +1,27 @@
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+	echo = FALSE,
+	eval=FALSE,
+	message = FALSE,
+	warning = FALSE
+)
+source("../scripts/source_files.R")
+```
+
+```{sql connection=con, output.var='purpose_of_hearing'}
+select a.cino, b.purpose from case_details as a left join case_history as b ON a.cino=b.cino where a.case_flag = '1'
+```
+
+To share, removing the cino and removing duplicates from purpose so shorten the file
+
+```{r}
+purpose_of_hearing$cino <- NULL
+purpose_df <- data.frame(purpose_of_hearing=unique(purpose_of_hearing$purpose))
+
+write_csv(purpose_df, 'datasets/to_standardise/purpose_of_hearing.csv')
+```
+
+
+
