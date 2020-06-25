@@ -1,5 +1,4 @@
 
-
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(
 	echo = FALSE,
@@ -10,18 +9,22 @@ knitr::opts_chunk$set(
 source("../scripts/source_files.R")
 ```
 
+Get case history details for all cases
 ```{sql connection=con, output.var='purpose_of_hearing'}
-select a.cino, b.purpose from case_details as a left join case_history as b ON a.cino=b.cino where a.case_flag = '1'
+select c.cino, c.state_name, c.district_name, c.disp_nature, c.updated_disp_name, c.updated_type_name, c.court_name, c.est_code, c.reg_year_date, c.fir_year, c.updated_purpose, count(c.cino) as total_hearings from (select a.cino, a.state_name, a.district_name, a.disp_nature, a.updated_disp_name, a.updated_type_name, a.court_name, a.est_code, a.reg_year_date, a.fir_year, b.updated_purpose from case_details as a left join case_history as b ON a.cino=b.cino where a.case_flag = '1') as c group by c.cino, c.state_name, c.district_name, c.disp_nature, c.updated_disp_name, c.updated_type_name, c.court_name, c.est_code, c.reg_year_date, c.fir_year, c.updated_purpose
 ```
 
-To share, removing the cino and removing duplicates from purpose so shorten the file
+Reshape the data to have one row per case
+```{r}
+purpose_of_hearing$total_hearings[is.na(purpose_of_hearing$total_hearings)] <- 0
+
+purpose_of_hearing_wide <- purpose_of_hearing %>% pivot_wider(names_from = updated_purpose,values_from = total_hearings,values_fill=0)  
+
+purpose_of_hearing_wide <- purpose_of_hearing_wide %>% mutate(total_hearings = rowSums(across(`Miscellaneous Arguments`:`P`)))
+```
 
 ```{r}
-purpose_of_hearing$cino <- NULL
-purpose_df <- data.frame(purpose_of_hearing=unique(purpose_of_hearing$purpose))
-
-write_csv(purpose_df, 'datasets/to_standardise/purpose_of_hearing.csv')
+write_csv(purpose_of_hearing_wide, "datasets/cases_with_purpose_of_hearing.csv")
 ```
-
 
 
