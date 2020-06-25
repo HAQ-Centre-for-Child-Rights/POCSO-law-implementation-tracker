@@ -132,7 +132,7 @@ select cino, disp_name from case_details where case_flag = '1'
 
 ```{r}
 clean_disp_name$disp_name <- str_trim(clean_disp_name$disp_name)
-disposal_codebook <- read_csv("datasets/case_disposal_codebook.csv")
+disposal_codebook <- read_csv("datasets/codebook/case_disposal_codebook.csv")
 
 clean_disp_name <- left_join(clean_disp_name, disposal_codebook, by='disp_name')
 
@@ -159,7 +159,7 @@ select cino, type_name from case_details where case_flag = '1'
 
 ```{r}
 clean_type_name$type_name <- str_trim(clean_type_name$type_name)
-case_type_codebook <- read_csv("datasets/case_type_codebook.csv")
+case_type_codebook <- read_csv("datasets/codebook/case_type_codebook.csv")
 case_type_codebook$`Broad heading it falls under` <- NULL
 
 
