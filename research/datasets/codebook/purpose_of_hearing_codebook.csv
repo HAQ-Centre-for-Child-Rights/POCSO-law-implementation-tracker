@@ -1,4 +1,4 @@
-purpose_of_hearing,consolidated_purpose_of_hearing
+purpose,consolidated_purpose_of_hearing
 Misc./ Appearance,Miscellaneous Appearance
 Charge,Charge
 Prosecution Evidence,Prosecution Evidence
@@ -9,7 +9,7 @@ Statement of Accused,Statement of Accused
 Final Arguments,Final Arguments
 For Bail,Bail
 Appereance,Miscellaneous Appearance
-Prosecution Evidence,Prosecution Evidence
+Procecution Evidence,Prosecution Evidence
 313 Cr.Pc,Statement of Accused
 Defence Evidence,Defence Evidence
 Final Order,Judgement
@@ -99,6 +99,7 @@ Defendant Witness,Defence Evidence
 Hearing on Petition,Miscellaneous
 Cross examination of Prosecution Witness,Prosecution Evidence
 Court/Official witness,Other Evidence
+Court/Official  witness,Other Evidence
 Report,Miscellaneous
 F.F,Miscellaneous
 Statement,Other Evidence
@@ -192,11 +193,13 @@ Evidence of M.O.,Prosecution Evidence
 Appearence of the accused,Miscellaneous Appearance
 Inventory Report,Miscellaneous
 Appearence and C.C.,Charge
+Appearance  Report,Miscellaneous Appearance
 Appearance and Report,Miscellaneous Appearance
 Examination,Other Evidence
 Evidence of I.O.,Prosecution Evidence
 Cost of Nazir,Miscellaneous
 Statement / Defence / Argument,Defence Evidence
+Statement  and Defence,Defence Evidence
 Statement and Defence,Defence Evidence
 Evedience of IO/MO,Prosecution Evidence
 Evedience of MO,Prosecution Evidence
@@ -362,3 +365,4 @@ Pre-Summning Evidence,Other Evidence
 P,P
 FRESH APPLICATION,Miscellaneous
 Order on Misc. Application,Miscellaneous Order
+Awaiting  report,Miscellaneous
