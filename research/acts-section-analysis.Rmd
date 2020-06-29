@@ -1,10 +1,3 @@
----
-title: "Combination of Acts & Section"
-author: "CivicDataLab"
-date: "10/06/2020"
-output: html_document
----
-
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(
 	echo = FALSE,
@@ -14,6 +7,57 @@ knitr::opts_chunk$set(
 )
 source("../scripts/source_files.R")
 ```
+
+
+--- This section filters all acts identified with issues. We generate some more information on these acts such as details on orders and judgements to check if we can still include these acts in the analysis. 
+
+```{r issue with these acts}
+acts_issue <- read_csv("/tmp/pocso/issue_with_these_acts.csv")
+act_ids <- noquote(paste0(acts_issue$act_id, collapse = ','))
+```
+
+```{r cases_with_issues}
+get_cases_with_issues <- glue("select * from case_acts where act IN ({act_ids})")
+cases_with_issues <- dbxSelect(conn = con, statement = get_cases_with_issues)
+case_list <- noquote(paste0("'",cases_with_issues$cino,"'",collapse = ','))
+```
+
+Get judgment details for identified cases
+
+```{r}
+get_case_details <- glue("select cino, judgment_link, judgment_path from case_details where cino IN ({case_list})")
+cases_with_details <- dbxSelect(conn = con, statement = get_case_details)
+```
+
+Get order details for identified cases
+```{r}
+get_order_details <- glue("select cino, count(cino) as total_orders from public.order where cino IN ({case_list}) group by cino")
+cases_with_orders <- dbxSelect(conn = con, statement = get_order_details)
+```
+
+Joining files at cino
+```{r}
+all_cases_with_issues <- left_join(cases_with_issues, cases_with_details)
+all_cases_with_issues <- left_join(all_cases_with_issues, cases_with_orders)
+all_cases_with_issues$judgment_link[is.na(all_cases_with_issues$judgment_link)] <- ''
+all_cases_with_issues$judgment_path[is.na(all_cases_with_issues$judgment_path)] <- ''
+all_cases_with_issues$total_orders[is.na(all_cases_with_issues$total_orders)] <- 0
+
+all_acts_with_issues <- all_cases_with_issues %>% group_by(act) %>% summarise(total_cases = length(cino), total_judgements = length(judgment_link[judgment_link != '']),
+                                                                              total_orders = sum(total_orders))
+
+all_acts_with_issues <- left_join(acts_issue, all_acts_with_issues, by=c('act_id'='act'))
+```
+
+```{r}
+write_csv(all_acts_with_issues, "datasets/to_standardise/acts_with_issues.csv")
+```
+
+
+
+
+
+--- To update the section below for acts and section analysis, post data cleaning 
 
 
 ```{sql connection=con}
