@@ -25,7 +25,7 @@ case_list <- noquote(paste0("'",cases_with_issues$cino,"'",collapse = ','))
 Get judgment details for identified cases
 
 ```{r}
-get_case_details <- glue("select cino, judgment_link, judgment_path from case_details where cino IN ({case_list})")
+get_case_details <- glue("select cino, state_name, judgment_link, judgment_path from case_details where cino IN ({case_list})")
 cases_with_details <- dbxSelect(conn = con, statement = get_case_details)
 ```
 
@@ -43,7 +43,7 @@ all_cases_with_issues$judgment_link[is.na(all_cases_with_issues$judgment_link)] 
 all_cases_with_issues$judgment_path[is.na(all_cases_with_issues$judgment_path)] <- ''
 all_cases_with_issues$total_orders[is.na(all_cases_with_issues$total_orders)] <- 0
 
-all_acts_with_issues <- all_cases_with_issues %>% group_by(act) %>% summarise(total_cases = length(cino), total_judgements = length(judgment_link[judgment_link != '']),
+all_acts_with_issues <- all_cases_with_issues %>% group_by(act,state_name) %>% summarise(total_cases = length(cino), total_judgements = length(judgment_link[judgment_link != '']),
                                                                               total_orders = sum(total_orders))
 
 all_acts_with_issues <- left_join(acts_issue, all_acts_with_issues, by=c('act_id'='act'))

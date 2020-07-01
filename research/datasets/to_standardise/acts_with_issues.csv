@@ -1,274 +1,289 @@
-act_id,act_name,section_name,total_cases,total_judgements,total_orders
-54,SC/ST Act,2w,2,1,32
-86,SC/ST Act,---,7,1,39
-105,POCSO Act,3(2)(v),1,1,32
-122,POCSO Act,3(2)(V),1,1,3
-123,POCSO Act,3(1)(W),1,1,3
-140,SC/ST Act,3(1)XII,1,0,22
-162,SC/ST Act,3(1)(XII),3,1,15
-168,SC/ST Act,3(1)(11),2,1,15
-169,SC/ST Act,3(1)(12),3,1,87
-184,SC/ST Act,SC,2,1,48
-185,SC/ST Act,STACT,1,1,40
-195,POCSO Act,3-1 (xii),1,0,12
-197,SC/ST Act,3.1(12),1,0,13
-199,SC/ST Act,SC/STACT1989,1,0,13
-209,POCSO Act,SC,1,0,12
-210,POCSO Act,STACT,1,0,12
-224,POCSO Act,ACT,1,1,25
-230,POCSO Act,u,2,1,35
-232,SC/ST Act,u,1,0,20
-234,SC/ST Act,3(I)(XI),1,0,12
-264,SC/ST Act,33,11,1,88
-265,SC/ST Act,89,13,1,101
-269,Arms Act,54,46,16,326
-270,Arms Act,59,45,15,278
-278,SC/ST Act,33,5,0,61
-279,SC/ST Act,89,5,0,61
-367,POCSO Act,---,34,9,136
-423,I.P.C.,D,4,1,18
-483,I.P.C.,-3,3,2,22
-502,I.P.C.,3636,1,1,20
-544,SC/ST Act,3(XI),1,1,11
-599,Medical Termination of Pregnancy Act,45,1,1,22
-608,POCSO Act,3A1,1,0,20
-612,SC/ST Act,3(i)(XI)(XII),1,1,2
-648,I.P.C.,IPC,19,0,62
-657,POCSO Act,POCSOAct,4,2,118
-658,SC/ST Act,ATAct,1,0,8
-660,SC/ST Act,SC/ST,1,0,4
-683,POCSO Act,32,1,0,36
-703,SC/ST Act,(w),2,0,17
-704,SC/ST Act,(v),3,0,20
-706,POCSO Act,POCSO,8,3,71
-718,SC/ST Act,392V,1,1,15
-767,I.P.C.,379 AB,1,0,13
-778,SC/ST Act,3XII,2,1,19
-808,SC/ST Act,ST,3,0,17
-871,I.P.C.,A,7,1,20
-888,SC/ST Act,33,34,15,229
-889,SC/ST Act,89,34,15,229
-896,SC/ST Act,33,59,30,396
-897,SC/ST Act,89,57,30,366
-911,SC/ST Act,3(I)(XII),1,1,12
-920,I.P.C.,D,3,1,5
-921,POCSO Act,---,24,5,32
-993,I.P.C.,B,9,1,9
-995,I.P.C.,63,2,0,3
-1014,SC/ST Act,3(1)(xii),3,1,43
-1015,SC/ST Act,69,1,0,15
-1024,SC/ST Act,3(i)(xii),2,0,59
-1064,POCSO Act,6(3),1,0,12
-1068,I.P.C.,(i),6,2,3
-1072,I.P.C.,(I),3,1,13
-1106,POCSO Act,---,31,4,116
-1138,I.P.C.,379B,6,1,38
-1157,I.P.C.,1,2,0,10
-1263,I.P.C.,n),22,7,122
-1279,I.P.C.,I,4,1,25
-1282,I.P.C.,N),14,2,54
-1289,I.P.C.,1,2,0,16
-1290,I.P.C.,i),8,1,46
-1320,I.P.C.,j),1,1,20
-1330,I.P.C.,-1,5,1,10
-1353,I.P.C.,f),2,1,17
-1356,I.P.C.,A),2,0,45
-1376,SC/ST Act,W,2,2,6
-1377,SC/ST Act,i,2,2,6
-1378,SC/ST Act,ii),2,2,6
-1384,I.P.C.,f,1,0,5
-1385,I.P.C.,1),1,0,5
-1388,I.P.C.,ii),1,1,13
-1402,I.P.C.,376(1)A,1,0,34
-1414,I.P.C.,354(I)(ii),1,0,9
-1427,SC/ST Act,xii),2,1,16
-1432,I.P.C.,376(11)(N),1,1,21
-1465,SC/ST Act,xi),1,1,15
-1514,POCSO Act,Pocso Act,1,0,5
-1598,POCSO Act,---,3,1,38
-1602,I.P.C.,2,5,1,41
-1603,I.P.C.,n,1,1,16
-1610,SC/ST Act,ST,1,0,13
-1634,I.P.C.,B) IPC,1,0,6
-1636,I.P.C.,-1,4,1,15
-1661,POCSO Act,---,12,4,22
-1668,I.P.C.,31,1,1,7
-1701,POCSO Act,---,19,2,42
-1713,SC/ST Act,-2,1,0,12
-1727,POCSO Act,---,4,1,43
-1780,I.P.C.,(1)(1),1,0,7
-1795,I.P.C.,A,17,2,49
-1804,I.P.C.,3645,1,1,27
-1825,I.P.C.,B,3,0,4
-1857,SC/ST Act,Z,1,0,0
-1858,SC/ST Act,B,1,0,0
-1859,SC/ST Act,II,1,0,0
-1868,I.P.C.,15,1,1,15
-1904,I.P.C.,(1)(i),3,1,18
-1924,POCSO Act,ST,1,1,9
-1983,POCSO Act,ACT,2,2,43
-1990,Probation of Offenders Act,14,1,0,9
-2002,Cr. P. C.,IPC,2,0,6
-2047,POCSO Act,6L,1,1,18
-2048,POCSO Act,10G,1,1,18
-2117,POCSO Act,---,6,0,4
-2179,Medical Termination of Pregnency Act,27,1,0,3
-2185,Narcotic Drugs and Psychotropic Substances Act 1985,85,1,0,0
-2306,POCSO Act,---,2,0,10
-2415,I.P.C.,---,519,91,2455
-2419,POCSO Act,1011,1,0,6
-2463,POCSO Act,POCSO,1,0,0
-2541,Provincial Small Cause Court Act 1887,---,1,0,7
-2548,Cr. P. C.,---,184,24,1980
-2563,Hindu Marriage Act 1956,67,1,0,0
-2571,I.P.C.,-12363,1,0,0
-2572,I.P.C.,3765,1,0,3
-2573,I.P.C.,0.366,1,0,0
-2592,I.P.C.,3541,2,1,11
-2593,I.P.C.,3786,1,0,0
-2598,I.P.C.,3213,1,0,0
-2602,POCSO Act,---,4,0,23
-2608,I.P.C.,1098,1,0,0
-2610,I.P.C.,-2,4,1,5
-2617,I.P.C.,3623,1,0,4
-2646,Hindu Minority and Guardianship Act 1956,---,1,0,3
-2649,POCSO Act,2,1,0,0
-2670,Provident Fund Insurance Act,---,1,0,4
-2671,I.P.C.,4561,1,0,8
-2684,I.P.C.,4652,1,1,13
-2697,I.P.C.,0,2,0,0
-2713,I.P.C.,(2,1,0,0
-2714,I.P.C.,)(F)(2),1,0,0
-2715,I.P.C.,(J)IPC,1,0,0
-2728,I.P.C.,i)IPC,1,0,1
-2736,I.P.C.,I,2,0,3
-2737,I.P.C.,F,2,0,3
-2738,I.P.C.,J,1,0,0
-2785,I.P.C.,N,2,0,3
-2804,SC/ST Act,STACT,1,0,0
-2831,Prize Chits and Money Circulation Schemes (Banning) Act,XI,1,0,0
-2875,I.P.C.,(N),1,0,5
-2876,I.P.C.,0,3,0,0
-2894,I.M.C. Act,---,1,0,1
-2908,POCSO Act,POCSOACT,1,0,0
-2926,POCSO Act,6(1)(N)POCSOACT,1,0,3
-2927,I.P.C.,K,1,0,3
-2928,I.P.C.,M,1,0,3
-2938,POCSO Act,R,1,0,0
-2964,I.P.C.,(f),1,1,1
-2978,I.P.C.,37A,1,0,4
-2983,I.P.C.,(f)& (i),1,0,0
-2995,I.P.C.,32B,1,0,6
-3011,POCSO Act,`,1,0,0
-3015,POCSO Act,J(ii),1,0,0
-3024,Cr. P. C.,POCSOACT,1,0,0
-3030,Factories Act,14,1,0,2
-3037,POCSO Act,---,34,8,106
-3043,SC/ST Act,1,1,0,0
-3044,SC/ST Act,S,1,0,0
-3050,"JJ Act, 2000",4,1,0,21
-3051,"JJ Act, 2000",5,1,0,21
-3202,I.P.C.,326B,1,0,13
-3208,I.P.C.,16B,1,0,0
-3249,I.P.C.,376F,1,0,12
-3253,I.P.C.,12,1,0,0
-3260,POCSO Act,---,2,0,8
-3300,Partition,---,1,0,11
-3306,I.P.C.,376(2)1,1,0,3
-3357,POCSO Act,---,526,92,2554
-3475,I.P.C.,2n,1,0,4
-3487,I.P.C.,541,1,0,3
-3527,I.P.C.,B,1,0,0
-3647,I.P.C.,0,17,0,1
-3665,Arms Act,---,2,0,30
-3666,POCSO Act,0,1,0,0
-3688,POCSO Act,0,2,0,0
-3699,Public Premises Act 1971,---,1,0,3
-3715,Child Labour (Prohibition and Regulation) Act,---,2,0,8
-3719,CMRA,---,2,0,5
-3788,I.P.C.,376I,1,0,1
-3792,PCMA,---,1,0,10
-3818,Hindu Marriage Act 1956,34,1,0,4
-3830,Madras Public Property Malversation Act 1837,---,1,0,15
-3840,POCSO Act,pocso,58,4,0
-3841,POCSO Act,Act,25,1,0
-3843,POCSO Act,POCSo,1,0,0
-3864,POCSO Act,pocsoact,4,0,0
-3867,POCSO Act,act,5,0,0
-3869,POCSO Act,(i),1,0,0
-3879,POCSO Act,POCSO,2,0,0
-3880,POCSO Act,ACT,1,0,0
-3887,POCSO Act,IPC,8,0,0
-3893,POCSO Act,pocsoAct,2,1,0
-3897,POCSO Act,pocseact,1,0,0
-3901,POCSO Act,376(F),2,0,0
-3920,POCSO Act,of,1,0,0
-3928,POCSO Act,Pocso,1,0,0
-3936,POCSO Act,2,1,0,0
-3937,POCSO Act,i,1,0,0
-3952,POCSO Act,5(4)pocsoact,1,0,0
-3968,POCSO Act,NA,8,4,0
-4006,POCSO Act,NIL,2,0,0
-4007,POCSO Act,nil,3,0,0
-4008,POCSO Act,376(f),1,0,0
-4024,I.P.C.,i,1,0,0
-4042,POCSO Act,nil,1,0,0
-4125,PCMA,II,1,0,0
-4144,POCSO Act,childlabour,1,0,0
-4174,POCSO Act,II,1,0,0
-4175,POCSO Act,IV,1,0,0
-4208,I.P.C.,375(f),1,1,0
-4247,POCSO Act,U,5,0,13
-4289,POCSO Act,R,6,1,0
-4348,I.P.C.,376(i)(l),1,0,0
-4398,I.P.C.,(2)(1),1,1,0
-4408,I.P.C.,35(D),1,0,0
-4414,I.P.C.,36(A),1,1,0
-4460,POCSO Act,376(2)(1),1,0,1
-4473,POCSO Act,---,2,2,1
-4474,POCSO Act,2(d),1,0,0
-4489,I.P.C.,(F),1,0,0
-4490,I.P.C.,(n),1,0,0
-4511,POCSO Act,376(d)(i)R,1,0,0
-4526,POCSO Act,376(2)(i),1,0,0
-4558,POCSO Act,---,2,1,0
-4567,POCSO Act,5(B)(iv),1,0,0
-4569,I.P.C.,(B),1,0,0
-4586,POCSO Act,---,2,1,0
-4588,POCSO Act,376(2)(i),1,1,0
-4593,POCSO Act,---,2,0,0
-4597,POCSO Act,R,2,1,0
-4610,I.P.C.,B),1,0,0
-4616,POCSO Act,2,1,0,0
-4617,POCSO Act,1,1,0,0
-4622,POCSO Act,376(f),1,1,0
-4624,POCSO Act,s(g),1,1,0
-4636,POCSO Act,r,1,0,0
-4639,POCSO Act,(m),1,1,0
-4640,POCSO Act,376(2)(1),1,0,0
-4642,POCSO Act,376(2)()1,1,1,0
-4657,POCSO Act,---,2,0,0
-4678,POCSO Act,2012,1,0,0
-4707,I.P.C.,W,1,1,0
-4722,POCSO Act,376(2)(i)IPC,1,0,0
-4730,POCSO Act,R,2,0,0
-4848,POCSO Act,2(d),1,0,0
-4852,POCSO Act,R,1,0,0
-4864,POCSO Act,376(F),1,0,0
-4875,POCSO Act,2012,2,1,0
-4892,I.P.C.,3776,1,1,0
-4904,POCSO Act,RW,1,0,0
-5576,POCSO Act,(m),1,0,0
-5577,POCSO Act,(n),1,0,0
-5911,I.P.C.,A,1,0,0
-6046,POCSO Act,POCSO Act,1,0,8
-6163,POCSO Act,A,1,0,0
-691,I.P.C.,506IPCandSCSTAct,1,0,8
-1816,POCSO Act,313IPCandPOCSOAct.,1,0,3
-1946,POCSO Act,506IPCAndPOCSOAct,1,0,2
-2213,I.P.C.,354/POCSO,1,0,0
-2786,POCSO Act,L,1,0,3
-2787,POCSO Act,N POCSOACT,1,0,3
-2816,POCSO Act,POCSP,1,0,0
-2936,I.P.C.,354APOCSOACT,1,0,3
-2982,I.P.C.,POCSO,1,0,6
+act_id,act_name,section_name,state_name,total_cases,total_judgements,total_orders
+54,SC/ST Act,2w,Haryana,2,1,32
+86,SC/ST Act,---,Haryana,7,1,39
+105,POCSO Act,3(2)(v),Haryana,1,1,32
+122,POCSO Act,3(2)(V),Haryana,1,1,3
+123,POCSO Act,3(1)(W),Haryana,1,1,3
+140,SC/ST Act,3(1)XII,Haryana,1,0,22
+162,SC/ST Act,3(1)(XII),Haryana,3,1,15
+168,SC/ST Act,3(1)(11),Haryana,2,1,15
+169,SC/ST Act,3(1)(12),Haryana,3,1,87
+184,SC/ST Act,SC,Haryana,2,1,48
+185,SC/ST Act,STACT,Haryana,1,1,40
+195,POCSO Act,3-1 (xii),Haryana,1,0,12
+197,SC/ST Act,3.1(12),Haryana,1,0,13
+199,SC/ST Act,SC/STACT1989,Haryana,1,0,13
+209,POCSO Act,SC,Haryana,1,0,12
+210,POCSO Act,STACT,Haryana,1,0,12
+224,POCSO Act,ACT,Haryana,1,1,25
+230,POCSO Act,u,Haryana,2,1,35
+232,SC/ST Act,u,Haryana,1,0,20
+234,SC/ST Act,3(I)(XI),Haryana,1,0,12
+264,SC/ST Act,33,Haryana,11,1,88
+265,SC/ST Act,89,Haryana,13,1,101
+269,Arms Act,54,Haryana,46,16,326
+270,Arms Act,59,Haryana,45,15,278
+278,SC/ST Act,33,Haryana,5,0,61
+279,SC/ST Act,89,Haryana,5,0,61
+367,POCSO Act,---,Haryana,34,9,136
+423,I.P.C.,D,Haryana,4,1,18
+483,I.P.C.,-3,Haryana,3,2,22
+502,I.P.C.,3636,Haryana,1,1,20
+544,SC/ST Act,3(XI),Haryana,1,1,11
+599,Medical Termination of Pregnancy Act,45,Haryana,1,1,22
+608,POCSO Act,3A1,Haryana,1,0,20
+612,SC/ST Act,3(i)(XI)(XII),Haryana,1,1,2
+648,I.P.C.,IPC,Delhi,10,0,27
+648,I.P.C.,IPC,Haryana,9,0,35
+657,POCSO Act,POCSOAct,Haryana,4,2,118
+658,SC/ST Act,ATAct,Haryana,1,0,8
+660,SC/ST Act,SC/ST,Haryana,1,0,4
+683,POCSO Act,32,Haryana,1,0,36
+703,SC/ST Act,(w),Haryana,2,0,17
+704,SC/ST Act,(v),Haryana,3,0,20
+706,POCSO Act,POCSO,Haryana,8,3,71
+718,SC/ST Act,392V,Haryana,1,1,15
+767,I.P.C.,379 AB,Haryana,1,0,13
+778,SC/ST Act,3XII,Haryana,2,1,19
+808,SC/ST Act,ST,Haryana,3,0,17
+871,I.P.C.,A,Assam,2,0,0
+871,I.P.C.,A,Haryana,5,1,20
+888,SC/ST Act,33,Haryana,34,15,229
+889,SC/ST Act,89,Haryana,34,15,229
+896,SC/ST Act,33,Haryana,59,30,396
+897,SC/ST Act,89,Haryana,57,30,366
+911,SC/ST Act,3(I)(XII),Haryana,1,1,12
+920,I.P.C.,D,Delhi,1,0,2
+920,I.P.C.,D,Haryana,2,1,3
+921,POCSO Act,---,Haryana,24,5,32
+993,I.P.C.,B,Assam,2,0,0
+993,I.P.C.,B,Delhi,4,0,0
+993,I.P.C.,B,Haryana,3,1,9
+995,I.P.C.,63,Delhi,1,0,1
+995,I.P.C.,63,Haryana,1,0,2
+1014,SC/ST Act,3(1)(xii),Haryana,3,1,43
+1015,SC/ST Act,69,Haryana,1,0,15
+1024,SC/ST Act,3(i)(xii),Haryana,2,0,59
+1064,POCSO Act,6(3),Haryana,1,0,12
+1068,I.P.C.,(i),Assam,5,1,0
+1068,I.P.C.,(i),Haryana,1,1,3
+1072,I.P.C.,(I),Delhi,2,0,11
+1072,I.P.C.,(I),Haryana,1,1,2
+1106,POCSO Act,---,Haryana,31,4,116
+1138,I.P.C.,379B,Haryana,6,1,38
+1157,I.P.C.,1,Delhi,1,0,7
+1157,I.P.C.,1,Haryana,1,0,3
+1263,I.P.C.,n),Haryana,22,7,122
+1279,I.P.C.,I,Haryana,4,1,25
+1282,I.P.C.,N),Haryana,14,2,54
+1289,I.P.C.,1,Haryana,2,0,16
+1290,I.P.C.,i),Haryana,8,1,46
+1320,I.P.C.,j),Haryana,1,1,20
+1330,I.P.C.,-1,Haryana,5,1,10
+1353,I.P.C.,f),Haryana,2,1,17
+1356,I.P.C.,A),Haryana,2,0,45
+1376,SC/ST Act,W,Haryana,2,2,6
+1377,SC/ST Act,i,Haryana,2,2,6
+1378,SC/ST Act,ii),Haryana,2,2,6
+1384,I.P.C.,f,Haryana,1,0,5
+1385,I.P.C.,1),Haryana,1,0,5
+1388,I.P.C.,ii),Haryana,1,1,13
+1402,I.P.C.,376(1)A,Haryana,1,0,34
+1414,I.P.C.,354(I)(ii),Haryana,1,0,9
+1427,SC/ST Act,xii),Haryana,2,1,16
+1432,I.P.C.,376(11)(N),Haryana,1,1,21
+1465,SC/ST Act,xi),Haryana,1,1,15
+1514,POCSO Act,Pocso Act,Haryana,1,0,5
+1598,POCSO Act,---,Haryana,3,1,38
+1602,I.P.C.,2,Assam,1,0,0
+1602,I.P.C.,2,Delhi,2,0,6
+1602,I.P.C.,2,Haryana,2,1,35
+1603,I.P.C.,n,Haryana,1,1,16
+1610,SC/ST Act,ST,Haryana,1,0,13
+1634,I.P.C.,B) IPC,Haryana,1,0,6
+1636,I.P.C.,-1,Assam,3,0,1
+1636,I.P.C.,-1,Haryana,1,1,14
+1661,POCSO Act,---,Delhi,6,0,8
+1661,POCSO Act,---,Haryana,6,4,14
+1668,I.P.C.,31,Haryana,1,1,7
+1701,POCSO Act,---,Assam,2,1,0
+1701,POCSO Act,---,Haryana,17,1,42
+1713,SC/ST Act,-2,Haryana,1,0,12
+1727,POCSO Act,---,Haryana,4,1,43
+1780,I.P.C.,(1)(1),Haryana,1,0,7
+1795,I.P.C.,A,Haryana,17,2,49
+1804,I.P.C.,3645,Haryana,1,1,27
+1825,I.P.C.,B,Haryana,3,0,4
+1857,SC/ST Act,Z,Haryana,1,0,0
+1858,SC/ST Act,B,Haryana,1,0,0
+1859,SC/ST Act,II,Haryana,1,0,0
+1868,I.P.C.,15,Haryana,1,1,15
+1904,I.P.C.,(1)(i),Haryana,3,1,18
+1924,POCSO Act,ST,Haryana,1,1,9
+1983,POCSO Act,ACT,Haryana,2,2,43
+1990,Probation of Offenders Act,14,Haryana,1,0,9
+2002,Cr. P. C.,IPC,Haryana,2,0,6
+2047,POCSO Act,6L,Haryana,1,1,18
+2048,POCSO Act,10G,Haryana,1,1,18
+2117,POCSO Act,---,Haryana,6,0,4
+2179,Medical Termination of Pregnency Act,27,Delhi,1,0,3
+2185,Narcotic Drugs and Psychotropic Substances Act 1985,85,Delhi,1,0,0
+2306,POCSO Act,---,Delhi,2,0,10
+2415,I.P.C.,---,Delhi,519,91,2455
+2419,POCSO Act,1011,Delhi,1,0,6
+2463,POCSO Act,POCSO,Delhi,1,0,0
+2541,Provincial Small Cause Court Act 1887,---,Delhi,1,0,7
+2548,Cr. P. C.,---,Delhi,184,24,1980
+2563,Hindu Marriage Act 1956,67,Delhi,1,0,0
+2571,I.P.C.,-12363,Delhi,1,0,0
+2572,I.P.C.,3765,Delhi,1,0,3
+2573,I.P.C.,0.366,Delhi,1,0,0
+2592,I.P.C.,3541,Delhi,2,1,11
+2593,I.P.C.,3786,Delhi,1,0,0
+2598,I.P.C.,3213,Delhi,1,0,0
+2602,POCSO Act,---,Delhi,4,0,23
+2608,I.P.C.,1098,Delhi,1,0,0
+2610,I.P.C.,-2,Assam,2,1,0
+2610,I.P.C.,-2,Delhi,2,0,5
+2617,I.P.C.,3623,Delhi,1,0,4
+2646,Hindu Minority and Guardianship Act 1956,---,Delhi,1,0,3
+2649,POCSO Act,2,Delhi,1,0,0
+2670,Provident Fund Insurance Act,---,Delhi,1,0,4
+2671,I.P.C.,4561,Delhi,1,0,8
+2684,I.P.C.,4652,Delhi,1,1,13
+2697,I.P.C.,0,Delhi,2,0,0
+2713,I.P.C.,(2,Delhi,1,0,0
+2714,I.P.C.,)(F)(2),Delhi,1,0,0
+2715,I.P.C.,(J)IPC,Delhi,1,0,0
+2728,I.P.C.,i)IPC,Delhi,1,0,1
+2736,I.P.C.,I,Delhi,2,0,3
+2737,I.P.C.,F,Delhi,2,0,3
+2738,I.P.C.,J,Delhi,1,0,0
+2785,I.P.C.,N,Delhi,2,0,3
+2804,SC/ST Act,STACT,Delhi,1,0,0
+2831,Prize Chits and Money Circulation Schemes (Banning) Act,XI,Delhi,1,0,0
+2875,I.P.C.,(N),Delhi,1,0,5
+2876,I.P.C.,0,Delhi,3,0,0
+2894,I.M.C. Act,---,Delhi,1,0,1
+2908,POCSO Act,POCSOACT,Delhi,1,0,0
+2926,POCSO Act,6(1)(N)POCSOACT,Delhi,1,0,3
+2927,I.P.C.,K,Delhi,1,0,3
+2928,I.P.C.,M,Delhi,1,0,3
+2938,POCSO Act,R,Delhi,1,0,0
+2964,I.P.C.,(f),Delhi,1,1,1
+2978,I.P.C.,37A,Delhi,1,0,4
+2983,I.P.C.,(f)& (i),Delhi,1,0,0
+2995,I.P.C.,32B,Delhi,1,0,6
+3011,POCSO Act,`,Delhi,1,0,0
+3015,POCSO Act,J(ii),Delhi,1,0,0
+3024,Cr. P. C.,POCSOACT,Delhi,1,0,0
+3030,Factories Act,14,Delhi,1,0,2
+3037,POCSO Act,---,Delhi,34,8,106
+3043,SC/ST Act,1,Delhi,1,0,0
+3044,SC/ST Act,S,Delhi,1,0,0
+3050,"JJ Act, 2000",4,Delhi,1,0,21
+3051,"JJ Act, 2000",5,Delhi,1,0,21
+3202,I.P.C.,326B,Delhi,1,0,13
+3208,I.P.C.,16B,Delhi,1,0,0
+3249,I.P.C.,376F,Delhi,1,0,12
+3253,I.P.C.,12,Delhi,1,0,0
+3260,POCSO Act,---,Delhi,2,0,8
+3300,Partition,---,Delhi,1,0,11
+3306,I.P.C.,376(2)1,Delhi,1,0,3
+3357,POCSO Act,---,Delhi,526,92,2554
+3475,I.P.C.,2n,Delhi,1,0,4
+3487,I.P.C.,541,Delhi,1,0,3
+3527,I.P.C.,B,Delhi,1,0,0
+3647,I.P.C.,0,Delhi,17,0,1
+3665,Arms Act,---,Delhi,2,0,30
+3666,POCSO Act,0,Delhi,1,0,0
+3688,POCSO Act,0,Delhi,2,0,0
+3699,Public Premises Act 1971,---,Delhi,1,0,3
+3715,Child Labour (Prohibition and Regulation) Act,---,Delhi,2,0,8
+3719,CMRA,---,Delhi,2,0,5
+3788,I.P.C.,376I,Delhi,1,0,1
+3792,PCMA,---,Delhi,1,0,10
+3818,Hindu Marriage Act 1956,34,Delhi,1,0,4
+3830,Madras Public Property Malversation Act 1837,---,Delhi,1,0,15
+3840,POCSO Act,pocso,Assam,58,4,0
+3841,POCSO Act,Act,Assam,25,1,0
+3843,POCSO Act,POCSo,Assam,1,0,0
+3864,POCSO Act,pocsoact,Assam,4,0,0
+3867,POCSO Act,act,Assam,5,0,0
+3869,POCSO Act,(i),Assam,1,0,0
+3879,POCSO Act,POCSO,Assam,2,0,0
+3880,POCSO Act,ACT,Assam,1,0,0
+3887,POCSO Act,IPC,Assam,8,0,0
+3893,POCSO Act,pocsoAct,Assam,2,1,0
+3897,POCSO Act,pocseact,Assam,1,0,0
+3901,POCSO Act,376(F),Assam,2,0,0
+3920,POCSO Act,of,Assam,1,0,0
+3928,POCSO Act,Pocso,Assam,1,0,0
+3936,POCSO Act,2,Assam,1,0,0
+3937,POCSO Act,i,Assam,1,0,0
+3952,POCSO Act,5(4)pocsoact,Assam,1,0,0
+3968,POCSO Act,NA,Assam,8,4,0
+4006,POCSO Act,NIL,Assam,2,0,0
+4007,POCSO Act,nil,Assam,3,0,0
+4008,POCSO Act,376(f),Assam,1,0,0
+4024,I.P.C.,i,Assam,1,0,0
+4042,POCSO Act,nil,Assam,1,0,0
+4125,PCMA,II,Assam,1,0,0
+4144,POCSO Act,childlabour,Assam,1,0,0
+4174,POCSO Act,II,Assam,1,0,0
+4175,POCSO Act,IV,Assam,1,0,0
+4208,I.P.C.,375(f),Assam,1,1,0
+4247,POCSO Act,U,Assam,5,0,13
+4289,POCSO Act,R,Assam,6,1,0
+4348,I.P.C.,376(i)(l),Assam,1,0,0
+4398,I.P.C.,(2)(1),Assam,1,1,0
+4408,I.P.C.,35(D),Assam,1,0,0
+4414,I.P.C.,36(A),Assam,1,1,0
+4460,POCSO Act,376(2)(1),Assam,1,0,1
+4473,POCSO Act,---,Assam,2,2,1
+4474,POCSO Act,2(d),Assam,1,0,0
+4489,I.P.C.,(F),Assam,1,0,0
+4490,I.P.C.,(n),Assam,1,0,0
+4511,POCSO Act,376(d)(i)R,Assam,1,0,0
+4526,POCSO Act,376(2)(i),Assam,1,0,0
+4558,POCSO Act,---,Assam,2,1,0
+4567,POCSO Act,5(B)(iv),Assam,1,0,0
+4569,I.P.C.,(B),Assam,1,0,0
+4586,POCSO Act,---,Assam,2,1,0
+4588,POCSO Act,376(2)(i),Assam,1,1,0
+4593,POCSO Act,---,Assam,2,0,0
+4597,POCSO Act,R,Assam,2,1,0
+4610,I.P.C.,B),Assam,1,0,0
+4616,POCSO Act,2,Assam,1,0,0
+4617,POCSO Act,1,Assam,1,0,0
+4622,POCSO Act,376(f),Assam,1,1,0
+4624,POCSO Act,s(g),Assam,1,1,0
+4636,POCSO Act,r,Assam,1,0,0
+4639,POCSO Act,(m),Assam,1,1,0
+4640,POCSO Act,376(2)(1),Assam,1,0,0
+4642,POCSO Act,376(2)()1,Assam,1,1,0
+4657,POCSO Act,---,Assam,2,0,0
+4678,POCSO Act,2012,Assam,1,0,0
+4707,I.P.C.,W,Assam,1,1,0
+4722,POCSO Act,376(2)(i)IPC,Assam,1,0,0
+4730,POCSO Act,R,Assam,2,0,0
+4848,POCSO Act,2(d),Assam,1,0,0
+4852,POCSO Act,R,Assam,1,0,0
+4864,POCSO Act,376(F),Assam,1,0,0
+4875,POCSO Act,2012,Assam,2,1,0
+4892,I.P.C.,3776,Assam,1,1,0
+4904,POCSO Act,RW,Assam,1,0,0
+5576,POCSO Act,(m),Delhi,1,0,0
+5577,POCSO Act,(n),Delhi,1,0,0
+5911,I.P.C.,A,Delhi,1,0,0
+6046,POCSO Act,POCSO Act,Haryana,1,0,8
+6163,POCSO Act,A,Assam,1,0,0
+691,I.P.C.,506IPCandSCSTAct,Haryana,1,0,8
+1816,POCSO Act,313IPCandPOCSOAct.,Haryana,1,0,3
+1946,POCSO Act,506IPCAndPOCSOAct,Haryana,1,0,2
+2213,I.P.C.,354/POCSO,Delhi,1,0,0
+2786,POCSO Act,L,Delhi,1,0,3
+2787,POCSO Act,N POCSOACT,Delhi,1,0,3
+2816,POCSO Act,POCSP,Delhi,1,0,0
+2936,I.P.C.,354APOCSOACT,Delhi,1,0,3
+2982,I.P.C.,POCSO,Delhi,1,0,6
