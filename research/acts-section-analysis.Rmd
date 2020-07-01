@@ -9,7 +9,7 @@ source("../scripts/source_files.R")
 ```
 
 
---- This section filters all acts identified with issues. We generate some more information on these acts such as details on orders and judgements to check if we can still include these acts in the analysis. 
+--- This section filters all acts identified with issues. We generate some more information on these acts such as details on orders and judgments to check if we can still include these acts in the analysis. 
 
 ```{r issue with these acts}
 acts_issue <- read_csv("/tmp/pocso/issue_with_these_acts.csv")
@@ -53,9 +53,88 @@ all_acts_with_issues <- left_join(acts_issue, all_acts_with_issues, by=c('act_id
 write_csv(all_acts_with_issues, "datasets/to_standardise/acts_with_issues.csv")
 ```
 
+--- Acts & Section codebook (with a few unstandardised acts/sections)
+
+```{r}
+acts_codebook <- read_csv("datasets/codebook/acts_sections_codebook.csv")
+
+# table(acts_codebook$act_name,acts_codebook$act_issue_flag) %>% data.frame() %>% spread(key = Var2, value = Freq) %>% mutate(total=`0`+`1`) %>% View()
+```
 
 
+Create a act/section dataset at a case level
 
+```{sql connection=con, output.var='valid_cases_with_act_id'}
+select a.* from case_acts as a left join case_details as b on a.cino=b.cino where b.case_flag = '1' 
+```
+
+Get act details from the act/section codebook
+
+```{r}
+valid_cases_with_act_details <- left_join(valid_cases_with_act_id, acts_codebook, by=c('act'='act_id'))
+```
+
+
+Prepare an empty df with cino + all act columns
+
+```{r}
+all_acts <- c('cino',unique(acts_codebook$act_name)) %>% data.frame(row.names = NULL, check.names = FALSE) %>% t() %>% data.frame(row.names = NULL, check.names = FALSE)
+names(all_acts)[] <- all_acts[1,]
+all_acts <- all_acts[-1,] 
+```
+
+Fetch comma separated act info for all cases in the empty df
+
+```{r prepare case_act dataframe, message=FALSE, warning=FALSE, include=FALSE}
+unique_case_numbers <- unique(valid_cases_with_act_id$cino)
+all_acts <- unique(acts_codebook$act_name)
+master_case_df <- data.frame(matrix(nrow = 0, ncol = (length(all_acts)+2), data = ''))
+names(master_case_df) <- c(all_acts, 'act_issue_flag', 'cino')
+loop_start <- print(glue("Lopp start time - {timestamp()}"))
+for(i in 1:length(unique_case_numbers)){
+  
+  print(glue("Case Number: {i}"))
+  act_issue_flag <- 0
+  all_sections <- c()
+  case_details <- unique_case_numbers[i]
+  for(j in 1:length(all_acts)){
+    
+    act_details <- all_acts[j]
+    all_act_sections <- valid_cases_with_act_details$section_name[valid_cases_with_act_details$cino == case_details & valid_cases_with_act_details$act_name == act_details]
+    
+    if(length(all_act_sections)>0){
+    section_details <- paste0(all_act_sections, collapse = " ; ")
+    act_issue_flag <- act_issue_flag +  sum(valid_cases_with_act_details$act_issue_flag[valid_cases_with_act_details$cino == case_details & valid_cases_with_act_details$act_name == act_details])
+    } else {
+      section_details <- ''
+    }
+    all_sections <- c(all_sections, section_details)
+  }
+  
+  
+  section_details_df <- all_sections %>% t() %>% data.frame(row.names = NULL)
+  names(section_details_df)[] <- all_acts
+  # If one of the act/section ID's is flagged then the case is marked with a flag of 1
+  section_details_df$act_issue_flag <- as.character(ifelse(act_issue_flag > 0, 1, 0))
+  section_details_df$cino <- case_details
+  master_case_df <- bind_rows(master_case_df, section_details_df)
+
+}
+loop_end <- print(glue("Lopp end time - {timestamp()}"))
+```
+
+```{sql connection=con, output.var='case_details_file'}
+select state_name, district_name, est_code, court_name, cino, fir_year, fil_no,date_of_filing, reg_no, reg_year_date, updated_type_name, disp_nature, updated_disp_name from case_details where case_flag = '1'
+```
+
+```{r}
+case_act_master <- left_join(case_details_file, master_case_df, by='cino')
+
+write_csv(case_act_master, "datasets/cases_with_acts.csv")
+```
+
+
+---
 
 --- To update the section below for acts and section analysis, post data cleaning 
 
