@@ -1,3 +1,5 @@
+
+# Setup {#setup}
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(
 	echo = FALSE,
@@ -8,12 +10,34 @@ knitr::opts_chunk$set(
 source("../scripts/source_files.R")
 ```
 
+```{sql connection=con}
+select * from case_acts where cino='HRKU010019842015'
+```
+
+```{sql connection=con}
+select * from act where id = '3931'
+```
+
+
+--- # To clean act and section details
+
+```{r Get cino's with judgement for selected act_ids}
+act_id <- 122
+
+relevant_cases_sql <- glue("select cino from case_acts where act = '{act_id}'")
+relevant_cases <- dbxSelect(conn = con, statement = relevant_cases_sql)
+relevant_cinos <- noquote(paste0("'",relevant_cases$cino, "'",collapse = ','))
+cino_with_judgement <- glue("select cino, judgment_link, judgment_path from case_details where cino IN ({relevant_cinos})")
+cino_with_judgement_details <- dbxSelect(conn = con, statement = cino_with_judgement)
+cases_with_judgement <- cino_with_judgement_details$cino[!is.na(cino_with_judgement_details$judgment_link)]
+print(cases_with_judgement)
+```
 
 --- This section filters all acts identified with issues. We generate some more information on these acts such as details on orders and judgments to check if we can still include these acts in the analysis. 
 
 ```{r issue with these acts}
-acts_issue <- read_csv("/tmp/pocso/issue_with_these_acts.csv")
-act_ids <- noquote(paste0(acts_issue$act_id, collapse = ','))
+acts_issue <- read_csv("datasets/to_standardise/acts_to_standardise.csv")
+act_ids <- noquote(paste0(acts_issue$act_id[acts_issue$act_issue_flag == 1], collapse = ','))
 ```
 
 ```{r cases_with_issues}
@@ -25,7 +49,7 @@ case_list <- noquote(paste0("'",cases_with_issues$cino,"'",collapse = ','))
 Get judgment details for identified cases
 
 ```{r}
-get_case_details <- glue("select cino, state_name, judgment_link, judgment_path from case_details where cino IN ({case_list})")
+get_case_details <- glue("select cino, judgment_link, judgment_path from case_details where cino IN ({case_list})")
 cases_with_details <- dbxSelect(conn = con, statement = get_case_details)
 ```
 
@@ -43,7 +67,7 @@ all_cases_with_issues$judgment_link[is.na(all_cases_with_issues$judgment_link)] 
 all_cases_with_issues$judgment_path[is.na(all_cases_with_issues$judgment_path)] <- ''
 all_cases_with_issues$total_orders[is.na(all_cases_with_issues$total_orders)] <- 0
 
-all_acts_with_issues <- all_cases_with_issues %>% group_by(act,state_name) %>% summarise(total_cases = length(cino), total_judgements = length(judgment_link[judgment_link != '']),
+all_acts_with_issues <- all_cases_with_issues %>% group_by(act) %>% summarise(total_cases = length(cino), total_judgements = length(judgment_link[judgment_link != '']),
                                                                               total_orders = sum(total_orders))
 
 all_acts_with_issues <- left_join(acts_issue, all_acts_with_issues, by=c('act_id'='act'))
@@ -52,6 +76,44 @@ all_acts_with_issues <- left_join(acts_issue, all_acts_with_issues, by=c('act_id
 ```{r}
 write_csv(all_acts_with_issues, "datasets/to_standardise/acts_with_issues.csv")
 ```
+
+
+# Assign New ID's for combined acts
+
+```{r assign new IDs}
+
+get_combined_acts <- all_acts_with_issues[grepl(pattern = '&',x = all_acts_with_issues$act_name_std),]
+updated_act_id_master <- data.frame()
+
+for(i in 1:nrow(get_combined_acts)){
+  all_acts <- strsplit(get_combined_acts$act_name_std[i],split = ' & ') %>% unlist() %>% stringr::str_trim()
+  
+  all_sections <- strsplit(get_combined_acts$section_name_std[i],split = ';') %>% unlist() %>% stringr::str_trim()
+  
+  new_act_df <-
+    data.frame('act_name_std' = all_acts, 'section_name_std' = all_sections)  
+  
+  subsections_check <- grepl(new_act_df$section_name_std,pattern = '/')
+  
+  if(TRUE %in% subsections_check){
+    rows_with_subsections <- new_act_df[subsections_check,]
+    for(j in 1:nrow(rows_with_subsections)){
+      act_name_sub <- rows_with_subsections$act_name_std[j]
+      section_name_sub <- strsplit(rows_with_subsections$section_name_std[j],'/') %>% unlist()
+      act_sub_df <- data.frame('act_name_std'=act_name_sub, 'section_name_std'=section_name_sub)
+      new_act_df <- bind_rows(new_act_df, act_sub_df)
+    }
+  }
+  
+  new_act_df <- new_act_df[!grepl(new_act_df$section_name_std, pattern = '/'),]
+  new_act_df$old_act_id <- get_combined_acts$act_id[i]
+  new_act_df$new_act_id <- paste0(new_act_df$old_act_id,'_' ,seq(1:nrow(new_act_df)))
+  
+  updated_act_id_master <- bind_rows(updated_act_id_master, new_act_df)
+}
+
+```
+
 
 --- Acts & Section codebook (with a few unstandardised acts/sections)
 
