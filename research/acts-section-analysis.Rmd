@@ -10,15 +10,6 @@ knitr::opts_chunk$set(
 source("../scripts/source_files.R")
 ```
 
-```{sql connection=con}
-select * from case_details where cino = 'DLET010004652012' limit 5
-```
-
-```{sql connection=con}
-select * from act where id = '3931'
-```
-
-
 --- # To clean act and section details
 
 ```{r Get cino's with judgement for selected act_ids}
@@ -33,57 +24,26 @@ cases_with_judgement <- cino_with_judgement_details$cino[!is.na(cino_with_judgem
 print(cases_with_judgement)
 ```
 
---- This section filters all acts identified with issues. We generate some more information on these acts such as details on orders and judgments to check if we can still include these acts in the analysis. 
-
 ```{r issue with these acts}
-acts_issue <- read_csv("datasets/to_standardise/acts_to_standardise.csv")
-act_ids <- noquote(paste0(acts_issue$act_id[acts_issue$act_issue_flag == 1], collapse = ','))
+acts_issue <- read_csv("datasets/to_standardise/acts_to_standardise.csv", col_types = cols(
+  act_id = col_character(),
+  act_name = col_character(),
+  section_name = col_character(),
+  act_name_std = col_character(),
+  section_name_std = col_character(),
+  act_issue_flag = col_character()
+))
 ```
-
-```{r cases_with_issues}
-get_cases_with_issues <- glue("select * from case_acts where act IN ({act_ids})")
-cases_with_issues <- dbxSelect(conn = con, statement = get_cases_with_issues)
-case_list <- noquote(paste0("'",cases_with_issues$cino,"'",collapse = ','))
-```
-
-Get judgment details for identified cases
-
-```{r}
-get_case_details <- glue("select cino, judgment_link, judgment_path from case_details where cino IN ({case_list})")
-cases_with_details <- dbxSelect(conn = con, statement = get_case_details)
-```
-
-Get order details for identified cases
-```{r}
-get_order_details <- glue("select cino, count(cino) as total_orders from public.order where cino IN ({case_list}) group by cino")
-cases_with_orders <- dbxSelect(conn = con, statement = get_order_details)
-```
-
-Joining files at cino
-```{r}
-all_cases_with_issues <- left_join(cases_with_issues, cases_with_details)
-all_cases_with_issues <- left_join(all_cases_with_issues, cases_with_orders)
-all_cases_with_issues$judgment_link[is.na(all_cases_with_issues$judgment_link)] <- ''
-all_cases_with_issues$judgment_path[is.na(all_cases_with_issues$judgment_path)] <- ''
-all_cases_with_issues$total_orders[is.na(all_cases_with_issues$total_orders)] <- 0
-
-all_acts_with_issues <- all_cases_with_issues %>% group_by(act) %>% summarise(total_cases = length(cino), total_judgements = length(judgment_link[judgment_link != '']),
-                                                                              total_orders = sum(total_orders))
-
-all_acts_with_issues <- left_join(acts_issue, all_acts_with_issues, by=c('act_id'='act'))
-```
-
-```{r}
-write_csv(all_acts_with_issues, "datasets/to_standardise/acts_with_issues.csv")
-```
-
 
 # Assign New ID's for combined acts
 
 ```{r assign new IDs}
 
-get_combined_acts <- all_acts_with_issues[grepl(pattern = '&',x = all_acts_with_issues$act_name_std),]
+get_combined_acts <- acts_issue[grepl(pattern = '&',x = acts_issue$act_name_std),]
 updated_act_id_master <- data.frame()
+
+# The POCSO act is not listed in these acts
+get_combined_acts <- get_combined_acts[!get_combined_acts$act_id %in% c(1816,1946,2213,2936),]
 
 for(i in 1:nrow(get_combined_acts)){
   all_acts <- strsplit(get_combined_acts$act_name_std[i],split = ' & ') %>% unlist() %>% stringr::str_trim()
@@ -111,20 +71,68 @@ for(i in 1:nrow(get_combined_acts)){
   
   updated_act_id_master <- bind_rows(updated_act_id_master, new_act_df)
 }
-
+names(updated_act_id_master)[which(names(updated_act_id_master) == 'new_act_id')] <- 'act_id'
+updated_act_id_master$act_issue_flag <- '0'
 ```
-
-
---- Acts & Section codebook (with a few unstandardised acts/sections)
 
 ```{r}
-acts_codebook <- read_csv("datasets/codebook/acts_sections_codebook.csv")
-
-# table(acts_codebook$act_name,acts_codebook$act_issue_flag) %>% data.frame() %>% spread(key = Var2, value = Freq) %>% mutate(total=`0`+`1`) %>% View()
+# Building the acts_codebook (Updating acts where act_name was a combination of two acts)
+acts_codebook <- bind_rows(acts_issue, updated_act_id_master)
+write_csv(acts_codebook, "datasets/codebook/acts_sections_codebook.csv")
 ```
 
 
-Create a act/section dataset at a case level
+```{r Update act IDs in cases with combined acts}
+act_mapping_df <- acts_codebook[!is.na(acts_codebook$old_act_id), c('old_act_id', 'act_id')] %>% unique() %>% data.frame()
+
+old_act_ids <- act_mapping_df$old_act_id %>% unique()
+
+old_act_ids_list <- noquote(paste0("'",old_act_ids,"'",collapse = ','))
+
+get_case_details <- glue("select * from case_acts where act IN ({old_act_ids_list})")
+case_act_update <- dbxSelect(conn = con, statement = get_case_details)
+case_act_update$act <- as.character(case_act_update$act)
+case_act_update <- left_join(case_act_update, act_mapping_df, by=c('act'='old_act_id'))
+case_act_update$act <- NULL
+names(case_act_update)[which(names(case_act_update) == 'act_id')] <- 'act'
+```
+
+
+```{sql connection=con}
+ALTER TABLE case_acts DROP CONSTRAINT case_acts_act_fkey;
+```
+```{sql connection=con}
+ALTER TABLE act ALTER COLUMN id TYPE varchar
+```
+```{sql connection=con}
+ALTER TABLE case_acts ALTER COLUMN act TYPE varchar
+```
+
+```{r}
+dbxInsert(con, 'case_acts',  case_act_update)
+```
+
+```{r}
+insert_acts <- acts_codebook[!is.na(acts_codebook$old_act_id), c('act_id','act_name_std','section_name_std')] %>% unique()
+names(insert_acts) <- c('id', 'name', 'section')
+```
+
+```{r}
+dbxInsert(con, 'act',  insert_acts)
+```
+
+```{sql connection=con}
+ALTER TABLE case_acts ADD CONSTRAINT case_acts_act_fkey FOREIGN KEY (act) REFERENCES act(id)
+```
+
+--- Start here to create a case level dataset for acts
+
+```{r}
+acts_codebook <- read_csv("datasets/codebook/acts_sections_codebook.csv", 
+    col_types = cols(act_id = col_character(), 
+        act_issue_flag = col_character(), 
+        old_act_id = col_character()))
+```
 
 ```{sql connection=con, output.var='valid_cases_with_act_id'}
 select a.* from case_acts as a left join case_details as b on a.cino=b.cino where b.case_flag = '1' 
@@ -134,13 +142,15 @@ Get act details from the act/section codebook
 
 ```{r}
 valid_cases_with_act_details <- left_join(valid_cases_with_act_id, acts_codebook, by=c('act'='act_id'))
+valid_cases_with_act_details <- valid_cases_with_act_details[valid_cases_with_act_details$act_issue_flag == 0,]
+valid_cases_with_act_details <- valid_cases_with_act_details[!is.na(valid_cases_with_act_details$cino),]
 ```
-
 
 Prepare an empty df with cino + all act columns
 
 ```{r}
-all_acts <- c('cino',unique(acts_codebook$act_name)) %>% data.frame(row.names = NULL, check.names = FALSE) %>% t() %>% data.frame(row.names = NULL, check.names = FALSE)
+act_cols <- unique(acts_codebook$act_name_std[acts_codebook$act_issue_flag == 0])
+all_acts <- c('cino',act_cols) %>% data.frame(row.names = NULL, check.names = FALSE) %>% t() %>% data.frame(row.names = NULL, check.names = FALSE)
 names(all_acts)[] <- all_acts[1,]
 all_acts <- all_acts[-1,] 
 ```
@@ -149,9 +159,8 @@ Fetch comma separated act info for all cases in the empty df
 
 ```{r prepare case_act dataframe, message=FALSE, warning=FALSE, include=FALSE}
 unique_case_numbers <- unique(valid_cases_with_act_id$cino)
-all_acts <- unique(acts_codebook$act_name)
-master_case_df <- data.frame(matrix(nrow = 0, ncol = (length(all_acts)+2), data = ''))
-names(master_case_df) <- c(all_acts, 'act_issue_flag', 'cino')
+master_case_df <- data.frame(matrix(nrow = 0, ncol = (length(act_cols)+2), data = ''))
+names(master_case_df) <- c(act_cols, 'act_issue_flag', 'cino')
 loop_start <- print(glue("Lopp start time - {timestamp()}"))
 for(i in 1:length(unique_case_numbers)){
   
@@ -159,14 +168,14 @@ for(i in 1:length(unique_case_numbers)){
   act_issue_flag <- 0
   all_sections <- c()
   case_details <- unique_case_numbers[i]
-  for(j in 1:length(all_acts)){
+  for(j in 1:length(act_cols)){
     
-    act_details <- all_acts[j]
-    all_act_sections <- valid_cases_with_act_details$section_name[valid_cases_with_act_details$cino == case_details & valid_cases_with_act_details$act_name == act_details]
+    act_details <- act_cols[j]
+    all_act_sections <- valid_cases_with_act_details$section_name_std[valid_cases_with_act_details$cino == case_details & valid_cases_with_act_details$act_name_std == act_details]
     
     if(length(all_act_sections)>0){
     section_details <- paste0(all_act_sections, collapse = " ; ")
-    act_issue_flag <- act_issue_flag +  sum(valid_cases_with_act_details$act_issue_flag[valid_cases_with_act_details$cino == case_details & valid_cases_with_act_details$act_name == act_details])
+    act_issue_flag <- act_issue_flag +  sum(as.numeric(valid_cases_with_act_details$act_issue_flag[valid_cases_with_act_details$cino == case_details & valid_cases_with_act_details$act_name_std == act_details]))
     } else {
       section_details <- ''
     }
@@ -175,7 +184,7 @@ for(i in 1:length(unique_case_numbers)){
   
   
   section_details_df <- all_sections %>% t() %>% data.frame(row.names = NULL)
-  names(section_details_df)[] <- all_acts
+  names(section_details_df)[] <- act_cols
   # If one of the act/section ID's is flagged then the case is marked with a flag of 1
   section_details_df$act_issue_flag <- as.character(ifelse(act_issue_flag > 0, 1, 0))
   section_details_df$cino <- case_details
@@ -186,95 +195,13 @@ loop_end <- print(glue("Lopp end time - {timestamp()}"))
 ```
 
 ```{sql connection=con, output.var='case_details_file'}
-select state_name, district_name, est_code, court_name, cino, fir_year, fil_no,date_of_filing, reg_no, reg_year_date, updated_type_name, disp_nature, updated_disp_name from case_details where case_flag = '1'
+select cino, state_name, district_name from case_details where case_flag = '1'
 ```
 
 ```{r}
 case_act_master <- left_join(case_details_file, master_case_df, by='cino')
 
 write_csv(case_act_master, "datasets/cases_with_acts.csv")
-```
-
-
----
-
---- To update the section below for acts and section analysis, post data cleaning 
-
-
-```{sql connection=con}
-select count(*) as total_rows, 'act' as act_table from act UNION select count(*) as total_rows, 'acts_subset' as act_table from acts_subset
-```
-
-```{sql connection=con, output.var='check_acts'}
-select c.act as act_id, d.name as act_name, d.section as section_name from (select distinct a.cino, b.act from case_details as a LEFT JOIN case_acts as b ON a.cino=b.cino where case_flag = '1') as c LEFT JOIN act as d on c.act=d.id
-```
-
-Writing check_acts for standardising acts
-
-```{r}
-write.csv(check_acts, "datasets/to_standardise/acts_to_standardise.csv")
-```
-
-
-```{sql connection=con}
-select count(distinct a.cino) from case_details as a LEFT JOIN case_acts as b ON a.cino=b.cino where case_flag = '1'
-```
-
-```{sql connection=con, output.var='acts_dataset'}
-select * from acts_subset
-```
-
-```{sql connection=con, output.var='case_act_ids'}
-select * from case_acts where act IN (select distinct id from acts_subset)
-```
-
-
-```{r processing acts dataset}
-acts_dataset$title <- paste(str_squish(acts_dataset$act_name_std), str_squish(acts_dataset$section_name_std)) 
-
-revised_acts_dataset <- data.frame('title'=unique(acts_dataset$title))
-revised_acts_dataset$revised_id <- 1:nrow(revised_acts_dataset)
-
-revised_acts_dataset$revised_id[revised_acts_dataset$title == 'IPC 376IPC'] <-
-  revised_acts_dataset$revised_id[revised_acts_dataset$title == 'IPC 376']
-revised_acts_dataset$revised_id[revised_acts_dataset$title == 'IPC 506IPC'] <-
-  revised_acts_dataset$revised_id[revised_acts_dataset$title == 'IPC 506']
-
-acts_dataset_revised <- left_join(acts_dataset, revised_acts_dataset, by='title')
-```
-
-```{r add new id to case_act_ids}
-case_act_ids_revised <- left_join(case_act_ids, acts_dataset_revised[,c('id','revised_id')], by=c('act'='id'))
-```
-
-
-
-```{r act-wise-cases}
-act_ids <- unique(case_act_ids_revised$revised_id)
-act_case_df <- data.frame(id=c(), case_ids=c())
-for(i in 1:length(act_ids)){
-  act_cases <- data.frame(id=i, case_ids=unique(case_act_ids_revised$cino[case_act_ids_revised$revised_id %in% act_ids[[i]]]) %>% paste0(collapse = "__"))
-  act_case_df <- bind_rows(act_case_df, act_cases)
-}
-
-all_patterns <- c()
-for(i in 1:nrow(act_case_df)){
-  glue("Fetching cases for Act Number {i}") %>% print()
-  case_ids <- strsplit(act_case_df$case_ids[[i]], split = '__') %>% unlist()
-  for(j in 1:length(case_ids)){
-    caseidtosearch <- case_ids[[j]]
-    pattern_found <- act_case_df$id[grepl(pattern =  caseidtosearch, x = act_case_df$case_ids)] %>% sort() %>% paste0(collapse = '__')
-  all_patterns <- c(pattern_found, all_patterns)
-  }
-  glue('Total patterns found till now - {length(unique(all_patterns))}') %>% print()
-}
-
-```
-
-
-```{r}
-all_patterns_df <- table(all_patterns) %>% data.frame()
-write.csv(all_patterns_df, "datasets/act_section_patterns.csv")
 ```
 
 
