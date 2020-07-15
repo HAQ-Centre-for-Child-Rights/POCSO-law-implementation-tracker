@@ -145,6 +145,34 @@ f_pending_trial <- sum(yearly_cases_pendency_ratio$total_cases)
 
 number_of_cases_df <- data.frame('file_name'=c('year_wise_cases','year_wise_cases_pending','year_wise_disposed','nature_of_disposal', 'case_age','cases_pending_trial_yearly','cases_removed_case_age'), number_of_cases = c(f_year_wise_cases, f_year_wise_cases_pending, f_year_wise_cases_disposed, f_nature_of_disposal, f_case_age,f_pending_trial,f_cases_removed))
 ```
+## Case level data with orders and judgements
+
+```{sql connection=con, output.var='case_judgement_details'}
+select cino, state_name, district_name, judgment_link, judgment_path from case_details where case_flag='1' 
+```
+
+```{r clean judgment path variables}
+case_judgement_details$judgment_link[is.na(case_judgement_details$judgment_link)] <- ''
+case_judgement_details$judgment_path[is.na(case_judgement_details$judgment_path)] <- ''
+case_judgement_details$judgment_flag <- 'no_judgment_avaiable'
+case_judgement_details$judgment_flag[case_judgement_details$judgment_link != ''] <- 'with_judgment'
+case_judgement_details$judgment_link <- NULL
+case_judgement_details$judgment_path <- NULL
+```
+
+```{sql connection=con, output.var='total_order_per_case'}
+select cino, count(cino) as total_orders from public.order group by cino
+```
+
+```{r joining judgements and orders}
+
+# Only for cases where the case_flag = 1
+
+case_order_judgement_details <- left_join(case_judgement_details, total_order_per_case, by='cino')
+case_order_judgement_details$total_orders[is.na(case_order_judgement_details$total_orders)] <- 0
+```
+
+
 
 ```{r state-wise-case-list}
 state_list <- dbxSelect(con, "select distinct state_name from case_details where case_flag = '1'") %>% unlist(use.names = FALSE)
@@ -180,4 +208,7 @@ write_csv(year_wise_FIR,"datasets/year_wise_FIR.csv")
 
 # On 20/06/20
 write_csv(master_case_file, "datasets/state_wise_cases/master_file_of_cases.csv")
+
+# On 15/07/20
+write_csv(case_order_judgement_details, "datasets/case_order_judgment_details.csv")
 ```

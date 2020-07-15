@@ -11,7 +11,7 @@ source("../scripts/source_files.R")
 ```
 
 ```{sql connection=con}
-select * from case_acts where cino='HRKU010019842015'
+select * from case_details where cino = 'DLET010004652012' limit 5
 ```
 
 ```{sql connection=con}

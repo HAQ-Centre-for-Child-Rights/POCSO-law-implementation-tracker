@@ -1,7 +1,7 @@
 # Connect to local/remote DB
 server_flag <- 'l' # l (local) / r (remote)
 if(server_flag == 'l'){
-  con_string <- 'local'
+  con_string <- 'local_'
 } else if (server_flag == 'r'){
   con_string <- ''
 }
