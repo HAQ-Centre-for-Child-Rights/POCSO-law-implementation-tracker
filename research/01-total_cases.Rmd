@@ -188,6 +188,11 @@ lapply(state_list, fetch_state_cases)
 ```
 
 
+```{sql connection=con, output.var='state_wise_purpose_hearing'}
+select a.state_name, a.district_name, b.purpose, b.updated_purpose, count(*) as total_hearings from case_details as a inner join case_history as b on a.cino=b.cino  where a.case_flag = '1' group by a.state_name, a.district_name, b.purpose, b.updated_purpose 
+```
+
+
 ```{r Writing Files}
 write_csv(year_wise_cases,"datasets/year_wise_cases.csv")
 write_csv(nature_of_disposal,"datasets/nature_of_disposal.csv")
@@ -211,4 +216,8 @@ write_csv(master_case_file, "datasets/state_wise_cases/master_file_of_cases.csv"
 
 # On 15/07/20
 write_csv(case_order_judgement_details, "datasets/case_order_judgment_details.csv")
+
+# On 11/10/20
+write_csv(state_wise_purpose_hearing, "datasets/state_wise_purpose_hearing.csv")
+
 ```
