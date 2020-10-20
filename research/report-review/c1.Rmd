@@ -10,3 +10,13 @@ knitr::opts_chunk$set(
 )
 source(here("scripts","source_files.R"))
 ```
+
+List of Judgments by state
+
+```{sql connection=con}
+
+select state_name, total_judgments, total_disposed_cases, (total_judgments::decimal / total_disposed_cases * 100) as percent_judgments FROM 
+(select state_name, count(case when judgment_path IS NOT null then 1 END) as total_judgments, count(case when disp_nature!='0' then 1 END) as total_disposed_cases from case_details where case_flag='1' group by state_name) as a
+
+```
+
