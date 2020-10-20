@@ -30,3 +30,6 @@ vignettes/*.pdf
 data/*
 # Mac
 .DS_Store
+
+# Annexures
+research/docs/report-to-review/annexures/*
