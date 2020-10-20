@@ -1,4 +1,6 @@
 
+Chapter 1 - Introduction and Methodology of selection of cases
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(
 	echo = FALSE,
@@ -6,5 +8,5 @@ knitr::opts_chunk$set(
 	message = FALSE,
 	warning = FALSE
 )
-source("../scripts/source_files.R")
+source(here("scripts","source_files.R"))
 ```
