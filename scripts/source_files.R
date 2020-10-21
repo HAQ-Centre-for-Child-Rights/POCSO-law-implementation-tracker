@@ -1,5 +1,5 @@
 # The paths are with respect to the Rmd files (under research)
-
+library(here)
 source(here("scripts", "libraries.R"))
 source(here("scripts", "connect_db.R"))
 source(here("scripts","functions.R"))
