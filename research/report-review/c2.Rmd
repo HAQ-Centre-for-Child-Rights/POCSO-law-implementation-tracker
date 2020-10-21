@@ -1,0 +1,13 @@
+
+Chapter 2 - Cases and offences registered under POCSO Act
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+	echo = FALSE,
+	eval=FALSE,
+	message = FALSE,
+	warning = FALSE
+)
+source(here("scripts","source_files.R"))
+```
+
