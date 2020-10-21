@@ -8,6 +8,62 @@ knitr::opts_chunk$set(
 	message = FALSE,
 	warning = FALSE
 )
-source(here("scripts","source_files.R"))
+source(here::here("scripts","source_files.R"))
 ```
 
+Stat 1 - Verify the registration year of cases. We're reporting that we have a total of 19783 cases between November of 2012 to March of 2020. 
+
+```{sql connection=con}
+select cino, dt_regis from case_details where (dt_regis<'01-11-2012' OR dt_regis>'31-03-2020') AND case_flag = '1'
+```
+
+Chart 2.1 - Total number of cases registered under POCSO Act - State/UT
+```{sql connection=con}
+
+select state_name, count(*) as total_cases from case_details where case_flag='1' group by state_name
+
+```
+Chart 2.2 - Year wise total number of cases
+```{sql connection=con}
+select reg_year_date, count(*) as total_cases from case_details where case_flag='1' group by reg_year_date
+```
+
+
+Chart 2.5 - District wise number of cases - Assam
+
+```{sql connection=con}
+select district_name, count(*) as total_cases from case_details where case_flag='1' and state_name='Assam' group by district_name order by total_cases
+
+```
+
+
+Table 2.8 - Police Station-Wise Share of Cases for Top 5 Districts with Maximum Cases (Assam)
+```{sql connection=con}
+select district_name, police_station, count(*) as total_cases from case_details where state_name='Assam' and district_name IN ('Barpeta','Sonitpur','Sivasagar','Morigaon','Nagaon') and case_flag='1' group by police_station, district_name order by district_name,total_cases desc
+```
+
+Chart 2.8 - District wise number of cases - Haryana
+
+```{sql connection=con}
+select district_name, count(*) as total_cases from case_details where case_flag='1' and state_name='Haryana' group by district_name order by total_cases
+
+```
+
+Table 2.12 - Police Station-Wise Share of Cases for Top 5 Districts with Maximum Cases (Haryana)
+
+```{sql connection=con}
+select district_name, police_station, count(*) as total_cases from case_details where state_name='Haryana' and district_name IN ('Hisar','Sirsa','Sonepat','Gurugram','Faridabad') and case_flag='1' group by police_station, district_name order by district_name,total_cases desc
+```
+
+Chart 2.11 - District wise number of cases - Delhi
+
+```{sql connection=con}
+select district_name, count(*) as total_cases from case_details where case_flag='1' and state_name='Delhi' group by district_name order by total_cases
+
+```
+
+Table 2.15 - Police Station-Wise Share of Cases for Top 5 Districts with Maximum Cases (Delhi)
+
+```{sql connection=con}
+select district_name, police_station, count(*) as total_cases from case_details where state_name='Delhi' and district_name IN ('West','North West','North','South West','Central') and case_flag='1' group by police_station, district_name order by district_name,total_cases desc
+```
