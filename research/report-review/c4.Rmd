@@ -1,0 +1,65 @@
+
+Chapter 4 - Nature of Disposal
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+	echo = FALSE,
+	eval=FALSE,
+	message = FALSE,
+	warning = FALSE
+)
+source(here::here("scripts","source_files.R"))
+```
+
+Chart 4.1 - Nature of Disposal (in per cent)
+```{sql connection=con, output.var=disp_nature_count}
+select updated_disp_name, count(*) from case_details where case_flag='1' and disp_nature!='0' group by updated_disp_name
+```
+
+```{r nature of disposal values}
+disposal_var <- c("Abated", "Acquitted", "Convicted", "Discharged", "Transferred", "Quashed", "Untraced", "PO Consigned")
+
+other_var <- c("Adjourned Sine die", "Allowed", "Cancelled", "Case is filed", "Clubbed in FIR", "Compromised", "Concilliation", "Consigned", "Contested", "Converted", "Declared Juvenile", "Decreed with costs", "Dismissed", "Disposed", "Disposed of as withdrawn with permission to file fresh", "Disposed of with directions", "Disposed off on contest", "Disposed otherwise", "Disposed uncontest", "Further investigation ordered", "Judgement delivered", "Plaintiff suit is dissmissed counter claims decreed", "Proceeding dropped", "Proceeding stopped", "Rejected", "Remand back", "Some Convicted, some Acquitted", "Stayed")
+```
+
+Check with the file shared with [HAQ](https://github.com/HAQ-Centre-for-Child-Rights/POCSO-law-implementation-tracker/blob/master/research/datasets/nature_of_disposal.csv)
+
+```{r}
+nature_of_disposal <- read_csv(here("research","datasets","nature_of_disposal.csv"), 
+    col_types = cols(disp_nature = col_character(), 
+        fil_year = col_character(), reg_year_date = col_character(), 
+        decision_year = col_character()))
+nature_of_disposal$updated_disp_name <- str_trim(nature_of_disposal$updated_disp_name)
+nature_of_disposal$disposal_category <- ifelse(nature_of_disposal$updated_disp_name %in% disposal_var, nature_of_disposal$updated_disp_name, ifelse(nature_of_disposal$updated_disp_name %in% other_var,'Other',''))
+
+nature_of_disposal$disposal_category[grepl(nature_of_disposal$updated_disp_name, pattern = 'Convicted')] <- 'Convicted'
+nature_of_disposal$disposal_category[grepl(nature_of_disposal$updated_disp_name, pattern = 'Transferred')] <- 'Transferred'
+nature_of_disposal$disposal_category[grepl(nature_of_disposal$updated_disp_name, pattern = 'Acquitted')] <- 'Acquitted'
+nature_of_disposal$disposal_category[nature_of_disposal$updated_disp_name=='Adjourned Sine die'] <- 'Other'
+nature_of_disposal$disposal_category[nature_of_disposal$updated_disp_name=='Case is filed'] <- 'Other'
+nature_of_disposal$disposal_category[nature_of_disposal$updated_disp_name=='Some Convicted, some Acquitted'] <- 'Other'
+nature_of_disposal$disposal_category[nature_of_disposal$disposal_category==''] <- 'Other'
+
+
+# Overall
+nature_of_disposal %>% group_by(disposal_category) %>% summarise(tc=sum(total_cases))
+
+# State-wise
+nature_of_disposal %>% filter(state_name=='Assam') %>% group_by(disposal_category) %>% summarise(tc=sum(total_cases)) %>% mutate(pc=tc*100/sum(tc))
+```
+Table 4.2 A - District-wise Nature of Disposal - Assam
+
+```{r}
+nature_of_disposal %>% filter(state_name=='Assam') %>% group_by(district_name, disposal_category) %>% summarise(tc=sum(total_cases)) %>% pivot_wider(names_from = disposal_category, values_from=tc, values_fill = 0)
+
+```
+
+Chart 4.3 - Rate of Conviction (Year-wise) - Assam, Delhi & Haryana Combined
+
+```{r}
+convicted_cases <- nature_of_disposal %>% filter(disposal_category=='Convicted') %>%  group_by(decision_year) %>% summarise(tcc=sum(total_cases))
+total_cases <- nature_of_disposal %>% group_by(decision_year) %>% summarise(tc=sum(total_cases))
+conviction_percent <- left_join(convicted_cases, total_cases, by='decision_year') %>% mutate(con_per = tcc*100/tc)
+
+```
+
