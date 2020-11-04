@@ -1,0 +1,12 @@
+
+Chapter 1 - Case Age and time taken for disposal
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+	echo = FALSE,
+	eval=FALSE,
+	message = FALSE,
+	warning = FALSE
+)
+source(here::here("scripts","source_files.R"))
+```
