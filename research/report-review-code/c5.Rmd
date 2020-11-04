@@ -10,3 +10,98 @@ knitr::opts_chunk$set(
 )
 source(here::here("scripts","source_files.R"))
 ```
+
+Chart 5.1 - Case Age for Disposed Cases
+```{sql connection=con, output.var=case_age}
+select cino, updated_disp_name, state_name, district_name, reg_year_date, disp_nature, dt_regis, date_of_decision from case_details where case_flag = '1'
+```
+
+```{r processing-case-age}
+# case_age <- case_age_raw
+case_age$end_date <- case_age$date_of_decision 
+
+# End date of a case should depend on when the data was downloaded for a state. This will ensure that we capture the correct status of a case (pending/disposed) as on the date of data-collection. 
+
+# At present, we're using a fix date - 2020/03/31, but this will be updated as per the revised date of data collection for each state
+
+case_age$end_date[is.na(case_age$end_date)] <- as.Date("2020-03-31")
+case_age$decision_year <- year(case_age$end_date)
+case_age$decision_year[case_age$disp_nature == 0] <- NA_character_
+
+# Case age is calculated as a difference between the date of decision (disposed cases) or 2020/03/31 (pending cases) and the date of registration (dt_regis) of a case
+
+case_age$age_of_case_interval <- lubridate::interval(case_age$dt_regis,case_age$end_date)
+
+case_age$age_of_case_days <- time_length(case_age$age_of_case_interval, "days")
+
+# Remove cases with difference < 0
+# cases_removed <- case_age[case_age$age_of_case_days < 0,]
+# write_csv(cases_removed,"datasets/case_age_negative.csv")
+
+# case_age <- case_age[case_age$age_of_case_days >= 0,]
+```
+
+```{r calculating age intervals}
+case_age %>% filter(disp_nature!=0 & age_of_case_days <= 365) %>% summarise(tc=length(state_name))
+```
+```{r}
+case_age %>% group_by(state_name) %>% filter(disp_nature==0)%>% summarise(max(age_of_case_days))
+```
+
+```{r}
+case_age %>% filter(disp_nature==0 & age_of_case_days >= 730) %>% group_by(state_name) %>% summarise(tc=length(cino))
+```
+
+
+```{r}
+case_age %>% filter(disp_nature==0) %>% group_by(state_name) %>% summarise(tc=length(cino))
+```
+
+```{r}
+case_age %>% filter(disp_nature!=0 & age_of_case_days == 0) %>% group_by(state_name) %>% summarise(tc=length(cino))
+```
+Table 5.2 - Cases Disposed the same day as the Date of Registration - Nature of Disposal and Nature of Offence
+
+```{r}
+offence_data <- read_csv(here("research","datasets","case_wise_offence.csv"))
+case_age <- left_join(case_age, offence_data, by='cino')
+
+case_0_days <- case_age[case_age$age_of_case_days==0 & case_age$disp_nature!=0,]
+case_0_days <- table(case_0_days$offence_type, case_0_days$updated_disp_name) %>% data.frame() %>% pivot_wider(names_from = 'Var1', values_from='Freq')
+```
+
+Table 5.3 - Percentage of Cases Disposed & Time Taken From Year of Registration to Year of Disposal
+
+```{r}
+
+case_age$age_interval <- findInterval(case_age$age_of_case_days, seq(0,(365*8),by = 365), rightmost.closed = TRUE)
+
+c1 <- case_age %>% group_by(reg_year_date) %>% summarise(case_registered=length(cino),
+                                                   case_disposed=length(cino[disp_nature!=0]))
+
+c2 <- case_age %>% group_by(reg_year_date, age_interval) %>% summarise(dc=length(cino[disp_nature!=0]))
+
+c3 <- left_join(c2,c1,by="reg_year_date")
+
+
+c3$dc_percent <- c3$dc/c3$case_registered*100
+c3$dc <- NULL
+c3[c3$reg_year_date==2012,]
+c4 <- c3 %>% pivot_wider(names_from = age_interval, values_from=dc_percent,values_fill = 0)
+c4 <- c4[,c('reg_year_date','case_registered','case_disposed',seq(0,9,1))]
+c4 %>% View()
+```
+
+```{r}
+case_age %>% group_by(state_name) %>% summarise(dc=length(cino[disp_nature!=0]), dc1=length(cino[disp_nature!=0&age_interval==1])) %>% mutate(percent_disposal=dc1/dc*100)
+```
+
+Table 5.7 - Nature of Disposal and Time Taken for Disposal (in percent)
+```{r}
+d1 <- case_age %>% filter(updated_disp_name=='Abated') %>% group_by(updated_disp_name, age_interval) %>% summarise(dc=length(cino[disp_nature!=0])) %>% mutate(dcp=dc/sum(dc)*100)
+
+
+d2 <- case_age %>% group_by(age_interval) %>% summarise(tdc=length(cino[disp_nature!=0]))
+d2
+```
+
