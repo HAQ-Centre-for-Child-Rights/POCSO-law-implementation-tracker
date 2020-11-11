@@ -63,3 +63,40 @@ conviction_percent <- left_join(convicted_cases, total_cases, by='decision_year'
 
 ```
 
+Table 4.8 - Percentage Share of Offences in Total Convictions & Offence-wise Rate of Conviction
+
+```{r}
+offence_data <- read_csv(here("research","datasets","case_wise_offence.csv"))
+offence_data$state <- stringr::str_sub(offence_data$cino,start = 1,end = 2)
+```
+
+```{sql connection=con, output.var='disposal_type'}
+select cino, updated_disp_name from case_details where case_flag='1' and disp_nature!='0'
+```
+
+```{r}
+disposal_type$updated_disp_name <- str_trim(disposal_type$updated_disp_name)
+
+
+disposal_type$disposal_category <- ifelse(disposal_type$updated_disp_name %in% disposal_var, disposal_type$updated_disp_name, ifelse(disposal_type$updated_disp_name %in% other_var,'Other',''))
+
+disposal_type$disposal_category[grepl(disposal_type$updated_disp_name, pattern = 'Convicted')] <- 'Convicted'
+disposal_type$disposal_category[grepl(disposal_type$updated_disp_name, pattern = 'Transferred')] <- 'Transferred'
+disposal_type$disposal_category[grepl(disposal_type$updated_disp_name, pattern = 'Acquitted')] <- 'Acquitted'
+disposal_type$disposal_category[disposal_type$updated_disp_name=='Adjourned Sine die'] <- 'Other'
+disposal_type$disposal_category[disposal_type$updated_disp_name=='Case is filed'] <- 'Other'
+disposal_type$disposal_category[disposal_type$updated_disp_name=='Some Convicted, some Acquitted'] <- 'Other'
+disposal_type$disposal_category[disposal_type$disposal_category==''] <- 'Other'
+offence_data <- left_join(offence_data, disposal_type, by='cino')
+offence_data <- offence_data[!is.na(offence_data$disposal_category),]
+```
+
+```{r}
+table(offence_data$offence_type[offence_data$disposal_category=='Convicted'],offence_data$disposal_category[offence_data$disposal_category=='Convicted'])
+```
+
+Table 4.9 - Conviction by Category of Offence
+```{r}
+table(offence_data$offfence_category[offence_data$disposal_category=='Convicted'],offence_data$disposal_category[offence_data$disposal_category=='Convicted'])
+```
+
