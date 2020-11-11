@@ -11,6 +11,12 @@ knitr::opts_chunk$set(
 source(here::here("scripts","source_files.R"))
 ```
 
+Case age data processed by HAQ
+```{r}
+age_data_haq <- read_csv(here("research","datasets","case_age_haq.csv"))
+```
+
+
 Chart 5.1 - Case Age for Disposed Cases
 ```{sql connection=con, output.var=case_age}
 select cino, updated_disp_name, state_name, district_name, reg_year_date, disp_nature, dt_regis, date_of_decision from case_details where case_flag = '1'
@@ -41,8 +47,18 @@ case_age$age_of_case_days <- time_length(case_age$age_of_case_interval, "days")
 # case_age <- case_age[case_age$age_of_case_days >= 0,]
 ```
 
+
+Merging case_age with data from HAQ
+```{r}
+case_age <- left_join(case_age, age_data_haq[,c('cino','case_age_days')], by='cino')
+names(case_age)[which(names(case_age) == 'case_age_days')] <- 'case_age_haq'
+names(case_age)[which(names(case_age) == 'age_of_case_days')] <- 'case_age_cdl'
+case_age$age_diff <- case_age$case_age_cdl - case_age$case_age_haq
+```
+
+
 ```{r calculating age intervals}
-case_age %>% filter(disp_nature!=0 & age_of_case_days <= 365) %>% summarise(tc=length(state_name))
+case_age %>% filter(disp_nature!=0 & case_age_haq <= 365) %>% summarise(tc=length(state_name))
 ```
 ```{r}
 case_age %>% group_by(state_name) %>% filter(disp_nature==0)%>% summarise(max(age_of_case_days))
