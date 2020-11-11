@@ -67,3 +67,29 @@ Table 2.15 - Police Station-Wise Share of Cases for Top 5 Districts with Maximum
 ```{sql connection=con}
 select district_name, police_station, count(*) as total_cases from case_details where state_name='Delhi' and district_name IN ('West','North West','North','South West','Central') and case_flag='1' group by police_station, district_name order by district_name,total_cases desc
 ```
+
+
+Chart 2.3 - Distribution of Offences (Category-Wise)
+```{r}
+offence_data <- read_csv(here("research","datasets","case_wise_offence.csv"))
+offence_data$state <- stringr::str_sub(offence_data$cino,start = 1,end = 2)
+
+
+table(offence_data$offfence_category)
+```
+
+Table 2.4 - Offence-wise Distribution of Cases Registered (Category I)
+```{r}
+table(offence_data$offence_type[offence_data$offfence_category=='I']) %>% data.frame() %>% arrange(desc(Freq))
+```
+
+
+Table 2.6 - Offence-wise Distribution of Cases Registered (Category II)
+```{r}
+table(offence_data$offence_type[offence_data$offfence_category=='II']) %>% data.frame() %>% arrange(desc(Freq))
+```
+
+Table 2.7 - Offence-wise Distribution of Cases Registered
+```{r}
+table(offence_data$offence_type[offence_data$offfence_category=='III']) %>% data.frame() %>% arrange(desc(Freq))
+```
