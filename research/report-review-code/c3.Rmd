@@ -127,38 +127,26 @@ Table 3.3 - Court Caseload - Top 20 per cent Districts
 select district_name, (cases_registered_2020+cases_before_2020) as case_load_2020 from (select district_name, count(case when reg_year_date='2020' then 1 end) as cases_registered_2020, count(case when reg_year_date<'2020' and (DATE_PART('year', date_of_decision::date)>='2020' OR disp_nature='0') then 1 end)  as cases_before_2020  from case_details where case_flag='1' and state_name='Haryana' group by district_name) as a order by case_load_2020 desc
 ```
 
-Offence wise analysis [Pending - Check dataset with HAQ]
+Offence wise analysis
 
 ```{r}
-offence_file <-
-  readr::read_csv(
-    here("research", "datasets", "cases_with_primary_offences.csv"),
-    col_types = cols(
-      `Other headings Type of Offence` = col_character(),
-      act_issue_flag = col_character()
-    )
-  )
-
-category_1 <- c('PSA',
-'APSA',
-'SA',
-'ASA',
-'SH',
-'CP',
-'PSA + CP',
-'PSA + Storage of CP',
-'APSA + CP',
-'APSA + Storage of CP',
-'APSA + CP + Storage of CP',
-'SA + CP',
-'ASA + CP',
-'SH + CP',
-'SH + CP + Storage of CP')
-
-category_2 <- c("Abetment of PSA", "Abetment of APSA", "Abetment of SA", "Abetment of ASA", "Abetment of SH", "Abetment of CP", "Attempt to PSA", "Attempt to APSA", "Attempt to SA", "Attempt to ASA", "Attempt to SH", "Abetment of PSA + CP", "Abetment of APSA + CP", "Abetment to SH + CP", "Abetment of SA + Storage of CP", "Abetment of PSA + CP + Storage of CP", "Abetment of PSA + Attempt to PSA", "Abetment of APSA + Attempt to APSA", "Abetment of SA + Attempt to SA")
-
-category_3 <- c("Disclosure of Identity", "Failure to report", "False reporting")
-
-offence_file$category <- ifelse(offence_file$`Type of Offence` %in% category_1, 'c1',ifelse(offence_file$`Type of Offence` %in% category_2,'c2',ifelse(offence_file$`Type of Offence` %in% category_3, 'c3','not_found')))
+offence_data <- read_csv(here("research","datasets","case_wise_offence.csv"))
+offence_data$state <- stringr::str_sub(offence_data$cino,start = 1,end = 2)
 ```
+
+```{sql connection=con, output.var='case_status'}
+select cino, disp_nature from case_details where case_flag='1'
+```
+
+```{r}
+offence_data <- left_join(offence_data, case_status, by='cino')
+offence_data$case_status <- ifelse(offence_data$disp_nature!=0,'disposed','pending')
+```
+
+
+```{sql connection=con}
+select * from case_details where cino='DLWT010016612014'
+```
+
+
 
