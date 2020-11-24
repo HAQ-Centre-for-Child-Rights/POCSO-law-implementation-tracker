@@ -1,0 +1,54 @@
+
+[Queries and Challenges document](https://docs.google.com/document/d/1lF_5ieLHunm-IRQDA1tDk_QkSJUbWYENTRU13WjyepY/edit)
+
+```{r setup, include=FALSE}
+# knitr::opts_chunk$set(
+# 	echo = FALSE,
+# 	eval=FALSE,
+# 	message = FALSE,
+# 	warning = FALSE
+# )
+source(here::here("scripts","source_files.R"))
+```
+
+The E-Courts portal shows that there are 21 District Courts as against 18 this report looks at. See https://districts.ecourts.gov.in/haryana and https://highcourtchd.gov.in/sub_pages/top_menu/dist_jud/pdf/Haryana_Gradation1.pdf
+
+How do we explain this?
+
+Missing districts:
+
+- Karnal
+- Mahendragarh
+- Mewat
+
+[Data Mining statistics from Haryana](https://docs.google.com/spreadsheets/d/1CXfaxY5v4FJB0chdo--fW_EsX353Bi6mZzzEScguCkI/edit#gid=689112034)
+
+On e-Courts website:
+- Narnaul district is displayed as Mahendragarh
+- Nuh district is displayed as Mewat
+
+We have data from both these districts. Checking the number of flagged cases from these districts. 
+
+```{sql connection=con, output.var='haryana_district_wise_cases'}
+select state_name, district_name, case_flag, count(cino) from case_details where state_name='Haryana' group by state_name, district_name, case_flag
+```
+
+
+```{r}
+haryana_case_details <- haryana_district_wise_cases %>% pivot_wider(names_from = 'case_flag', values_from='count', names_prefix='case_flag_')
+haryana_case_details$total_cases <- haryana_case_details$case_flag_1 + haryana_case_details$case_flag_0
+```
+
+Insights:
+
+- All 36 cases from Karnal were not considered in the master list of cases because of invalid case types
+- All 55 cases from Narnaul (Mahendragarh) were not considered in the master list of cases because of invalid case types
+- We did not find any case on the e-Courts portal at the time of mining from Nuh (Mewat)
+
+
+```{sql echo=FALSE, connection=con}
+select type_name, count(cino), state_name from case_details where district_name IN ('Narnaul','Karnal') group by type_name, state_name
+```
+
+
+
