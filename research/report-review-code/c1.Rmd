@@ -20,3 +20,9 @@ select state_name, total_judgments, total_disposed_cases, (total_judgments::deci
 
 ```
 
+
+
+```{sql connection=con, output.var='case_wise_dates'}
+select cino, state_name, dt_regis from case_details where case_flag='1'
+```
+
