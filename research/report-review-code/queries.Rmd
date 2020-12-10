@@ -50,5 +50,8 @@ Insights:
 select type_name, count(cino), state_name from case_details where district_name IN ('Narnaul','Karnal') group by type_name, state_name
 ```
 
+```{sql connection=con}
+select * from case_details where district_name IN ('Narnaul','Karnal') AND type_name='POCSO ACT'
+```
 
 
